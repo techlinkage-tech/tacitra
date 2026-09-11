@@ -1,0 +1,57 @@
+{
+  "acceptance": {
+    "description": "generated change returns integer 42",
+    "expected_integer": 42
+  },
+  "category": "repository-change",
+  "id": "heldout-repository-halve",
+  "max_repair_rounds": 2,
+  "prompt": "../../../shared/heldout-repository-halve/prompt.md",
+  "representations": [
+    {
+      "artifact": "../../../shared/heldout-repository-halve/reference.patch.json",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "tacitra-semantic-patch",
+      "language": "tacitra",
+      "prepare_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "patch.apply",
+          "{work}/program.taci",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "../../../shared/heldout-repository-halve/edit-context.json"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "../../../shared/heldout-repository-halve/base.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../../../specs/tacitra-core-v1.md",
+        "../../../../specs/tacitra-edit-v1.md"
+      ],
+      "surface": "semantic-query",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

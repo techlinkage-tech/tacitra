@@ -1,0 +1,1 @@
+{"body_target":"sym:fn:shift","content_hash":"sha256:54f088cfc0bc195f75171e2483f45ad5fbe15e4235d311c5da8030218e6eaed0","leaves":[{"id":"expr:sym:fn:shift/body/result/left","kind":"name","type":"Int","value":"sym:fn:shift/param:value"},{"id":"expr:sym:fn:shift/body/result/right","kind":"integer","type":"Int","value":3}],"symbol_id":"sym:fn:shift","type":"fn(Int) -> Int"}

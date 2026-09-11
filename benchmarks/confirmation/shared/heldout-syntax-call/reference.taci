@@ -1,0 +1,7 @@
+fn combine(left: Int, right: Int) -> Int {
+  left + right
+}
+
+fn main() -> Int {
+  combine(17, 25)
+}

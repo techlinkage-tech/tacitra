@@ -1,0 +1,7 @@
+fn charge(value: Int) -> Int {
+  value - 9
+}
+
+fn main() -> Int {
+  charge(50)
+}

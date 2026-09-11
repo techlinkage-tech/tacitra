@@ -1,0 +1,7 @@
+fn increment(value: Int) -> Int {
+  value + 1
+}
+
+fn main() -> Int {
+  increment(40)
+}

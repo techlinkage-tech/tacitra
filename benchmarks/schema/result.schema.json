@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/benchmarks/result-v2.schema.json",
+  "title": "Tacitra raw benchmark result v2",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "evidence", "measurement_mode", "run_id", "trial_id", "case_id", "category", "representation", "language", "surface", "pins", "tokens", "compile_at_1", "pass_at_1", "repair_rounds", "max_repair_rounds", "patch_size", "accepted", "wall_clock_time", "failure", "artifacts"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "evidence": {"const": "measured"},
+    "measurement_mode": {"enum": ["static_reference", "model"]},
+    "run_id": {"type": "string"}, "trial_id": {"type": "string"},
+    "case_id": {"type": "string"}, "category": {"type": "string"},
+    "representation": {"type": "string"},
+    "language": {"enum": ["python", "go", "rust", "tacitra"]},
+    "surface": {"type": "string"},
+    "pins": {"type": "object", "additionalProperties": false, "required": ["case_revision", "harness_revision", "model", "model_settings", "tokenizer_name", "tokenizer_version", "environment"], "properties": {"case_revision": {"type": "string"}, "harness_revision": {"type": "string"}, "model": {"type": ["string", "null"]}, "model_settings": {"type": "object"}, "tokenizer_name": {"type": "string"}, "tokenizer_version": {"type": "string"}, "environment": {"type": "object"}}},
+    "tokens": {"type": "object", "additionalProperties": false, "required": ["instruction_tokens", "specification_tokens", "repository_context_tokens", "task_tokens", "input_tokens", "output_tokens", "diagnostic_tokens", "repair_tokens", "total_tokens"], "properties": {"instruction_tokens": {"$ref": "#/$defs/count"}, "specification_tokens": {"$ref": "#/$defs/count"}, "repository_context_tokens": {"$ref": "#/$defs/count"}, "task_tokens": {"$ref": "#/$defs/count"}, "input_tokens": {"$ref": "#/$defs/count"}, "output_tokens": {"$ref": "#/$defs/count"}, "diagnostic_tokens": {"$ref": "#/$defs/count"}, "repair_tokens": {"$ref": "#/$defs/count"}, "total_tokens": {"$ref": "#/$defs/count"}}},
+    "compile_at_1": {"type": "boolean"}, "pass_at_1": {"type": "boolean"},
+    "repair_rounds": {"type": "integer", "minimum": 0}, "max_repair_rounds": {"type": "integer", "minimum": 0},
+    "patch_size": {"type": ["integer", "null"], "minimum": 0},
+    "accepted": {"type": "boolean"}, "wall_clock_time": {"type": "number", "minimum": 0},
+    "failure": {"type": ["object", "null"]}, "artifacts": {"type": "object"}
+  },
+  "$defs": {"count": {"type": "integer", "minimum": 0}}
+}

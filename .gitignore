@@ -1,0 +1,7 @@
+/target/
+__pycache__/
+*.py[cod]
+*.tmp
+benchmarks/model/*.local.json
+.env.local
+.env*

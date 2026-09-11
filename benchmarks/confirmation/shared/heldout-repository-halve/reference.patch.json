@@ -1,0 +1,11 @@
+{
+  "base_hash": "sha256:19980eb0fce37e700c1eeff9ad39d1702876ca3d162e15349589b9fb5133c82b",
+  "operations": [
+    {
+      "op": "replace_function_body",
+      "replacement": "{ value / 2 }",
+      "target": "sym:fn:halve"
+    }
+  ],
+  "schema_version": 1
+}

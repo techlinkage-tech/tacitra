@@ -1,0 +1,9 @@
+--- program.py
++++ program.py
+@@ -1,5 +1,5 @@
+ def increment(value: int) -> int:
+-    return value + 1
++    return value + 2
+ 
+ 
+ print(increment(40))

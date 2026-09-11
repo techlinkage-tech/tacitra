@@ -1,0 +1,8 @@
+--- program.taci
++++ program.taci
+@@ -1,4 +1,4 @@
+-let offset = missing;
++let offset = 2;
+ 
+ fn main() -> Int {
+   40 + offset

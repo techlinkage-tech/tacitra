@@ -1,0 +1,11 @@
+{
+  "base_hash": "sha256:54f088cfc0bc195f75171e2483f45ad5fbe15e4235d311c5da8030218e6eaed0",
+  "operations": [
+    {
+      "op": "replace_function_body",
+      "replacement": "{ value + 4 }",
+      "target": "sym:fn:shift"
+    }
+  ],
+  "schema_version": 1
+}

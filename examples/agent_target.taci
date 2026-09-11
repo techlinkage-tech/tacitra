@@ -1,0 +1,21 @@
+record Config {
+  offset: Int,
+  enabled: Bool,
+}
+
+fn increment(value: Int) -> Int {
+  value + 1
+}
+
+fn adjust(value: Int, config: Config) -> Int {
+  if config.enabled {
+    value + config.offset
+  } else {
+    value
+  }
+}
+
+fn main() -> Int {
+  let config = new Config { offset: 1, enabled: true };
+  adjust(increment(40), config)
+}

@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn add_offset(value: i64) -> i64 {
+-    value + offset
++    value + 2
+ }
+ 
+ fn main() {

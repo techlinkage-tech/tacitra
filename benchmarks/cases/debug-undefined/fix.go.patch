@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func addOffset(value int) int {
+-	return value + offset
++	return value + 2
+ }
+ 
+ func main() {

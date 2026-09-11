@@ -1,0 +1,7 @@
+fn halve(value: Int) -> Int {
+  value / 2
+}
+
+fn main() -> Int {
+  halve(84)
+}

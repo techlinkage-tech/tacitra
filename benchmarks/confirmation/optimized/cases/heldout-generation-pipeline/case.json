@@ -1,0 +1,42 @@
+{
+  "acceptance": {
+    "description": "generated change returns integer 42",
+    "expected_integer": 42
+  },
+  "category": "generation",
+  "id": "heldout-generation-pipeline",
+  "max_repair_rounds": 2,
+  "prompt": "../../../shared/heldout-generation-pipeline/prompt.md",
+  "representations": [
+    {
+      "artifact": "../../../shared/heldout-generation-pipeline/reference.taci",
+      "artifact_kind": "source",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{artifact}"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "tacitra-source",
+      "language": "tacitra",
+      "prepare_commands": [],
+      "repository_context": [],
+      "result_kind": "integer",
+      "setup_files": [],
+      "specification": [
+        "../../../../specs/tacitra-core-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{artifact}"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

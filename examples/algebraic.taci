@@ -1,0 +1,32 @@
+record User {
+  name: String,
+  active: Bool,
+}
+
+union State {
+  Ready,
+  Failed(String),
+}
+
+fn greeting(user: User, state: State) -> Result[Option[String], String] {
+  if user.active {
+    match state {
+      Ready => Ok(Some(user.name)),
+      Failed(message) => Err(message),
+    }
+  } else {
+    Ok(None())
+  }
+}
+
+fn main() -> String {
+  let user = new User { name: "Ada", active: true };
+  let state = Ready();
+  match greeting(user, state) {
+    Ok(value) => match value {
+      Some(name) => name,
+      None => "inactive",
+    },
+    Err(message) => message,
+  }
+}

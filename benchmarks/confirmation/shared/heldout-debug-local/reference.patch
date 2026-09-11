@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn compute(value: Int) -> Int {
+-  let step = delta;
++  let step = 2;
+   value + step
+ }
+ 

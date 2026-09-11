@@ -1,0 +1,1538 @@
+{
+  "accepted": 63,
+  "evidence": "measured",
+  "groups": [
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "debug-repair",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "go",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 158.0,
+        "median": 158,
+        "population_variance": 0
+      },
+      "representation": "go-diagnostic-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 33.0,
+          "median": 33,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 9016.0,
+          "median": 9016,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 158.0,
+          "median": 158,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 130.0,
+          "median": 130,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 160.0,
+          "median": 160,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 172.0,
+          "median": 172,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9174.0,
+          "median": 9174,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9174.0,
+        "median": 9174,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9174.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.5229053333333336,
+        "median": 3.389287,
+        "population_variance": 0.04600302156955553
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "debug-repair",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "python",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 158.0,
+        "median": 158,
+        "population_variance": 0
+      },
+      "representation": "python-diagnostic-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 40.0,
+          "median": 40,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 9000.0,
+          "median": 9000,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 158.0,
+          "median": 158,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 85.0,
+          "median": 85,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 172.0,
+          "median": 172,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9158.0,
+          "median": 9158,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9158.0,
+        "median": 9158,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9158.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.20410633333333336,
+        "median": 0.201461,
+        "population_variance": 1.461282022222224e-05
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "debug-repair",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "rust",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 135.0,
+        "median": 135,
+        "population_variance": 0
+      },
+      "representation": "rust-diagnostic-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 55.0,
+          "median": 55,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 9014.0,
+          "median": 9014,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 135.0,
+          "median": 135,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 107.0,
+          "median": 107,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 159.0,
+          "median": 159,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 172.0,
+          "median": 172,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9149.0,
+          "median": 9149,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9149.0,
+        "median": 9149,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9149.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.251941,
+        "median": 0.25689,
+        "population_variance": 5.735220066666652e-05
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "debug-repair",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 142.0,
+        "median": 142,
+        "population_variance": 0
+      },
+      "representation": "tacitra-diagnostic-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 233.0,
+          "median": 233,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 15687.0,
+          "median": 15687,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 142.0,
+          "median": 142,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 93.0,
+          "median": 93,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 6668.0,
+          "median": 6668,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 172.0,
+          "median": 172,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 15829.0,
+          "median": 15829,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 15829.0,
+        "median": 15829,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 15829.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.07277766666666667,
+        "median": 0.072174,
+        "population_variance": 1.8729108888888952e-06
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "generation",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "go",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "go-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8835.0,
+          "median": 8835,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 143.0,
+          "median": 143,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 160.0,
+          "median": 160,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 154.0,
+          "median": 154,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8978.0,
+          "median": 8978,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8978.0,
+        "median": 8978,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8978.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.41071,
+        "median": 3.393045,
+        "population_variance": 0.008279773400666667
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "generation",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "python",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "python-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8857.0,
+          "median": 8857,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 103.0,
+          "median": 103,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 154.0,
+          "median": 154,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8960.0,
+          "median": 8960,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8960.0,
+        "median": 8960,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8960.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.20889933333333333,
+        "median": 0.191085,
+        "population_variance": 0.0018943416362222213
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "generation",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "rust",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "rust-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8834.0,
+          "median": 8834,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 132.0,
+          "median": 132,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 159.0,
+          "median": 159,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 154.0,
+          "median": 154,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8966.0,
+          "median": 8966,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8966.0,
+        "median": 8966,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8966.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.24125300000000002,
+        "median": 0.24867,
+        "population_variance": 0.0001704216260000003
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "generation",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "tacitra-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 13465.0,
+          "median": 13465,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 95.0,
+          "median": 95,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 4790.0,
+          "median": 4790,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 154.0,
+          "median": 154,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 13560.0,
+          "median": 13560,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 13560.0,
+        "median": 13560,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 13560.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.05017433333333334,
+        "median": 0.050698,
+        "population_variance": 2.606246888888886e-06
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "interop",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "go",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "go-worker",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 14530.0,
+          "median": 14530,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 622.0,
+          "median": 622,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 730.0,
+          "median": 730,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 5127.0,
+          "median": 5127,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 152.0,
+          "median": 152,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 15152.0,
+          "median": 15152,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 15152.0,
+        "median": 15152,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 15152.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.968747,
+        "median": 3.932743,
+        "population_variance": 0.05524480129400009
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "interop",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "python",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "python-worker",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 15608.0,
+          "median": 15608,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 1047.0,
+          "median": 1047,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 1786.0,
+          "median": 1786,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 5149.0,
+          "median": 5149,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 152.0,
+          "median": 152,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 16655.0,
+          "median": 16655,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 16655.0,
+        "median": 16655,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 16655.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.2826553333333333,
+        "median": 0.29879,
+        "population_variance": 0.0008147517508888885
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "interop",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "rust",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "rust-worker",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 14531.0,
+          "median": 14531,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 722.0,
+          "median": 722,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 732.0,
+          "median": 732,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 5126.0,
+          "median": 5126,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 152.0,
+          "median": 152,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 15253.0,
+          "median": 15253,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 15253.0,
+        "median": 15253,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 15253.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.390944,
+        "median": 0.395616,
+        "population_variance": 0.0002868869360000002
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "interop",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "tacitra-interop-call",
+      "surface": "interop-manifest",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 15426.0,
+          "median": 15426,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 23.0,
+          "median": 23,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 1786.0,
+          "median": 1786,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 4967.0,
+          "median": 4967,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 152.0,
+          "median": 152,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 15449.0,
+          "median": 15449,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 15449.0,
+        "median": 15449,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 15449.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.140422,
+        "median": 0.132985,
+        "population_variance": 0.00016817904600000008
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "go",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 153.0,
+        "median": 153,
+        "population_variance": 0
+      },
+      "representation": "go-source-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8988.0,
+          "median": 8988,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 153.0,
+          "median": 153,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 125.0,
+          "median": 125,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 160.0,
+          "median": 160,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9141.0,
+          "median": 9141,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9141.0,
+        "median": 9141,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9141.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.4186080000000003,
+        "median": 3.425608,
+        "population_variance": 0.003477236770666665
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "python",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 151.0,
+        "median": 151,
+        "population_variance": 0
+      },
+      "representation": "python-source-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8963.0,
+          "median": 8963,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 151.0,
+          "median": 151,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 78.0,
+          "median": 78,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9114.0,
+          "median": 9114,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9114.0,
+        "median": 9114,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9114.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.20985833333333334,
+        "median": 0.208102,
+        "population_variance": 6.268192155555557e-05
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "rust",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 129.0,
+        "median": 129,
+        "population_variance": 0
+      },
+      "representation": "rust-source-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8962.0,
+          "median": 8962,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 129.0,
+          "median": 129,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 100.0,
+          "median": 100,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 159.0,
+          "median": 159,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 9091.0,
+          "median": 9091,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 9091.0,
+        "median": 9091,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 9091.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.26960100000000004,
+        "median": 0.264075,
+        "population_variance": 0.00012245660466666668
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 219.0,
+        "median": 219,
+        "population_variance": 0
+      },
+      "representation": "tacitra-semantic-patch",
+      "surface": "semantic-query",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 17973.0,
+          "median": 17973,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 219.0,
+          "median": 219,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 917.0,
+          "median": 917,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 8353.0,
+          "median": 8353,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 18192.0,
+          "median": 18192,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 18192.0,
+        "median": 18192,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 18192.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.07468366666666666,
+        "median": 0.075122,
+        "population_variance": 3.3654082222222254e-06
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 136.0,
+        "median": 136,
+        "population_variance": 0
+      },
+      "representation": "tacitra-source-patch",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 13579.0,
+          "median": 13579,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 136.0,
+          "median": 136,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 86.0,
+          "median": 86,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 4790.0,
+          "median": 4790,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 13715.0,
+          "median": 13715,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 13715.0,
+        "median": 13715,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 13715.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.07504833333333333,
+        "median": 0.076578,
+        "population_variance": 2.0441108222222216e-05
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "syntax",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "go",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "go-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8890.0,
+          "median": 8890,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 99.0,
+          "median": 99,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 160.0,
+          "median": 160,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 209.0,
+          "median": 209,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8989.0,
+          "median": 8989,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8989.0,
+        "median": 8989,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8989.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.5915913333333336,
+        "median": 3.536006,
+        "population_variance": 0.011686537254888866
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "syntax",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "python",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "python-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8912.0,
+          "median": 8912,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 53.0,
+          "median": 53,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 182.0,
+          "median": 182,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 209.0,
+          "median": 209,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8965.0,
+          "median": 8965,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8965.0,
+        "median": 8965,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8965.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.19413500000000003,
+        "median": 0.182073,
+        "population_variance": 0.0004371310159999998
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "syntax",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "rust",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "rust-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 8889.0,
+          "median": 8889,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 75.0,
+          "median": 75,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 159.0,
+          "median": 159,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 209.0,
+          "median": 209,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 8964.0,
+          "median": 8964,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 8964.0,
+        "median": 8964,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 8964.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.24554033333333333,
+        "median": 0.253713,
+        "population_variance": 0.0001555812028888889
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "category": "syntax",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "language": "tacitra",
+      "pass_at_1_rate": 1.0,
+      "patch_size": null,
+      "representation": "tacitra-source",
+      "surface": "human-source",
+      "token_components": {
+        "diagnostic_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "input_tokens": {
+          "mean": 13520.0,
+          "median": 13520,
+          "population_variance": 0
+        },
+        "instruction_tokens": {
+          "mean": 8521.0,
+          "median": 8521,
+          "population_variance": 0
+        },
+        "output_tokens": {
+          "mean": 61.0,
+          "median": 61,
+          "population_variance": 0
+        },
+        "repair_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "repository_context_tokens": {
+          "mean": 0.0,
+          "median": 0,
+          "population_variance": 0
+        },
+        "specification_tokens": {
+          "mean": 4790.0,
+          "median": 4790,
+          "population_variance": 0
+        },
+        "task_tokens": {
+          "mean": 209.0,
+          "median": 209,
+          "population_variance": 0
+        },
+        "total_tokens": {
+          "mean": 13581.0,
+          "median": 13581,
+          "population_variance": 0
+        }
+      },
+      "total_tokens": {
+        "mean": 13581.0,
+        "median": 13581,
+        "population_variance": 0
+      },
+      "total_tokens_per_accepted_solution": 13581.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 0.05813933333333334,
+        "median": 0.060302,
+        "population_variance": 4.956915622222227e-05
+      }
+    }
+  ],
+  "measurement_mode": "static_reference",
+  "raw_trials": 63,
+  "schema_version": 1,
+  "tokenizer_name": "utf8-bytes",
+  "tokenizer_version": "1"
+}

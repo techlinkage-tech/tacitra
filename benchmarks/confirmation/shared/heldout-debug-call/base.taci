@@ -1,0 +1,7 @@
+fn compute(value: Int) -> Int {
+  missing(value)
+}
+
+fn main() -> Int {
+  compute(40)
+}

@@ -1,0 +1,1 @@
+Express a complete program with a typed `answer` function that returns integer 42 and print or return that value from the entry point. Use the shortest clear canonical source accepted by the declared profile.

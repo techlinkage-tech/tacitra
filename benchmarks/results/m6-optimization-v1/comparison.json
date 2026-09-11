@@ -1,0 +1,366 @@
+{
+  "after": {
+    "acceptance_rate": 1.0,
+    "accepted": 63,
+    "components": {
+      "diagnostic_tokens": 1083.0,
+      "instruction_tokens": 536823.0,
+      "output_tokens": 13644.0,
+      "repair_tokens": 0.0,
+      "repository_context_tokens": 14520.0,
+      "specification_tokens": 65085.0,
+      "task_tokens": 10974.0
+    },
+    "total_tokens": 642129.0,
+    "total_tokens_per_accepted_solution": 10192.52380952381,
+    "trials": 63
+  },
+  "before": {
+    "acceptance_rate": 1.0,
+    "accepted": 63,
+    "components": {
+      "diagnostic_tokens": 1083.0,
+      "instruction_tokens": 536823.0,
+      "output_tokens": 13668.0,
+      "repair_tokens": 0.0,
+      "repository_context_tokens": 20265.0,
+      "specification_tokens": 155292.0,
+      "task_tokens": 10974.0
+    },
+    "total_tokens": 738105.0,
+    "total_tokens_per_accepted_solution": 11715.952380952382,
+    "trials": 63
+  },
+  "component_deltas": {
+    "diagnostic_tokens": {
+      "after": 1083.0,
+      "before": 1083.0,
+      "delta": 0.0,
+      "delta_percent": 0.0
+    },
+    "instruction_tokens": {
+      "after": 536823.0,
+      "before": 536823.0,
+      "delta": 0.0,
+      "delta_percent": 0.0
+    },
+    "output_tokens": {
+      "after": 13644.0,
+      "before": 13668.0,
+      "delta": -24.0,
+      "delta_percent": -0.17559262510974538
+    },
+    "repair_tokens": {
+      "after": 0.0,
+      "before": 0.0,
+      "delta": 0.0,
+      "delta_percent": null
+    },
+    "repository_context_tokens": {
+      "after": 14520.0,
+      "before": 20265.0,
+      "delta": -5745.0,
+      "delta_percent": -28.349370836417467
+    },
+    "specification_tokens": {
+      "after": 65085.0,
+      "before": 155292.0,
+      "delta": -90207.0,
+      "delta_percent": -58.088633026814
+    },
+    "task_tokens": {
+      "after": 10974.0,
+      "before": 10974.0,
+      "delta": 0.0,
+      "delta_percent": 0.0
+    }
+  },
+  "evidence": "measured_static_reference",
+  "groups": [
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9174.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9174.0,
+      "category": "debug-repair",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "go",
+      "representation": "go-diagnostic-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9158.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9158.0,
+      "category": "debug-repair",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "python",
+      "representation": "python-diagnostic-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9149.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9149.0,
+      "category": "debug-repair",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "rust",
+      "representation": "rust-diagnostic-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 10022.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 15829.0,
+      "category": "debug-repair",
+      "classification": "improved",
+      "delta_percent": -36.68582980605218,
+      "delta_tokens": -5807.0,
+      "language": "tacitra",
+      "representation": "tacitra-diagnostic-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8978.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8978.0,
+      "category": "generation",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "go",
+      "representation": "go-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8960.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8960.0,
+      "category": "generation",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "python",
+      "representation": "python-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8966.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8966.0,
+      "category": "generation",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "rust",
+      "representation": "rust-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9359.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 13560.0,
+      "category": "generation",
+      "classification": "improved",
+      "delta_percent": -30.980825958702066,
+      "delta_tokens": -4201.0,
+      "language": "tacitra",
+      "representation": "tacitra-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 15152.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 15152.0,
+      "category": "interop",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "go",
+      "representation": "go-worker",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 16655.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 16655.0,
+      "category": "interop",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "python",
+      "representation": "python-worker",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 15253.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 15253.0,
+      "category": "interop",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "rust",
+      "representation": "rust-worker",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9627.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 15449.0,
+      "category": "interop",
+      "classification": "improved",
+      "delta_percent": -37.685287073596996,
+      "delta_tokens": -5822.0,
+      "language": "tacitra",
+      "representation": "tacitra-interop-call",
+      "surface": "interop-manifest"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9141.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9141.0,
+      "category": "repository-change",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "go",
+      "representation": "go-source-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9114.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9114.0,
+      "category": "repository-change",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "python",
+      "representation": "python-source-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9091.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 9091.0,
+      "category": "repository-change",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "rust",
+      "representation": "rust-source-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9514.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 13715.0,
+      "category": "repository-change",
+      "classification": "improved",
+      "delta_percent": -30.63069631790011,
+      "delta_tokens": -4201.0,
+      "language": "tacitra",
+      "representation": "tacitra-source-patch",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 10432.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 18192.0,
+      "category": "repository-change",
+      "classification": "improved",
+      "delta_percent": -42.65611257695691,
+      "delta_tokens": -7760.0,
+      "language": "tacitra",
+      "representation": "tacitra-semantic-patch",
+      "surface": "semantic-query"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8989.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8989.0,
+      "category": "syntax",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "go",
+      "representation": "go-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8965.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8965.0,
+      "category": "syntax",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "python",
+      "representation": "python-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 8964.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 8964.0,
+      "category": "syntax",
+      "classification": "unchanged",
+      "delta_percent": 0.0,
+      "delta_tokens": 0.0,
+      "language": "rust",
+      "representation": "rust-source",
+      "surface": "human-source"
+    },
+    {
+      "after_acceptance_rate": 1.0,
+      "after_total_tokens_per_accepted_solution": 9380.0,
+      "before_acceptance_rate": 1.0,
+      "before_total_tokens_per_accepted_solution": 13581.0,
+      "category": "syntax",
+      "classification": "improved",
+      "delta_percent": -30.93292099256314,
+      "delta_tokens": -4201.0,
+      "language": "tacitra",
+      "representation": "tacitra-source",
+      "surface": "human-source"
+    }
+  ],
+  "overall": {
+    "acceptance_rate_delta": 0.0,
+    "classification": "improved",
+    "delta_percent": -13.00302802446807,
+    "delta_tokens_per_accepted_solution": -1523.4285714285725
+  },
+  "schema_version": 1,
+  "statistical_note": "Token counts are deterministic with zero within-group variance; model accuracy and model-token effects remain unmeasured.",
+  "tokenizer": {
+    "name": "utf8-bytes",
+    "version": "1"
+  }
+}

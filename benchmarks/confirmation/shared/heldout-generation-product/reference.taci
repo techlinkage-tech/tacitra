@@ -1,0 +1,7 @@
+fn area(width: Int, height: Int) -> Int {
+  width * height
+}
+
+fn main() -> Int {
+  area(6, 7)
+}

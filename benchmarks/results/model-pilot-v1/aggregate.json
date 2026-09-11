@@ -1,0 +1,120 @@
+{
+  "acceptance_rate": 1.0,
+  "accepted": 6,
+  "config_revision": "sha256:075e3cd6458e6e3e77717dd2fed87f93e6c1f79f690943636f3de7e4e4a52721",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "evidence": "measured",
+  "groups": [
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "cached_input_tokens": {
+        "mean": 3186.0,
+        "median": 3996,
+        "population_variance": 1312200
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "input_tokens": {
+        "mean": 3999.0,
+        "median": 3999,
+        "population_variance": 0
+      },
+      "language": "tacitra",
+      "output_tokens": {
+        "mean": 229.33333333333334,
+        "median": 232,
+        "population_variance": 84.22222222222223
+      },
+      "pass_at_1_rate": 1.0,
+      "reasoning_tokens": {
+        "mean": 108.33333333333333,
+        "median": 111,
+        "population_variance": 84.22222222222223
+      },
+      "repair_rounds": {
+        "mean": 0.0,
+        "median": 0,
+        "population_variance": 0
+      },
+      "representation": "tacitra-semantic-patch",
+      "suite": "baseline",
+      "surface": "semantic-query",
+      "total_tokens": {
+        "mean": 4228.333333333333,
+        "median": 4231,
+        "population_variance": 84.22222222222223
+      },
+      "total_tokens_per_accepted_solution": 4228.333333333333,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 4.403289333333333,
+        "median": 4.177049,
+        "population_variance": 0.11938109821755538
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 3,
+      "cached_input_tokens": {
+        "mean": 1420.0,
+        "median": 2130,
+        "population_variance": 1008200
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "failed": 0,
+      "input_tokens": {
+        "mean": 2133.0,
+        "median": 2133,
+        "population_variance": 0
+      },
+      "language": "tacitra",
+      "output_tokens": {
+        "mean": 162.0,
+        "median": 152,
+        "population_variance": 372.6666666666667
+      },
+      "pass_at_1_rate": 1.0,
+      "reasoning_tokens": {
+        "mean": 74.0,
+        "median": 64,
+        "population_variance": 372.6666666666667
+      },
+      "repair_rounds": {
+        "mean": 0.0,
+        "median": 0,
+        "population_variance": 0
+      },
+      "representation": "tacitra-semantic-patch",
+      "suite": "optimized",
+      "surface": "semantic-query",
+      "total_tokens": {
+        "mean": 2295.0,
+        "median": 2285,
+        "population_variance": 372.6666666666667
+      },
+      "total_tokens_per_accepted_solution": 2295.0,
+      "trials": 3,
+      "wall_clock_time": {
+        "mean": 3.635493,
+        "median": 2.92513,
+        "population_variance": 1.0400356806246664
+      }
+    }
+  ],
+  "measurement_mode": "model",
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_output_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  },
+  "provider": "openai-responses",
+  "raw_trials": 6,
+  "schema_version": 1,
+  "total_tokens": 19570,
+  "total_tokens_per_accepted_solution": 3261.6666666666665
+}

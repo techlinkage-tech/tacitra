@@ -1,0 +1,5 @@
+fn main() -> Int {
+  let gross = 50;
+  let fee = 8;
+  gross - fee
+}

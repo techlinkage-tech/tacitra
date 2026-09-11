@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/protocol/diagnostics-v1.schema.json",
+  "title": "Tacitra compiler diagnostic response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "valid", "diagnostics"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "valid": {"type": "boolean"},
+    "diagnostics": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/diagnostic"}
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"valid": {"const": true}}},
+      "then": {"properties": {"diagnostics": {"maxItems": 0}}},
+      "else": {"properties": {"diagnostics": {"minItems": 1}}}
+    }
+  ],
+  "$defs": {
+    "position": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["byte", "line", "column"],
+      "properties": {
+        "byte": {"type": "integer", "minimum": 0},
+        "line": {"type": "integer", "minimum": 1},
+        "column": {"type": "integer", "minimum": 1}
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "severity", "message", "span", "expected_type", "actual_type"],
+      "properties": {
+        "code": {"type": "string", "pattern": "^(L|P|N|T|R)[0-9]{4}$"},
+        "severity": {"const": "error"},
+        "message": {"type": "string"},
+        "span": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": {"$ref": "#/$defs/position"},
+            "end": {"$ref": "#/$defs/position"}
+          }
+        },
+        "expected_type": {"type": ["string", "null"]},
+        "actual_type": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

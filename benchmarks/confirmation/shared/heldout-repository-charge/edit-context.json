@@ -1,0 +1,1 @@
+{"body_target":"sym:fn:charge","content_hash":"sha256:2c6214e41317dd7fbba056e20e263e862e5fb827cc27b2d3f1f34151ecb854fd","leaves":[{"id":"expr:sym:fn:charge/body/result/left","kind":"name","type":"Int","value":"sym:fn:charge/param:value"},{"id":"expr:sym:fn:charge/body/result/right","kind":"integer","type":"Int","value":9}],"symbol_id":"sym:fn:charge","type":"fn(Int) -> Int"}

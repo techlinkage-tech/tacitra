@@ -1,0 +1,1 @@
+{"body_target":"sym:fn:halve","content_hash":"sha256:19980eb0fce37e700c1eeff9ad39d1702876ca3d162e15349589b9fb5133c82b","leaves":[{"id":"expr:sym:fn:halve/body/result/left","kind":"name","type":"Int","value":"sym:fn:halve/param:value"},{"id":"expr:sym:fn:halve/body/result/right","kind":"integer","type":"Int","value":3}],"symbol_id":"sym:fn:halve","type":"fn(Int) -> Int"}

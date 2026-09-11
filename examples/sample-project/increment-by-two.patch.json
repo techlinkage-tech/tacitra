@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "base_hash": "sha256:e18784412053e7c21bee55c42fbedbdfa5937a5582fa047e8e73f761c233a3ba",
+  "operations": [
+    {
+      "op": "replace_function_body",
+      "target": "sym:fn:increment",
+      "replacement": "{ value + 2 }"
+    }
+  ]
+}

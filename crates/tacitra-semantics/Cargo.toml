@@ -1,0 +1,12 @@
+[package]
+name = "tacitra-semantics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tacitra-syntax = { path = "../tacitra-syntax" }
+
+[lints]
+workspace = true

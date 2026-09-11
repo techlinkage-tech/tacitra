@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn add_offset(value: Int) -> Int {
+-  value + offset
++  value + 2
+ }
+ 
+ fn main() -> Int {

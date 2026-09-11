@@ -1,0 +1,11 @@
+fn double(value: Int) -> Int {
+  value * 2
+}
+
+fn add_two(value: Int) -> Int {
+  value + 2
+}
+
+fn main() -> Int {
+  add_two(double(20))
+}

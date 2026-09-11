@@ -1,0 +1,62 @@
+{
+  "baseline": {
+    "acceptance_rate": 1.0,
+    "accepted": 3,
+    "total_tokens_per_accepted_solution": 4228.333333333333
+  },
+  "config_revision": "sha256:075e3cd6458e6e3e77717dd2fed87f93e6c1f79f690943636f3de7e4e4a52721",
+  "decision": {
+    "acceptance_noninferiority_margin": null,
+    "classification": "not_preregistered"
+  },
+  "difference": {
+    "acceptance_rate": 0.0,
+    "bootstrap_95_percent_interval": {
+      "acceptance_rate": [
+        0.0,
+        0.0
+      ],
+      "samples": 10000,
+      "seed": 20260911,
+      "total_tokens_per_accepted_solution": [
+        -1953.0,
+        -1916.0
+      ]
+    },
+    "total_tokens_per_accepted_solution": -1933.333333333333
+  },
+  "endpoint": "https://api.openai.com/v1/responses",
+  "evidence": "measured",
+  "groups": [
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 4228.333333333333,
+      "category": "repository-change",
+      "delta": -1933.333333333333,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 2295.0,
+      "representation": "tacitra-semantic-patch",
+      "trials": 3
+    }
+  ],
+  "limitations": [
+    "The paired bootstrap is conditional on the observed cases and repetitions.",
+    "An all-success pilot produces a degenerate empirical acceptance interval and does not prove population-level non-inferiority."
+  ],
+  "measurement_mode": "model_paired_comparison",
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_output_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  },
+  "optimized": {
+    "acceptance_rate": 1.0,
+    "accepted": 3,
+    "total_tokens_per_accepted_solution": 2295.0
+  },
+  "paired_trials": 3,
+  "provider": "openai-responses",
+  "schema_version": 1
+}

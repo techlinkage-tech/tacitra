@@ -1,0 +1,1 @@
+{"valid":false,"diagnostics":[{"code":"N0002","severity":"error","message":"undefined name `offset`","span":{"start":{"byte":42,"line":2,"column":11},"end":{"byte":48,"line":2,"column":17}},"expected_type":null,"actual_type":null}]}

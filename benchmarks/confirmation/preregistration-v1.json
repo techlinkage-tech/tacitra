@@ -1,0 +1,218 @@
+{
+  "date": "2026-09-11",
+  "decision_rule": {
+    "accepted_loss_confidence": 0.95,
+    "accepted_loss_definition": "optimized failure among pairs accepted by baseline",
+    "max_accepted_loss_rate": 0.05,
+    "primary_metric": "total_tokens_per_accepted_solution",
+    "require_every_category_has_accepted_optimized_trial": true,
+    "require_token_interval_upper_below": 0,
+    "token_bootstrap_samples": 10000,
+    "token_bootstrap_seed": 20260911,
+    "token_difference": "optimized_minus_baseline"
+  },
+  "design": {
+    "case_count": 20,
+    "cases": [
+      {
+        "category": "debug-repair",
+        "id": "heldout-debug-call",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-diagnostic-patch"
+      },
+      {
+        "category": "debug-repair",
+        "id": "heldout-debug-local",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-diagnostic-patch"
+      },
+      {
+        "category": "debug-repair",
+        "id": "heldout-debug-offset",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-diagnostic-patch"
+      },
+      {
+        "category": "debug-repair",
+        "id": "heldout-debug-top-level",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-diagnostic-patch"
+      },
+      {
+        "category": "generation",
+        "id": "heldout-generation-adjust",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "generation",
+        "id": "heldout-generation-balance",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "generation",
+        "id": "heldout-generation-pipeline",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "generation",
+        "id": "heldout-generation-product",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "interop",
+        "id": "heldout-interop-add",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-interop-call"
+      },
+      {
+        "category": "interop",
+        "id": "heldout-interop-affine",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-interop-call"
+      },
+      {
+        "category": "interop",
+        "id": "heldout-interop-multiply",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-interop-call"
+      },
+      {
+        "category": "interop",
+        "id": "heldout-interop-subtract",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-interop-call"
+      },
+      {
+        "category": "repository-change",
+        "id": "heldout-repository-charge",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-semantic-patch"
+      },
+      {
+        "category": "repository-change",
+        "id": "heldout-repository-halve",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-semantic-patch"
+      },
+      {
+        "category": "repository-change",
+        "id": "heldout-repository-scale",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-semantic-patch"
+      },
+      {
+        "category": "repository-change",
+        "id": "heldout-repository-shift",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-semantic-patch"
+      },
+      {
+        "category": "syntax",
+        "id": "heldout-syntax-call",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "syntax",
+        "id": "heldout-syntax-composition",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "syntax",
+        "id": "heldout-syntax-division",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      },
+      {
+        "category": "syntax",
+        "id": "heldout-syntax-locals",
+        "max_repair_rounds": 2,
+        "representation": "tacitra-source"
+      }
+    ],
+    "cases_per_category": {
+      "debug-repair": 4,
+      "generation": 4,
+      "interop": 4,
+      "repository-change": 4,
+      "syntax": 4
+    },
+    "max_repair_rounds": 2,
+    "paired_trials": 60,
+    "repetitions": 3,
+    "schedule_seed": 20260911,
+    "total_trials": 120
+  },
+  "hypothesis": "Milestone 6 context projections reduce total provider tokens without losing more than 5% of baseline-accepted changes.",
+  "id": "confirmation-v1",
+  "interpretation": "A passing decision supports these projections on the frozen suite and model condition; it does not establish other-model or other-task generality.",
+  "model_condition": {
+    "config_revision": "sha256:075e3cd6458e6e3e77717dd2fed87f93e6c1f79f690943636f3de7e4e4a52721",
+    "model": "gpt-5.6-luna",
+    "provider": "openai-responses",
+    "settings": {
+      "max_output_tokens": 2048,
+      "reasoning": {
+        "effort": "low"
+      }
+    }
+  },
+  "pins": {
+    "baseline_case_revisions": {
+      "heldout-debug-call": "sha256:2844547d63f92c534faaeab7b4ee3b9a22f489352a9e56f73c78ba13f12f75a7",
+      "heldout-debug-local": "sha256:3166cfe0d36b393b162a4d3f2a3b2b7d8de054e3264ea884529bb459c25ce751",
+      "heldout-debug-offset": "sha256:514112655e466f0c7f3d87680a3ea0842444d56b11ad8e7bf337ca714cf7ae04",
+      "heldout-debug-top-level": "sha256:e42d7a10238c1e32fb27c0b3c55332cab79a29169027a2f9677f88eeccd8b1ee",
+      "heldout-generation-adjust": "sha256:4d8f0fc66ea344d070c2a06688b5af6dd52dd2b05e22a03250d0c241fbfb0d82",
+      "heldout-generation-balance": "sha256:d106c76d427f497dce77f3ac198e9019608c66a2164e69ed116390648ca1f2f5",
+      "heldout-generation-pipeline": "sha256:e223a6db8aa782b83a2caced78318d2a66edeac57a948b0f137b81d9411b2ff3",
+      "heldout-generation-product": "sha256:4d0e786d5d0103cc9ed4a0d7da46884315b553dea97e5cd86d6d3512e04adcab",
+      "heldout-interop-add": "sha256:ad9df32288d8796a353c1f5ddec76e087c53cb95c3de76a6c6f6c472b0c72923",
+      "heldout-interop-affine": "sha256:0d8af87e8abca80e702377df56e7a7168cf5cff8699f576d7d86ec0b083158ca",
+      "heldout-interop-multiply": "sha256:88b5e2a3db62002d03edfcec315837240f1036a18cdab7c2bb23e34bd7891bf9",
+      "heldout-interop-subtract": "sha256:c83ccbcbe1032f62365051fda72dd8f67b9a94084891bb957c2d0bd431039153",
+      "heldout-repository-charge": "sha256:7ea2542515e60db41f1eefcc75b553d528fc281598b6a26d012deb8d367c869e",
+      "heldout-repository-halve": "sha256:20d63ef7913e08254d1a7e46cbcdbe411c64f0ad190d94a38d4468ccef1424d8",
+      "heldout-repository-scale": "sha256:6c7c68f45329881027bb0fb42d483ecca390bb158a8fa84925effeae96b6e647",
+      "heldout-repository-shift": "sha256:2a402e68ae1e4e7fc5afb11db756dc2bf4fcb8ff1ba1513550d9573fe2592755",
+      "heldout-syntax-call": "sha256:20c16919bd1ed00fdabecda9dfae947f1416d7e782a0800bae0790d645dedcd1",
+      "heldout-syntax-composition": "sha256:525bf9c6d6b5ab48dbfea9491e7529b568e67f29e23e00d0b385c5bf66f87c31",
+      "heldout-syntax-division": "sha256:81f55fcccd6560095eac49e3c7e324aff22ccb45da5b6cd9aad821627a96def2",
+      "heldout-syntax-locals": "sha256:e5bb8bd440b5a685df9a9bc83736a370f8d9860ad42686835cf665c462d8a167"
+    },
+    "builder_revision": "sha256:dadb74b8a3e6c5161cbd7e680b9b0b915b217dbd294f19660d75fcbe6f801b9f",
+    "comparison_revision": "sha256:289bcbf6894cc9cb079dc13b47557a694bdf906a42368b2a8b2016c5bb6d2f38",
+    "harness_revision": "sha256:f4167af83a4c857891004df6afb92b44853585f1a78e63fb5c460b2d27cb04f3",
+    "optimized_case_revisions": {
+      "heldout-debug-call": "sha256:3fbbea07b8d9d7952d908410604479fed1de7e7a19c7e0f9b73cf02d48ad9331",
+      "heldout-debug-local": "sha256:5f8f752264688f6068748b30ec90f28d24836a7eb670a7c813dd46b065e7b389",
+      "heldout-debug-offset": "sha256:77f0e508fd206fcda712132557da2c13ca23d2659ada323fa7f92b8f193ee4c5",
+      "heldout-debug-top-level": "sha256:611aa6f1dd9198d8582cbc49c80bb22f841fe7b301684ddc0cc97aa87caa66fa",
+      "heldout-generation-adjust": "sha256:4bbefc097a71aa7c6a6eab4dd50835385841803954d377800c3aa2357598d3e4",
+      "heldout-generation-balance": "sha256:b56a986972a775c830c554df913bc3966bdd6dd8039d8b108f2cbd43598bb362",
+      "heldout-generation-pipeline": "sha256:bfaf468889b2558fdb913a8140c58b11f6b8ffe0bab9248e677bb4ca6a8c8e04",
+      "heldout-generation-product": "sha256:f27b7ee08e29ae45be012b98d7f2db1b45673b99dc8b97d43dd8f50218338dc9",
+      "heldout-interop-add": "sha256:7a24addbe9b5c78c279707bfdec566b4c82ffb29b725de99d6f6779e38758b49",
+      "heldout-interop-affine": "sha256:6e4ceab7c5c43b4355290f13886df099d26cb75ed11e516dfe606deb676365df",
+      "heldout-interop-multiply": "sha256:6e10a9b0a7c7c35550d845371eb7e69a2ab72f82d6a526c4e1c76debcee6e591",
+      "heldout-interop-subtract": "sha256:e1888367fc281086a97912e77ff10a25f02d62c6a82a238d8dedfaf8f8455dcc",
+      "heldout-repository-charge": "sha256:2d62efdbdc0d27accf7c623198502694ac4ec969bc28f76368da3dbadd96d3e8",
+      "heldout-repository-halve": "sha256:b06905157aab40ca72786dc889a03aac5b7c7e29ea8733b0e8b74bcc6d06fb59",
+      "heldout-repository-scale": "sha256:9c79ee1b9dd6210380c55529a30031750640fc70fb240e2cf9dfb7c77124e38d",
+      "heldout-repository-shift": "sha256:2d593edbc3ee565f6cb85cb1d5ab0ca047c50fed6e2c8579c068c1b432f748ba",
+      "heldout-syntax-call": "sha256:e8f78d5daa037fca04cb3a609d4c0c6a1383fda36df3c8513e34a2a5c90773d7",
+      "heldout-syntax-composition": "sha256:a03d32657fae48632f25adc793d2be9ca9237826f80fa90a57331e76569c81c0",
+      "heldout-syntax-division": "sha256:a02c27eb4577dca657abc90d8ffa58dd2088b747daddcbe42d8dc545b8609937",
+      "heldout-syntax-locals": "sha256:9c9a55dd63ee22c848046b9f932d5295bc637b522648aa6075822432bcfd974d"
+    },
+    "prompt_revision": "sha256:e514cd51018136054ae263c3796e4cba7361b0ab7e26706f989a5be6b6cf1ffd",
+    "report_revision": "sha256:d25b2b6b97d13bc302016a3f7de82f7ac3ec63c744cc3838007f4bc5bde166d4"
+  },
+  "schema_version": 1,
+  "status": "frozen-before-run"
+}

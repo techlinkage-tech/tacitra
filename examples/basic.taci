@@ -1,0 +1,7 @@
+fn add(a: Int, b: Int) -> Int {
+  a + b
+}
+
+let answer = add(40, 2);
+
+let accepted = answer == 42;

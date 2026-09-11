@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn increment(value: Int) -> Int {
+-  value + 1
++  value + 2
+ }
+ 
+ fn main() -> Int {

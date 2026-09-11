@@ -1,0 +1,15 @@
+[package]
+name = "tacitra-agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde_json = "1.0"
+sha2 = "0.10"
+tacitra-syntax = { path = "../tacitra-syntax" }
+tacitra-semantics = { path = "../tacitra-semantics" }
+
+[lints]
+workspace = true

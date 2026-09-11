@@ -1,0 +1,5 @@
+let offset = missing;
+
+fn main() -> Int {
+  40 + offset
+}

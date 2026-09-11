@@ -1,0 +1,1 @@
+{"valid":false,"diagnostics":[{"code":"N0002","severity":"error","message":"undefined name `missing`","span":{"start":{"byte":13,"line":1,"column":14},"end":{"byte":20,"line":1,"column":21}},"expected_type":null,"actual_type":null}]}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/schema/interop-manifest-v1.json",
+  "title": "Tacitra interoperability manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "module", "transport", "exports"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "module": {"$ref": "#/$defs/name"},
+    "transport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "protocol_version", "command", "timeout_ms"],
+      "properties": {
+        "kind": {"const": "stdio-json-rpc"},
+        "protocol_version": {"const": "2.0"},
+        "command": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "timeout_ms": {"type": "integer", "minimum": 1, "maximum": 300000}
+      }
+    },
+    "exports": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/export"}
+    }
+  },
+  "$defs": {
+    "name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+    "namedType": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": {"$ref": "#/$defs/name"},
+        "type": {"$ref": "#/$defs/type"}
+      }
+    },
+    "type": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {"kind": {"enum": ["bool", "string", "bytes"]}}
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "signed", "bits"],
+          "properties": {
+            "kind": {"const": "int"},
+            "signed": {"type": "boolean"},
+            "bits": {"enum": [8, 16, 32, 64]}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "bits"],
+          "properties": {
+            "kind": {"const": "float"},
+            "bits": {"enum": [32, 64]}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "element"],
+          "properties": {
+            "kind": {"const": "list"},
+            "element": {"$ref": "#/$defs/type"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "name", "fields"],
+          "properties": {
+            "kind": {"const": "record"},
+            "name": {"$ref": "#/$defs/name"},
+            "fields": {"type": "array", "items": {"$ref": "#/$defs/namedType"}}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "value"],
+          "properties": {
+            "kind": {"const": "option"},
+            "value": {"$ref": "#/$defs/type"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "ok", "error"],
+          "properties": {
+            "kind": {"const": "result"},
+            "ok": {"$ref": "#/$defs/type"},
+            "error": {"$ref": "#/$defs/type"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "name"],
+          "properties": {
+            "kind": {"const": "opaque"},
+            "name": {"$ref": "#/$defs/name"}
+          }
+        }
+      ]
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "arguments", "result"],
+      "properties": {
+        "description": {"type": "string", "minLength": 1},
+        "arguments": {"type": "object"},
+        "result": true
+      }
+    },
+    "export": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "parameters", "result", "error", "mode", "effects", "capabilities", "ownership", "examples"],
+      "properties": {
+        "name": {"$ref": "#/$defs/name"},
+        "parameters": {"type": "array", "items": {"$ref": "#/$defs/namedType"}},
+        "result": {"$ref": "#/$defs/type"},
+        "error": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/type"}]},
+        "mode": {"enum": ["sync", "async"]},
+        "effects": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/name"}},
+        "capabilities": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/name"}},
+        "ownership": {"enum": ["copy", "handle"]},
+        "examples": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/example"}}
+      }
+    }
+  }
+}

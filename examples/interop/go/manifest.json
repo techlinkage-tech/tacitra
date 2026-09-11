@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "module": "go_math",
+  "transport": {
+    "kind": "stdio-json-rpc",
+    "protocol_version": "2.0",
+    "command": ["./worker"],
+    "timeout_ms": 1000
+  },
+  "exports": [
+    {
+      "name": "add",
+      "parameters": [
+        {"name": "left", "type": {"kind": "int", "signed": true, "bits": 64}},
+        {"name": "right", "type": {"kind": "int", "signed": true, "bits": 64}}
+      ],
+      "result": {"kind": "int", "signed": true, "bits": 64},
+      "error": null,
+      "mode": "sync",
+      "effects": [],
+      "capabilities": [],
+      "ownership": "copy",
+      "examples": [
+        {"description": "add two integers", "arguments": {"left": 20, "right": 22}, "result": 42}
+      ]
+    }
+  ]
+}

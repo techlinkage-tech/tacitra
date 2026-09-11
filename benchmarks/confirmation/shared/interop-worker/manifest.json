@@ -1,0 +1,188 @@
+{
+  "exports": [
+    {
+      "capabilities": [],
+      "effects": [],
+      "error": null,
+      "examples": [
+        {
+          "arguments": {
+            "left": 19,
+            "right": 23
+          },
+          "description": "add example yielding 42",
+          "result": 42
+        }
+      ],
+      "mode": "sync",
+      "name": "add",
+      "ownership": "copy",
+      "parameters": [
+        {
+          "name": "left",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        },
+        {
+          "name": "right",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        }
+      ],
+      "result": {
+        "bits": 64,
+        "kind": "int",
+        "signed": true
+      }
+    },
+    {
+      "capabilities": [],
+      "effects": [],
+      "error": null,
+      "examples": [
+        {
+          "arguments": {
+            "left": 50,
+            "right": 8
+          },
+          "description": "subtract example yielding 42",
+          "result": 42
+        }
+      ],
+      "mode": "sync",
+      "name": "subtract",
+      "ownership": "copy",
+      "parameters": [
+        {
+          "name": "left",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        },
+        {
+          "name": "right",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        }
+      ],
+      "result": {
+        "bits": 64,
+        "kind": "int",
+        "signed": true
+      }
+    },
+    {
+      "capabilities": [],
+      "effects": [],
+      "error": null,
+      "examples": [
+        {
+          "arguments": {
+            "left": 6,
+            "right": 7
+          },
+          "description": "multiply example yielding 42",
+          "result": 42
+        }
+      ],
+      "mode": "sync",
+      "name": "multiply",
+      "ownership": "copy",
+      "parameters": [
+        {
+          "name": "left",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        },
+        {
+          "name": "right",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        }
+      ],
+      "result": {
+        "bits": 64,
+        "kind": "int",
+        "signed": true
+      }
+    },
+    {
+      "capabilities": [],
+      "effects": [],
+      "error": null,
+      "examples": [
+        {
+          "arguments": {
+            "factor": 5,
+            "offset": 2,
+            "value": 8
+          },
+          "description": "affine example yielding 42",
+          "result": 42
+        }
+      ],
+      "mode": "sync",
+      "name": "affine",
+      "ownership": "copy",
+      "parameters": [
+        {
+          "name": "value",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        },
+        {
+          "name": "factor",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        },
+        {
+          "name": "offset",
+          "type": {
+            "bits": 64,
+            "kind": "int",
+            "signed": true
+          }
+        }
+      ],
+      "result": {
+        "bits": 64,
+        "kind": "int",
+        "signed": true
+      }
+    }
+  ],
+  "module": "confirmation_math",
+  "schema_version": 1,
+  "transport": {
+    "command": [
+      "python3",
+      "worker.py"
+    ],
+    "kind": "stdio-json-rpc",
+    "protocol_version": "2.0",
+    "timeout_ms": 1000
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "acceptance": {
+    "description": "generated change returns integer 42",
+    "expected_integer": 42
+  },
+  "category": "debug-repair",
+  "id": "heldout-debug-top-level",
+  "max_repair_rounds": 2,
+  "prompt": "../../../shared/heldout-debug-top-level/prompt.md",
+  "representations": [
+    {
+      "artifact": "../../../shared/heldout-debug-top-level/reference.patch",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [
+        "../../../shared/heldout-debug-top-level/diagnostic.json"
+      ],
+      "id": "tacitra-diagnostic-patch",
+      "language": "tacitra",
+      "prepare_commands": [
+        [
+          "patch",
+          "--silent",
+          "{work}/program.taci",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "../../../shared/heldout-debug-top-level/base.taci"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "../../../shared/heldout-debug-top-level/base.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../../../specs/tacitra-core-v1.md",
+        "../../../../specs/tacitra-diagnostic-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

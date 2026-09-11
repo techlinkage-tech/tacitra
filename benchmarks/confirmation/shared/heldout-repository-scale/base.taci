@@ -1,0 +1,7 @@
+fn scale(value: Int) -> Int {
+  value * 6
+}
+
+fn main() -> Int {
+  scale(6)
+}

@@ -1,0 +1,1 @@
+{"body_target":"sym:fn:scale","content_hash":"sha256:e1eed88eca1fe19daa31aa29e25499066575dc2e058ea487bfcc0d6bae236c84","leaves":[{"id":"expr:sym:fn:scale/body/result/left","kind":"name","type":"Int","value":"sym:fn:scale/param:value"},{"id":"expr:sym:fn:scale/body/result/right","kind":"integer","type":"Int","value":6}],"symbol_id":"sym:fn:scale","type":"fn(Int) -> Int"}

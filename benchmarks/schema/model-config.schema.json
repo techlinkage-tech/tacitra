@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/benchmarks/model-config-v1.schema.json",
+  "title": "Tacitra model benchmark configuration v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "provider", "model", "settings", "request_timeout_seconds", "max_output_characters", "schedule_seed"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "provider": {"const": "openai-responses"},
+    "model": {"type": "string", "minLength": 1},
+    "settings": {"type": "object"},
+    "request_timeout_seconds": {"type": "integer", "minimum": 1},
+    "max_output_characters": {"type": "integer", "minimum": 1},
+    "schedule_seed": {"type": "integer"}
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "baseline": {
+    "acceptance_rate": 1.0,
+    "accepted": 60,
+    "total_tokens_per_accepted_solution": 3506.733333333333
+  },
+  "config_revision": "sha256:075e3cd6458e6e3e77717dd2fed87f93e6c1f79f690943636f3de7e4e4a52721",
+  "decision": {
+    "acceptance_noninferiority_margin": null,
+    "accepted_loss_rate_one_sided_95_percent_upper": 0.04870291331009752,
+    "baseline_accepted_pairs": 60,
+    "classification": "supports_adoption",
+    "every_category_has_optimized_acceptance": true,
+    "max_accepted_loss_rate": 0.05,
+    "observed_accepted_loss_rate": 0.0,
+    "optimized_category_has_acceptance": {
+      "debug-repair": true,
+      "generation": true,
+      "interop": true,
+      "repository-change": true,
+      "syntax": true
+    },
+    "optimized_losses_on_baseline_successes": 0
+  },
+  "difference": {
+    "acceptance_rate": 0.0,
+    "bootstrap_95_percent_interval": {
+      "acceptance_rate": [
+        0.0,
+        0.0
+      ],
+      "samples": 10000,
+      "seed": 20260911,
+      "total_tokens_per_accepted_solution": [
+        -1508.6,
+        -1297.5666666666666
+      ]
+    },
+    "total_tokens_per_accepted_solution": -1404.0499999999997
+  },
+  "endpoint": "https://api.openai.com/v1/responses",
+  "evidence": "measured",
+  "groups": [
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 3544.25,
+      "category": "debug-repair",
+      "delta": -1367.75,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 2176.5,
+      "representation": "tacitra-diagnostic-patch",
+      "trials": 12
+    },
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 2911.1666666666665,
+      "category": "generation",
+      "delta": -937.1666666666665,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 1974.0,
+      "representation": "tacitra-source",
+      "trials": 12
+    },
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 3942.0,
+      "category": "interop",
+      "delta": -1872.5833333333335,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 2069.4166666666665,
+      "representation": "tacitra-interop-call",
+      "trials": 12
+    },
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 4223.833333333333,
+      "category": "repository-change",
+      "delta": -1890.2499999999995,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 2333.5833333333335,
+      "representation": "tacitra-semantic-patch",
+      "trials": 12
+    },
+    {
+      "baseline_acceptance_rate": 1.0,
+      "baseline_total_tokens_per_accepted_solution": 2912.4166666666665,
+      "category": "syntax",
+      "delta": -952.4999999999998,
+      "optimized_acceptance_rate": 1.0,
+      "optimized_total_tokens_per_accepted_solution": 1959.9166666666667,
+      "representation": "tacitra-source",
+      "trials": 12
+    }
+  ],
+  "limitations": [
+    "The paired bootstrap is conditional on the observed cases and repetitions.",
+    "An all-success run produces a degenerate empirical acceptance-difference bootstrap interval; the separate one-sided accepted-loss bound is used for non-inferiority."
+  ],
+  "measurement_mode": "model_paired_comparison",
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_output_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  },
+  "optimized": {
+    "acceptance_rate": 1.0,
+    "accepted": 60,
+    "total_tokens_per_accepted_solution": 2102.6833333333334
+  },
+  "paired_trials": 60,
+  "preregistration_revision": "sha256:54f9aebf43be32f3d5d08bf1fc29bb688abde108fc23ebfc6e93c8c2280d748d",
+  "provider": "openai-responses",
+  "schema_version": 1
+}

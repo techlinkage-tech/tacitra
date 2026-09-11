@@ -1,0 +1,20 @@
+[package]
+name = "tacitra-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "tacitra"
+path = "src/main.rs"
+
+[dependencies]
+tacitra-syntax = { path = "../tacitra-syntax" }
+tacitra-semantics = { path = "../tacitra-semantics" }
+tacitra-agent = { path = "../tacitra-agent" }
+tacitra-interop = { path = "../tacitra-interop" }
+serde_json = "1.0"
+
+[lints]
+workspace = true

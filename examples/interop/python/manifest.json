@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "module": "python_math",
+  "transport": {
+    "kind": "stdio-json-rpc",
+    "protocol_version": "2.0",
+    "command": ["python3", "worker.py"],
+    "timeout_ms": 1000
+  },
+  "exports": [
+    {
+      "name": "add",
+      "parameters": [
+        {"name": "left", "type": {"kind": "int", "signed": true, "bits": 64}},
+        {"name": "right", "type": {"kind": "int", "signed": true, "bits": 64}}
+      ],
+      "result": {"kind": "int", "signed": true, "bits": 64},
+      "error": null,
+      "mode": "sync",
+      "effects": [],
+      "capabilities": [],
+      "ownership": "copy",
+      "examples": [
+        {"description": "add two integers", "arguments": {"left": 20, "right": 22}, "result": 42}
+      ]
+    },
+    {
+      "name": "explode",
+      "parameters": [],
+      "result": {"kind": "int", "signed": true, "bits": 64},
+      "error": {
+        "kind": "record",
+        "name": "ExternalFailure",
+        "fields": [
+          {"name": "kind", "type": {"kind": "string"}},
+          {"name": "message", "type": {"kind": "string"}}
+        ]
+      },
+      "mode": "sync",
+      "effects": [],
+      "capabilities": [],
+      "ownership": "copy",
+      "examples": [
+        {"description": "result shape for a non-failing implementation", "arguments": {}, "result": 0}
+      ]
+    },
+    {
+      "name": "sleep_ms",
+      "parameters": [
+        {"name": "milliseconds", "type": {"kind": "int", "signed": false, "bits": 32}}
+      ],
+      "result": {"kind": "int", "signed": false, "bits": 32},
+      "error": null,
+      "mode": "async",
+      "effects": ["clock"],
+      "capabilities": [],
+      "ownership": "copy",
+      "examples": [
+        {"description": "wait briefly", "arguments": {"milliseconds": 1}, "result": 1}
+      ]
+    }
+  ]
+}

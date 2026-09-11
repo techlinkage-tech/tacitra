@@ -1,0 +1,7 @@
+fn shift(value: Int) -> Int {
+  value + 3
+}
+
+fn main() -> Int {
+  shift(38)
+}

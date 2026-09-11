@@ -1,0 +1,7 @@
+fn adjust(value: Int, offset: Int) -> Int {
+  value + offset
+}
+
+fn main() -> Int {
+  adjust(37, 5)
+}

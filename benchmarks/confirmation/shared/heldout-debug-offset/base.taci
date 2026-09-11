@@ -1,0 +1,7 @@
+fn compute(value: Int) -> Int {
+  value + offset
+}
+
+fn main() -> Int {
+  compute(40)
+}

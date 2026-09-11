@@ -1,0 +1,5 @@
+fn main() -> Int {
+  let base = 39;
+  let increment = 3;
+  base + increment
+}

@@ -1,0 +1,11 @@
+{
+  "base_hash": "sha256:2c6214e41317dd7fbba056e20e263e862e5fb827cc27b2d3f1f34151ecb854fd",
+  "operations": [
+    {
+      "op": "replace_function_body",
+      "replacement": "{ value - 8 }",
+      "target": "sym:fn:charge"
+    }
+  ],
+  "schema_version": 1
+}

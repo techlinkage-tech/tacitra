@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/benchmarks/case-v2.schema.json",
+  "title": "Tacitra benchmark case v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "category", "prompt", "acceptance", "max_repair_rounds", "representations"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "category": {"enum": ["syntax", "generation", "repository-change", "debug-repair", "interop"]},
+    "prompt": {"type": "string"},
+    "max_repair_rounds": {"type": "integer", "minimum": 0},
+    "acceptance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["description", "expected_integer"],
+      "properties": {"description": {"type": "string", "minLength": 1}, "expected_integer": {"type": "integer"}}
+    },
+    "representations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/representation"}}
+  },
+  "$defs": {
+    "command": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "representation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "language", "surface", "artifact", "artifact_kind", "specification", "repository_context", "diagnostic_context", "setup_files", "prepare_commands", "compile_commands", "test_commands", "result_kind"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "language": {"enum": ["python", "go", "rust", "tacitra"]},
+        "surface": {"enum": ["human-source", "semantic-query", "structural-patch", "interop-manifest"]},
+        "artifact": {"type": "string"},
+        "artifact_kind": {"enum": ["source", "patch", "arguments", "manifest"]},
+        "specification": {"type": "array", "items": {"type": "string"}},
+        "repository_context": {"type": "array", "items": {"type": "string"}},
+        "diagnostic_context": {"type": "array", "items": {"type": "string"}},
+        "setup_files": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["source", "target"], "properties": {"source": {"type": "string"}, "target": {"type": "string"}}}},
+        "prepare_commands": {"type": "array", "items": {"$ref": "#/$defs/command"}},
+        "compile_commands": {"type": "array", "items": {"$ref": "#/$defs/command"}},
+        "test_commands": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/command"}},
+        "result_kind": {"enum": ["integer", "json-result"]}
+      }
+    }
+  }
+}

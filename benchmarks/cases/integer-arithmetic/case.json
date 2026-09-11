@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "id": "integer-arithmetic",
+  "category": "generation",
+  "prompt": "prompt.md",
+  "acceptance": {"description": "program prints integer 42", "expected_integer": 42},
+  "max_repair_rounds": 2,
+  "representations": [
+    {
+      "id": "python-source", "language": "python", "surface": "human-source",
+      "artifact": "solution.py", "artifact_kind": "source",
+      "specification": ["../../specs/python-v1.md"], "repository_context": [], "diagnostic_context": [], "setup_files": [], "prepare_commands": [],
+      "compile_commands": [["python3", "-m", "py_compile", "{artifact}"]], "test_commands": [["python3", "{artifact}"]], "result_kind": "integer"
+    },
+    {
+      "id": "go-source", "language": "go", "surface": "human-source",
+      "artifact": "solution.go", "artifact_kind": "source",
+      "specification": ["../../specs/go-v1.md"], "repository_context": [], "diagnostic_context": [], "setup_files": [], "prepare_commands": [],
+      "compile_commands": [["go", "build", "-o", "{work}/program", "{artifact}"]], "test_commands": [["{work}/program"]], "result_kind": "integer"
+    },
+    {
+      "id": "rust-source", "language": "rust", "surface": "human-source",
+      "artifact": "solution.rs", "artifact_kind": "source",
+      "specification": ["../../specs/rust-v1.md"], "repository_context": [], "diagnostic_context": [], "setup_files": [], "prepare_commands": [],
+      "compile_commands": [["{rustc}", "--edition=2021", "{artifact}", "-o", "{work}/program"]], "test_commands": [["{work}/program"]], "result_kind": "integer"
+    },
+    {
+      "id": "tacitra-source", "language": "tacitra", "surface": "human-source",
+      "artifact": "solution.taci", "artifact_kind": "source",
+      "specification": ["../../../docs/language/syntax.md", "../../../docs/language/semantics.md"], "repository_context": [], "diagnostic_context": [], "setup_files": [], "prepare_commands": [],
+      "compile_commands": [["{repo}/target/debug/tacitra", "check", "{artifact}"]], "test_commands": [["{repo}/target/debug/tacitra", "run", "{artifact}"]], "result_kind": "integer"
+    }
+  ]
+}

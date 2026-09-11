@@ -1,0 +1,11 @@
+fn triple(value: Int) -> Int {
+  value * 3
+}
+
+fn subtract_three(value: Int) -> Int {
+  value - 3
+}
+
+fn main() -> Int {
+  subtract_three(triple(15))
+}

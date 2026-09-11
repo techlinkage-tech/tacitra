@@ -1,0 +1,8 @@
+fn compute(value: Int) -> Int {
+  let step = delta;
+  value + step
+}
+
+fn main() -> Int {
+  compute(40)
+}

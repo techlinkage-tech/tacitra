@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn increment(value: i64) -> i64 {
+-    value + 1
++    value + 2
+ }
+ 
+ fn main() {

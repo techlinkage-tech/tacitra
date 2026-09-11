@@ -1,0 +1,7 @@
+fn double_add(a: Int, b: Int) -> Int {
+  a * 2 + b
+}
+
+fn main() -> Int {
+  double_add(20, 2)
+}

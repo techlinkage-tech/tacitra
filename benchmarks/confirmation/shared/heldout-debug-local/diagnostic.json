@@ -1,0 +1,1 @@
+{"valid":false,"diagnostics":[{"code":"N0002","severity":"error","message":"undefined name `delta`","span":{"start":{"byte":45,"line":2,"column":14},"end":{"byte":50,"line":2,"column":19}},"expected_type":null,"actual_type":null}]}

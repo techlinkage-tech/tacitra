@@ -1,0 +1,46 @@
+{
+  "acceptance": {
+    "description": "generated change returns integer 42",
+    "expected_integer": 42
+  },
+  "category": "interop",
+  "id": "heldout-interop-affine",
+  "max_repair_rounds": 2,
+  "prompt": "../../../shared/heldout-interop-affine/prompt.md",
+  "representations": [
+    {
+      "artifact": "../../../shared/heldout-interop-affine/reference.arguments.json",
+      "artifact_kind": "arguments",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "interop.inspect",
+          "{repo}/benchmarks/confirmation/shared/interop-worker/manifest.json"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "tacitra-interop-call",
+      "language": "tacitra",
+      "prepare_commands": [],
+      "repository_context": [
+        "../../../shared/interop-worker/manifest.json"
+      ],
+      "result_kind": "json-result",
+      "setup_files": [],
+      "specification": [
+        "../../../../../docs/interop.md"
+      ],
+      "surface": "interop-manifest",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "interop.call",
+          "{repo}/benchmarks/confirmation/shared/interop-worker/manifest.json",
+          "affine",
+          "{artifact}"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

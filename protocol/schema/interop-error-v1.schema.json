@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/protocol/interop-error-v1.schema.json",
+  "title": "Tacitra interoperability error v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "valid", "error"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "valid": {"const": false},
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "message", "detail"],
+      "properties": {
+        "code": {"type": "string", "pattern": "^I[0-9]{4}$"},
+        "message": {"type": "string"},
+        "detail": {}
+      }
+    }
+  }
+}
