@@ -1,52 +1,88 @@
 # Tacitra
 
-Tacitra is an experimental programming language for minimizing the total LLM input and output tokens needed to produce an accepted program change. It optimizes the whole loop—context, generation, compiler feedback, and repair—not source length alone.
+Tacitra is an experimental typed programming language designed to reduce the
+**total LLM tokens required to complete a correct change**. It optimizes the whole
+loop—specification, repository context, generated edits, diagnostics, and repairs—
+rather than making only the final source code shorter.
 
-Milestones 0 through 7 provide the measurement contract, deterministic syntax tooling, typed execution, hash-guarded structural patches, typed process-isolated interoperability, reproducible model measurements, measured task-scoped context optimization, and a release-readiness gate.
+## Why Tacitra?
+
+- **Less context:** task-scoped specifications and semantic queries return only the
+  types and expressions needed for the current task, without sending whole files.
+- **Smaller, safer edits:** patches target stable semantic IDs instead of line
+  numbers and use a content hash to reject stale changes before writing.
+- **Fewer ambiguous repairs:** one canonical syntax, explicit types, deterministic
+  formatting, and concise structured diagnostics give an LLM one predictable form
+  to generate and fix.
+- **Reuse without foreign source:** typed manifests summarize Python, Go, and Rust
+  APIs and execute them behind a validated, process-isolated JSON-RPC boundary.
+
+The practical benefit is lower model cost and less context-window pressure while
+preserving correctness checks and human-reviewable source diffs.
+
+### Measured result
+
+In a preregistered evaluation with 60 paired held-out tasks using the same pinned
+model and settings, baseline and optimized Tacitra both accepted **60/60** changes.
+Provider-reported tokens per accepted solution fell from **3,506.73 to 2,102.68**,
+an observed **40.04% reduction**. This supports the optimized context protocol for
+these small tasks and this model; it does not yet establish a cross-model result or
+superiority over Python, Go, or Rust. See the [full results](docs/model-confirmation-results.md).
 
 ```tacitra
 fn add(a: Int, b: Int) -> Int {
   a + b
 }
 
-let answer = add(40, 2);
-let accepted = answer == 42;
+fn main() -> Int {
+  add(40, 2)
+}
 ```
 
-## Build and use
+## Quick start
 
-Rust 1.85.1 is pinned by `rust-toolchain.toml`. See the [clean-environment installation guide](docs/install.md).
+Rust 1.85.1 is pinned by `rust-toolchain.toml`. See [installation](docs/install.md)
+and the [tutorial](docs/tutorial.md).
 
 ```sh
-cargo build
-cargo test --workspace
-cargo run -p tacitra-cli -- check examples/basic.taci
-cargo run -p tacitra-cli -- fmt examples/basic.taci
-cargo run -p tacitra-cli -- parse --json examples/basic.taci
-cargo run -p tacitra-cli -- run examples/algebraic.taci
-cargo run -p tacitra-cli -- symbol.describe examples/agent_target.taci sym:fn:increment
-cargo run -p tacitra-cli -- symbol.edit-context examples/agent_target.taci sym:fn:increment
-cargo run -p tacitra-cli -- patch.validate examples/agent_target.taci examples/patches/increment-by-two.json
-cargo run -p tacitra-cli -- interop.inspect examples/interop/python/manifest.json
-cargo run -p tacitra-cli -- external.call-context examples/interop/python/manifest.json add
-cargo run -p tacitra-cli -- interop.call examples/interop/python/manifest.json add examples/interop/python/add.arguments.json
-python3 benchmarks/harness.py validate
-python3 benchmarks/run_optimized.py validate
+cargo build --locked -p tacitra-cli
+target/debug/tacitra check examples/sample-project/main.taci
+target/debug/tacitra fmt --check examples/sample-project/main.taci
+target/debug/tacitra run examples/sample-project/main.taci
+```
+
+Query a function and validate a semantic patch without modifying the source:
+
+```sh
+target/debug/tacitra symbol.edit-context examples/sample-project/main.taci increment
+target/debug/tacitra patch.validate examples/sample-project/main.taci \
+  examples/sample-project/increment-by-two.patch.json
+```
+
+Inspect and call the typed Python example without reading its implementation:
+
+```sh
+target/debug/tacitra external.call-context examples/interop/python/manifest.json add
+target/debug/tacitra interop.call examples/interop/python/manifest.json add \
+  examples/interop/python/add.arguments.json
+```
+
+Run the complete offline release-readiness check with:
+
+```sh
 python3 scripts/release_check.py
 ```
 
-`check`, `parse`, and `run` return a non-zero status for invalid source. Add `--json` for stable machine-readable output. `check` includes name and type analysis; `run` executes only successfully checked HIR and invokes a zero-argument `main`. `fmt` writes canonical source to stdout; `fmt --write FILE` updates a valid file, and `fmt --check FILE` reports whether it is already canonical. Semantic query, patch, and interoperability commands always return JSON; see [the agent protocol](docs/agent-protocol.md) and [interoperability specification](docs/interop.md).
-
 ## Repository map
 
-- `crates/tacitra-syntax`: lexer, source-positioned AST, parser, formatter, and diagnostics
-- `crates/tacitra-semantics`: name resolution, typed HIR, type checking, and interpreter
-- `crates/tacitra-agent`: stable semantic indexing, queries, and structural patches
-- `crates/tacitra-interop`: typed manifests, shared value codec, and standard-I/O JSON-RPC
-- `crates/tacitra-cli`: compiler, execution, query, patch, and interoperability commands
-- `protocol/schema`: machine-readable protocol schemas
-- `docs/language`: accepted syntax for the implemented milestone
-- `docs/decisions`: architectural and public-syntax decisions
-- `benchmarks`: versioned case schema and comparable language fixtures
+- `crates/tacitra-syntax`: lexer, source-positioned AST, parser, formatter, diagnostics
+- `crates/tacitra-semantics`: name resolution, typed HIR, type checking, interpreter
+- `crates/tacitra-agent`: semantic IDs, focused queries, structural patches
+- `crates/tacitra-interop`: typed manifests, value codec, standard-I/O JSON-RPC
+- `crates/tacitra-cli`: compiler, execution, query, patch, and interop commands
+- `protocol/schema`: versioned machine-readable schemas
+- `benchmarks`: comparable fixtures, raw measurements, and reproducible reports
 
-Start with the [tutorial](docs/tutorial.md). Release and operational details are in [compatibility](docs/compatibility.md), [security boundaries](docs/security.md), [known limitations](docs/known-limitations.md), and the [release check](docs/release-check.md). See also the [roadmap](docs/roadmap.md), [current status](docs/status.md), [measurement rules](docs/metrics.md), [Milestone 6 optimization record](docs/m6-optimization-plan.md), and [real-model confirmation results](docs/model-confirmation-results.md). The preregistered 60-pair evaluation supported adoption: both conditions accepted 60/60, while provider tokens per accepted solution fell 40.04% under the pinned model condition.
+For scope and evidence boundaries, see [status](docs/status.md),
+[known limitations](docs/known-limitations.md), [security](docs/security.md), and
+the [measurement contract](docs/metrics.md).
