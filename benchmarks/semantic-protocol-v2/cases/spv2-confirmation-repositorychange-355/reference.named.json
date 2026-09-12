@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:83b4aeb34614a23d615118e798eff1b90b56cf4c481b5e3e77ee4e460ef6cdbc",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if divisor == 0 { Err(\"zero\") } else { Ok(value / divisor) } }",
+      "target": "sym:fn:solve_sp_355"
+    }
+  ],
+  "version": 1
+}

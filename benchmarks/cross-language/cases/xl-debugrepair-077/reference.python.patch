@@ -1,0 +1,10 @@
+--- program.py
++++ program.py
+@@ -1,6 +1,6 @@
+ def solve_077(value: int) -> int:
+     offset = 7
+-    return step_077(value) + offset
++    return value + offset
+ 
+ def main() -> int:
+     return solve_077(107)

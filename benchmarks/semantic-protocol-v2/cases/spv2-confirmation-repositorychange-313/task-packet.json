@@ -1,0 +1,47 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:3d8a838cd5cc8a989455f894cc3e18acf727959f9140c012761f9eec7206a016",
+    "success": "Change `solve_sp_313` so the boundary is inclusive and the accepted branch adds 11. The exact-boundary caller must print 354.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_313",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        },
+        {
+          "name": "limit",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int, Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_313/param:limit",
+        "Int"
+      ],
+      [
+        "sym:fn:solve_sp_313/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ if value >= limit { 0 } else { value + 2 } }"
+  },
+  "schema_version": 1
+}

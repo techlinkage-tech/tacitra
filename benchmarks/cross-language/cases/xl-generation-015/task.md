@@ -1,0 +1,1 @@
+Define `solve_015(left, right, enabled)` using both a boolean conjunction and an integer comparison. Return left plus right only when enabled and left is positive; otherwise return zero. Print `23` for `20`, `3`, and true.

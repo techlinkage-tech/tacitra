@@ -1,0 +1,179 @@
+{
+  "ablations": {
+    "conversation_or_cache": "stateless primary; warm 1/10/100 arithmetic simulation; cached tokens recorded but never subtracted",
+    "measured_locally": [
+      "task-scoped-specification",
+      "semantic-query",
+      "typed-structural-patch"
+    ],
+    "repair_context": "observable only on failed model attempts"
+  },
+  "budget": {
+    "calibration": "cross-language-v1 provider-token per UTF-8-byte medians",
+    "cost_note": "No public price is available for the exact pinned model; apply account input/output rates to measured usage before execution.",
+    "estimated_cost_usd": null,
+    "estimated_first_attempt_provider_tokens": 194027,
+    "evidence": "estimated",
+    "expected_api_calls_if_no_repairs": 300,
+    "maximum_api_calls": 900,
+    "projected_tokens_if_every_attempt_matches_first_attempt_size": 582081,
+    "projection_is_not_a_hard_ceiling": true
+  },
+  "decision_rule": {
+    "does_not_support_semantic_protocol": "primary one-sided bootstrap token lower >= 0 or observed semantic loss rate > 0.05",
+    "inconclusive": "otherwise",
+    "supports_semantic_protocol": "primary one-sided bootstrap token upper < 0, exact acceptance-loss upper <= 0.05, and semantic acceptance in every category"
+  },
+  "design": {
+    "categories": {
+      "debug-repair": 30,
+      "repository-change": 30
+    },
+    "development_cases": 6,
+    "exploratory": [
+      "tacitra-semantic minus python-ordinary",
+      "tacitra-semantic minus go-ordinary",
+      "tacitra-semantic minus rust-ordinary"
+    ],
+    "heldout_cases": 60,
+    "max_repair_rounds": 2,
+    "maximum_attempts_per_trial": 3,
+    "primary": "tacitra-semantic minus tacitra-ordinary",
+    "repetitions": 1,
+    "representations": [
+      "python-ordinary",
+      "go-ordinary",
+      "rust-ordinary",
+      "tacitra-ordinary",
+      "tacitra-semantic"
+    ],
+    "session_condition": "stateless repeated task; cold single task is one such request; warm results are arithmetic simulations only",
+    "total_trials": 300,
+    "trials_per_case": 5
+  },
+  "fairness": {
+    "failed_trials_retained": true,
+    "new_heldout_cases": true,
+    "reference_artifacts_excluded_from_prompts": true,
+    "same_task_and_acceptance_across_five_representations": true,
+    "seeded_interleaving": true,
+    "semantic_task_not_duplicated_outside_capsule": true
+  },
+  "id": "semantic-protocol-v1",
+  "model_condition": {
+    "max_output_characters": 40000,
+    "model": "gpt-5.6-luna",
+    "provider": "openai-responses",
+    "request_timeout_seconds": 120,
+    "schedule_seed": 20260913,
+    "settings": {
+      "max_output_tokens": 2048,
+      "reasoning": {
+        "effort": "low"
+      }
+    },
+    "substitution_allowed": false
+  },
+  "pins": {
+    "ai_library_revision": "sha256:dc4e6caf2f182dc1d763a1d61c587e7a3d5e60a308e06e934e3e2c21cb1fd34b",
+    "base_harness_revision": "sha256:934e094e066df3eeb44b7dfa2cecd44b3554fedb4439902de1abdea18c488624",
+    "builder_revision": "sha256:1dd3bb5026d265da22e54a60c7fc94afe2b4fb82610c9884a4ce605a5e851642",
+    "case_revisions": {
+      "sp-heldout-debugrepair-102": "sha256:a668752e2884aefbd8b74a3850f621e8b17522452503ee31d6b3798d5ff8b24e",
+      "sp-heldout-debugrepair-104": "sha256:dda716ecea141abf625e5dabe9fa52d3ff5086b6f4a0b92df462a15d81dc2fa6",
+      "sp-heldout-debugrepair-106": "sha256:c1cee65070cba7c4d7b402c409603001c7d8da8bdf846fa7650937141a7658be",
+      "sp-heldout-debugrepair-108": "sha256:03020467478fc4005e7d0dd634ada464752720a2aef5eb34fef27b445bdc9815",
+      "sp-heldout-debugrepair-110": "sha256:d1d4ac100ea613fc9145a909468b29a8deaf66cb22db55633ee60797e37e7e67",
+      "sp-heldout-debugrepair-112": "sha256:17e8f3b8e9f4082ef0c2301721ee841402fbec1c5a0c4cc802b45d584f552519",
+      "sp-heldout-debugrepair-114": "sha256:f8a42498de7eef2080556ffb0cc068f5917b3eb77ba7610002855162663180c0",
+      "sp-heldout-debugrepair-116": "sha256:e5f82bfd900c5a261c064748ef81fed1d19b58d041129fccc480d6e70246dcc7",
+      "sp-heldout-debugrepair-118": "sha256:879bf1ad2f389382d543c20b45cd49bc744b48e4ac6a85fec2a61b8f79672d22",
+      "sp-heldout-debugrepair-120": "sha256:749aacb0cac1eea708bcc05899845883f178bac80e32203456febd3411a08dd8",
+      "sp-heldout-debugrepair-122": "sha256:ee8dccee7ede204b990a1754e8fa430667a33536b4ce73b776faf5400001d664",
+      "sp-heldout-debugrepair-124": "sha256:af7790889c023f5573974bd9df9f6ede82f3131e6a13e7f791c66559d2f828b8",
+      "sp-heldout-debugrepair-126": "sha256:6194d9544b584ff737bcb58add6a6af9d599c1783c9751a828c404e40262d9c4",
+      "sp-heldout-debugrepair-128": "sha256:78f1b4c976fa01af97adf876c17534c0822096eac828a5f6b425d1d693f554a7",
+      "sp-heldout-debugrepair-130": "sha256:b2bf46a405a3cc48fbc0a5926b002cb288d9d012cfc41ceac8312fd6e110d263",
+      "sp-heldout-debugrepair-132": "sha256:a604c415cabb7df52ebae34b8cd6374caf4aad86e55c25b7fe5a5dd70160440a",
+      "sp-heldout-debugrepair-134": "sha256:ff96d0c0be9366c6f37600b0d845a2f107feb9dedb099869fd42ff7fc4aa698c",
+      "sp-heldout-debugrepair-136": "sha256:14f0b58efd498d667e52c2735850a2a47502ff53ddef4a8ad18dafdf4cd7d5a7",
+      "sp-heldout-debugrepair-138": "sha256:72c11934849f0c4ee6a45647e80e474c9393008dec7ba8bdff2fae4504691fe6",
+      "sp-heldout-debugrepair-140": "sha256:2a71006e50fff4027283f41faf72ee4ca5eeba8a2650b082ccc11b46a4b14320",
+      "sp-heldout-debugrepair-142": "sha256:8d304bb9be3069c9a4e3d932e501a5106d535887d76e81fe6863035e63801c51",
+      "sp-heldout-debugrepair-144": "sha256:33a273cbcc1586e8e317546d8806b7db58806d06f38dbd8c3dee36d51102509b",
+      "sp-heldout-debugrepair-146": "sha256:b4cdc77e3a388b44555dbeead147694e7f93fd6f2309ed4a572fdd848fc8ea23",
+      "sp-heldout-debugrepair-148": "sha256:38e5baa03c79c56f8c050378ae420caf2dbc3aa1f97e46944659df032290ac1a",
+      "sp-heldout-debugrepair-150": "sha256:9ac66620d461e13640d89b603b21796b3c82717a2b377cf57f1cb1bcac92bc6b",
+      "sp-heldout-debugrepair-152": "sha256:fc418874c62ae5a2285e2eb5b0ac37b4a9b8574f4d960914e5693afa742b57e9",
+      "sp-heldout-debugrepair-154": "sha256:9f3f39a346666e068f77aceb6c53d0135c1ef3efc51fe789bf5969938f59950c",
+      "sp-heldout-debugrepair-156": "sha256:bcb982e20eb2e6522ec5d5d3bffb531afc65f3fa8c24f93520fe016d7e3ed0a8",
+      "sp-heldout-debugrepair-158": "sha256:b145a371030385c3759c7cb26f4ec3927173f81c46236353b4160f864856555b",
+      "sp-heldout-debugrepair-160": "sha256:f04d2611a3fc7d8bf1539102f21c0b6d14c1fe76225518d92b6b62774fa0e59c",
+      "sp-heldout-repositorychange-101": "sha256:9edd4cb7ec50571643d5ebccbc2a9b4c346a9ac721763af604249337df9cb07e",
+      "sp-heldout-repositorychange-103": "sha256:a87a2ead9d9c354ce7228e7abb3395854b94c4c71b90ba614a3d332e54aca3bf",
+      "sp-heldout-repositorychange-105": "sha256:c0e6471500ac4a2a46b6a59fce6275c8d959308f9d2e12b388fa6c52108edc96",
+      "sp-heldout-repositorychange-107": "sha256:7e7ba702a7f1fa4e0d5e3bd9c278b48e44a3d302c12eabf22a66b51f1cc04f9e",
+      "sp-heldout-repositorychange-109": "sha256:bcf59482583625fc7a627bbabb888fa5f565b1ff75a3957e7652b5da7b43a4cb",
+      "sp-heldout-repositorychange-111": "sha256:9581328d3dd2c61585e827b6a8408ef50bcac45785a42a066d7c22df81f7f1dd",
+      "sp-heldout-repositorychange-113": "sha256:73184bf5329f260f5811eddce60cebd03f848052c40e3fd1bf60b7072fa698f2",
+      "sp-heldout-repositorychange-115": "sha256:a610ce58c534d1dc25e00816a22daf5ebb742448c04c2ca955a640d76c249120",
+      "sp-heldout-repositorychange-117": "sha256:a623d295a0bab17bcc599a4f40a665e336898f149acc1e70419d3392a2c3e702",
+      "sp-heldout-repositorychange-119": "sha256:0b5af79c859693d253918169c05f5636da1c8c352a4c194278108fcf4cf5a2bd",
+      "sp-heldout-repositorychange-121": "sha256:1b8eb66208042c5ca1d57cb340b153b9459781dc87a29c9843c62fc38e54ed1c",
+      "sp-heldout-repositorychange-123": "sha256:ac4364bedd5f079b9612d1758c48b8ad52703d4a3e03d3a3b8011656b58aaad0",
+      "sp-heldout-repositorychange-125": "sha256:45b14720257039016dffd4d188e55ce7b0554cce954f81f783e630da5037b6e3",
+      "sp-heldout-repositorychange-127": "sha256:c0893a3877cb7af9669ad7af81016cb1798e2bb2a231b8d0a81c23585d069ca5",
+      "sp-heldout-repositorychange-129": "sha256:6687fa047179b072c0253f06e341ddb19747d53735d131169e84cdbb02ba78ae",
+      "sp-heldout-repositorychange-131": "sha256:cd275e449db6d44dda59b9b6dfeaa7b87ed10606ab2558a14a6c8b9e0256a695",
+      "sp-heldout-repositorychange-133": "sha256:977d35ec2c201492652fe6084c0f381ab70913318d6a57021e8365781d494d48",
+      "sp-heldout-repositorychange-135": "sha256:8680519846c728198a20672c1729664a760a45d8ff8abc8c4be8d7e99bfc4128",
+      "sp-heldout-repositorychange-137": "sha256:5425613b12edbfe47d0300a5e110bb12c3cb6ebd63792daad9fa499580f3d557",
+      "sp-heldout-repositorychange-139": "sha256:833143d1b00dd869497b83c41b52d22bc71bdefde5a36e179e049281e4cb257d",
+      "sp-heldout-repositorychange-141": "sha256:64fe8c7e3e92ec23c4845096b2e65d7e65900cb834def72fd7e547b3750bd5c2",
+      "sp-heldout-repositorychange-143": "sha256:f9d7e1faaadf32b1e9f4a3b1241fb689b721e8432fe9336423fbcb2cf9f3c703",
+      "sp-heldout-repositorychange-145": "sha256:5019e6a3e903682eaef7fdb11c69d5e1ca0273618eabc024aa161402c5df6527",
+      "sp-heldout-repositorychange-147": "sha256:a4bb5852b32f487aa57f0a8e5baaf12312763b24a745dada33f19fc8f06fbf0c",
+      "sp-heldout-repositorychange-149": "sha256:a2c8bad4c175bd811f11a4889de2eb10c7872e35544cac8fca31aceffceab403",
+      "sp-heldout-repositorychange-151": "sha256:76df59a834d2c2af7bc59480f70b469e9738a9e24d4927e4540ed4cc54225c16",
+      "sp-heldout-repositorychange-153": "sha256:079218bcd216988c50a4a368e84d3f27961c93f6c58af3b5166b89c36d778d03",
+      "sp-heldout-repositorychange-155": "sha256:15c06d552de400306b2c86cb0ca4074e012cd5ccdb4283afce1a131131057e1f",
+      "sp-heldout-repositorychange-157": "sha256:3eb672a4e1dfdee69140cd093e7bc748aa8ffb4f624b8b3efddbe8f806d55360",
+      "sp-heldout-repositorychange-159": "sha256:dfe9c5c81897d843d9f3002f620b108d3bffcdff9e15e5f0d44976f6742fae3c"
+    },
+    "case_schema_revision": "sha256:9801670ef740d6c55a0f6a8b172f1beac6fee5b71cef1a1df4b4085a8fa8c621",
+    "comparison_revision": "sha256:d3960b41d48d7c817ccc9742c8f3df56c7af366375279827221a3d9ed43aa218",
+    "config_revision": "sha256:7396614a22d76f82c37bc06b201c47dd02838f06f092187329ce008dc33d223d",
+    "config_schema_revision": "sha256:a6ea8d7b2f07a657fe4c953e23cb8ee83c2d5d33c3c0f4ae5960af60a6659920",
+    "definitions_revision": "sha256:0e4b2c6731fd6c960222c41168c463ef9940808ffe1d8ac05a1af2d1ec30598e",
+    "harness_revision": "sha256:d06f93e97180c80821ae5716ceba4a6e0da9ddcfbaf466e71a64540aaf32a4ff",
+    "persistent_instructions_revision": "sha256:2cd891ae96de8d722b4ecf8639301c9110a2266e50064b1feaa6f9d67706414c",
+    "preregistration_schema_revision": "sha256:ea088f5b1b2a227beae72a1245fd88fed9b186592aa5ecd9ce243cb8a3623a8c",
+    "prompt_revision": "sha256:1c8f624499f45d013581be8ad1f55931cd183d611fd80cbf634de64164822875",
+    "protocol_profile_revision": "sha256:5afedbccbd918484252d86e6b0dda3141b619e2d0c9cd1662d5136012ba1aed0",
+    "repair_context_schema_revision": "sha256:2c924808ce435cf2c85110f4ef36e0b1d64d6f2c1ec8d0af4252174693608608",
+    "report_revision": "sha256:de3a61f971f254afa907304a1aeee12a3549f4e9bfaf4ae3018018d43fe2a1f6",
+    "result_schema_revision": "sha256:0ef215e5481c0667c9925f9eedc6d7eaa8776d704988730f30d8bbc1e02b6398",
+    "schedule_revision": "sha256:bd537d92e4d761d4e89be92a17d75cb9199119ebb49b040aeb0f6a7910db586b",
+    "task_capsule_schema_revision": "sha256:7db3a64bc1468d72da7512f3bb7aff929a0efcc3c641d19e58dcc3092292352e",
+    "typed_edit_schema_revision": "sha256:70dd2ee9754aeebbb2be1fa3cb2c21fd1ee3196c5c2820540a27542fb1dae1cb"
+  },
+  "repair": {
+    "ordinary": "previous artifact plus bounded first validation failure",
+    "semantic": "minimal repair-context-v1 only; no repeated capsule, specification, or successful operations"
+  },
+  "research_question": "Does the Tacitra task capsule plus typed edit reduce total provider tokens versus Tacitra ordinary source/diff without reducing acceptance by more than five percentage points?",
+  "schema_version": 1,
+  "statistics": {
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260913,
+    "independent_cases": 60,
+    "independent_unit": "case",
+    "noninferiority_limit": 0.05,
+    "one_sided_alpha": 0.05,
+    "paired_case_cluster_bootstrap": true,
+    "primary_metric": "total provider tokens per accepted solution, all failed attempts retained in numerator",
+    "sample_size_formula": "ceil(log(0.05)/log(0.95)) = 59; use 60",
+    "zero_loss_exact_upper": 0.04870291331009746
+  },
+  "status": "frozen-before-run"
+}

@@ -1,0 +1,13 @@
+{
+  "max_output_characters": 40000,
+  "model": "gpt-5.6-luna",
+  "provider": "openai-responses",
+  "repetitions": 1,
+  "request_timeout_seconds": 120,
+  "schedule_seed": 20260913,
+  "schema_version": 1,
+  "settings": {
+    "max_output_tokens": 2048,
+    "reasoning": {"effort": "low"}
+  }
+}

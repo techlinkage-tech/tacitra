@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -11,7 +11,7 @@
+ 
+ 
+ def solve_sp_151(value: int, divisor: int) -> tuple[bool, int]:
+-    if divisor <= 1: return False, 0
++    if divisor == 0: return False, 0
+     return True, value // divisor
+ 
+ def consume(result: tuple[bool, int]) -> int:

@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_076(value int64) int64 {
+-	offset := missing
++	offset := int64(6)
+ 	return value + offset
+ }
+ 

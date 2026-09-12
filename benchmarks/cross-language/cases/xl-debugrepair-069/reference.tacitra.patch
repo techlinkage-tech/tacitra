@@ -1,0 +1,10 @@
+--- program.taci
++++ program.taci
+@@ -1,6 +1,6 @@
+ fn solve_069(value: Int) -> Int {
+   let offset = 5;
+-  step_069(value) + offset
++  value + offset
+ }
+ 
+ fn main() -> Int {

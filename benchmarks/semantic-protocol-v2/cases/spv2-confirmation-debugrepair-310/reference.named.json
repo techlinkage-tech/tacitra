@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:c20b3eb31ad0b4846a18df782e8153df8805b220aba9ca60ff65ffd3528a1497",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 8 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_310"
+    }
+  ],
+  "version": 1
+}

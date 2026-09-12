@@ -1,0 +1,83 @@
+{
+  "design": {
+    "cases": 12,
+    "categories": {
+      "debug-repair": 6,
+      "repository-change": 6
+    },
+    "conditions": [
+      "ordinary",
+      "capsule-diff",
+      "capsule-fragment",
+      "capsule-named",
+      "compact-control"
+    ],
+    "max_repairs": 2,
+    "maximum_api_calls": 360,
+    "repetitions": 2,
+    "stateless": true,
+    "token_budget_all_phases": 750000,
+    "total_trials": 120
+  },
+  "id": "semantic-protocol-v2-pilot",
+  "model_condition": {
+    "model": "gpt-5.6-luna",
+    "provider": "openai-responses",
+    "settings": {
+      "max_output_tokens": 2048,
+      "reasoning": {
+        "effort": "low"
+      },
+      "store": false
+    },
+    "substitution_allowed": false
+  },
+  "phase": "pilot",
+  "pins": {
+    "ai_library_revision": "sha256:1550633e8f8c3e9fc202c5093952fa18276d9d35c0a469640183f653480117b9",
+    "budget_revision": "sha256:eac834e6ce6af391c7e8383deb2e286ac64e980f65b430b4bd6750367553d2bd",
+    "builder_revision": "sha256:20b736baa1148ccc959e0c27e3d264584255da144685b39dff398278bba7cf5f",
+    "case_revisions": {
+      "spv2-pilot-debugrepair-202": "sha256:f85ca88c19591029b0b409ba581200b3958a63692b0b4ef0d0acc5a99ef34c33",
+      "spv2-pilot-debugrepair-204": "sha256:e12cc766d0cfffd128800ff06fff8c0dfbb7cd73a76ce69c50e63a1c43efd912",
+      "spv2-pilot-debugrepair-206": "sha256:1dfa47a4928746aa35b2f12a01156cf1bf3ac4c51962a118294bb059f4417712",
+      "spv2-pilot-debugrepair-208": "sha256:ffcb6e560236b3b76560445241fe699468d96dc5e301aa5d03122bcd71690750",
+      "spv2-pilot-debugrepair-210": "sha256:2c3b2642b816d213bcd47ae3878bc468577bc5cbe5eb836660c3ce014ad207d7",
+      "spv2-pilot-debugrepair-212": "sha256:fe702a5de727c3094a63ebd61fb7d9350e52292b9992686a6fac2a2eb2af75bf",
+      "spv2-pilot-repositorychange-201": "sha256:854b3913de3d53b8428afa4e241a854126a47b65dfb6b80096074183f31b6f84",
+      "spv2-pilot-repositorychange-203": "sha256:8c38ccde0269702679867082d984ad507086e7f39948657a088d0430151008d3",
+      "spv2-pilot-repositorychange-205": "sha256:e99540b61dfd8e5baf01e2ac0a12e8f6cf4d4f655c58b4fa3c81b4ce78b1b2e7",
+      "spv2-pilot-repositorychange-207": "sha256:830d9e629d8019706fc314769284993b619f6ab3c5cf35fe6476c8a9958fb276",
+      "spv2-pilot-repositorychange-209": "sha256:735833f21e7bdb1767ff02112a418b2b69c699499a17ad0cdeeb5506077df667",
+      "spv2-pilot-repositorychange-211": "sha256:dd87ebe37c9cff9053773763b11d6cc9b137b3230a9151a03b4da1d4c930a23c"
+    },
+    "compact_contract_revision": "sha256:1e38c586e53d3978603b15380ec35170ee9a65f5b1388f3f55b3503bdee01bc1",
+    "comparison_revision": "sha256:57e1b16b79f926ca9f84a97b52265b6c7598a2e8fdde3c1db4cc2df8b66706ac",
+    "config_revision": "sha256:ea58908187979fad2adf5a5b3b8b380ed8461fc40d379179f3f6028a76471d2e",
+    "definitions_revision": "sha256:f78278dfeb49b11403c2b3e73ca6d43b96406518a35a8b92b99003a1f3335023",
+    "diff_contract_revision": "sha256:fa3d9b2fca8305b4a7375f0c189fafbec8e41b5a055d10b0004d07942ba785ce",
+    "fragment_contract_revision": "sha256:cdb3eb5164f3008d6a67415ac122891c82bf1512beead2b73e8a85f0f657a9e0",
+    "harness_revision": "sha256:07fff1d7052a41d24e45269c5d1e15334fbaa860fe5f2a108020a7dcc8a0ed30",
+    "named_contract_revision": "sha256:7ec4080ff538f785a53c2c965e7b86e4d21b08cc5dbe32bef09ddbd18ced8ce2",
+    "named_schema_revision": "sha256:e2a05b22b3f2586c41dad7c2bc1ff4a9db47905dbefdd2b53389abec7ae3f0a1",
+    "persistent_instructions_revision": "sha256:bbbc614af7a07e2eaf829749f552f3466862eed8960157b2d36219d77f07fbd1",
+    "prompt_revision": "sha256:8ae2c83da444878f4e280cf764b7366e359ec08eabfc8cf34b30717758ea14ba",
+    "report_revision": "sha256:f24f9bdc8bd0aa6edb0a0e074cadd160a6e03094a8ad808bc7f088e5b17eb10d",
+    "runtime_revision": "sha256:0dc6932f6b3568eea6450a36f242cb41ff5b9053b3c0068afca35853999adb25",
+    "schedule_revision": "sha256:ba0b6220b8d34ecb52bb45e287d2068c072645f2341d745b1692e890de56f380",
+    "task_profile_revision": "sha256:ef07f54601dae25cb3aa1203ade93e3d5d5eca65f54d1684e96dcdca2660f198",
+    "tests_revision": "sha256:d95e6f6fd504448fabaac974a9f9fc93e70ecec14950e2a53d2cb6deb764a3e8"
+  },
+  "schema_version": 1,
+  "selected_candidate": null,
+  "selection_rule": {
+    "max_observed_candidate_loss_on_baseline_accepted": 0.05,
+    "rank": [
+      "total_provider_tokens_per_accepted_solution",
+      "reasoning_tokens"
+    ],
+    "requires_acceptance_in_both_categories": true,
+    "stop_if_all_worse_than_baseline": true
+  },
+  "status": "frozen-before-run"
+}

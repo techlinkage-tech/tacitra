@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn solve_068(value: i64) -> i64 {
+-    let offset = missing;
++    let offset = 4;
+     value + offset
+ }
+ 

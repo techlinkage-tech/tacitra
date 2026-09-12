@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "error[E0277]: cannot add `&str` to `i64`\n --> program.rs:3:11\n  |\n3 |     value + offset\n  |           ^ no implementation for `i64 + &str`\n  |\n  = help: the trait `Add<&str>` is not implemented for `i64`\n  = help: the following other types implement trait `Add<Rhs>`:\n            `&i64` implements `Add<i64>`\n            `&i64` implements `Add`\n            `i64` implements `Add<&i64>`\n            `i64` implements `Add`\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0277`.\n",
+  "stdout": ""
+}

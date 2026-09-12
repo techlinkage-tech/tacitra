@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "# command-line-arguments\n./program.go:7:9: invalid operation: value + offset (mismatched types int64 and string)\n",
+  "stdout": ""
+}

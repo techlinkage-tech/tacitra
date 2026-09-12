@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:4a224f2ac644ae716aef80ff80dc32e35abcbbb25d3e81123223af58f0a12d6c",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 7 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_330"
+    }
+  ],
+  "version": 1
+}

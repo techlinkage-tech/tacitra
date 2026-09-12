@@ -1,0 +1,11 @@
+--- program.rs
++++ program.rs
+@@ -1,7 +1,7 @@
+ struct Packet045 { value: i64, enabled: bool }
+ 
+ fn solve_045(packet: Packet045) -> i64 {
+-    if packet.enabled { packet.value - 2 } else { packet.value }
++    if packet.enabled { packet.value + 11 } else { packet.value }
+ }
+ 
+ fn main() {

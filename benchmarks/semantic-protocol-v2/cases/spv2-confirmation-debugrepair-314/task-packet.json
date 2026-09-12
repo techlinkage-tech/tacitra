@@ -1,0 +1,56 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:7ee057420f688d50a1085f91fcfcc5f69a26a8958a52348038e6f3c65953e5d1",
+    "success": "Change record-based `solve_sp_314` so an enabled packet adds 12 instead of 3. It must print 356.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_314",
+      "params": [
+        {
+          "name": "packet",
+          "type": "PacketSp314"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(PacketSp314) -> Int"
+    },
+    "types": [
+      {
+        "def": {
+          "fields": [
+            {
+              "name": "value",
+              "type": "Int"
+            },
+            {
+              "name": "enabled",
+              "type": "Bool"
+            }
+          ]
+        },
+        "id": "type:record:PacketSp314",
+        "kind": "record"
+      }
+    ],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_314/param:packet",
+        "PacketSp314"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ if packet.enabled { packet.value + 3 } else { packet.value } }"
+  },
+  "schema_version": 1
+}

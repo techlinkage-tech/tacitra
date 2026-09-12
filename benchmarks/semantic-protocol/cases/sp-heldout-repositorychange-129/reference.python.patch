@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -11,7 +11,7 @@
+ 
+ 
+ def solve_sp_129(value: int, limit: int) -> int:
+-    return 0 if value >= limit else value + 2
++    return value + 9 if value <= limit else 0
+ 
+ 
+ if __name__ == "__main__":

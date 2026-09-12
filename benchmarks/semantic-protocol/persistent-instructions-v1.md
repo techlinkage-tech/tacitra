@@ -1,0 +1,1 @@
+Return only the requested artifact in the exact JSON envelope described by the prompt. Do not include Markdown fences or explanations. Use only supplied IDs and typed context. Do not assume source that is not present.

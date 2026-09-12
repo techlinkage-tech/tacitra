@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:69d782ab3f3a5dceac7c5056d1741c28ef42c2be1af337d875299d051b86d79b",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 6 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_322"
+    }
+  ],
+  "version": 1
+}

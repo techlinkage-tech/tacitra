@@ -1,0 +1,169 @@
+{
+  "evidence": "measured",
+  "representations": [
+    {
+      "accepted": 57,
+      "api_calls": 70,
+      "final_outcomes": {
+        "accepted": 57,
+        "prepare": 3
+      },
+      "first_attempt_context_utf8_bytes": {
+        "initial_diagnostic_bytes": 1740,
+        "instruction_bytes": 511260,
+        "prompt_template_bytes": 29820,
+        "repository_context_bytes": 25500,
+        "specification_bytes": 10920,
+        "task_bytes": 6080
+      },
+      "provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 27773,
+        "output_tokens": 12948,
+        "reasoning_tokens": 5536,
+        "total_tokens": 40721
+      },
+      "repair_calls": 10,
+      "repair_provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 5183,
+        "output_tokens": 3394,
+        "reasoning_tokens": 2367,
+        "total_tokens": 8577
+      },
+      "representation": "python-ordinary",
+      "trials": 60
+    },
+    {
+      "accepted": 59,
+      "api_calls": 76,
+      "final_outcomes": {
+        "accepted": 59,
+        "prepare": 1
+      },
+      "first_attempt_context_utf8_bytes": {
+        "initial_diagnostic_bytes": 1740,
+        "instruction_bytes": 511260,
+        "prompt_template_bytes": 29820,
+        "repository_context_bytes": 25320,
+        "specification_bytes": 9600,
+        "task_bytes": 6080
+      },
+      "provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 31789,
+        "output_tokens": 19021,
+        "reasoning_tokens": 6651,
+        "total_tokens": 50810
+      },
+      "repair_calls": 16,
+      "repair_provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 9454,
+        "output_tokens": 5551,
+        "reasoning_tokens": 3262,
+        "total_tokens": 15005
+      },
+      "representation": "go-ordinary",
+      "trials": 60
+    },
+    {
+      "accepted": 0,
+      "api_calls": 180,
+      "final_outcomes": {
+        "compile": 60
+      },
+      "first_attempt_context_utf8_bytes": {
+        "initial_diagnostic_bytes": 1740,
+        "instruction_bytes": 511260,
+        "prompt_template_bytes": 29820,
+        "repository_context_bytes": 22620,
+        "specification_bytes": 9540,
+        "task_bytes": 6080
+      },
+      "provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 92890,
+        "output_tokens": 41045,
+        "reasoning_tokens": 10407,
+        "total_tokens": 133935
+      },
+      "repair_calls": 120,
+      "repair_provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 70075,
+        "output_tokens": 27559,
+        "reasoning_tokens": 7114,
+        "total_tokens": 97634
+      },
+      "representation": "rust-ordinary",
+      "trials": 60
+    },
+    {
+      "accepted": 59,
+      "api_calls": 62,
+      "final_outcomes": {
+        "accepted": 59,
+        "prepare": 1
+      },
+      "first_attempt_context_utf8_bytes": {
+        "initial_diagnostic_bytes": 1740,
+        "instruction_bytes": 511260,
+        "prompt_template_bytes": 29820,
+        "repository_context_bytes": 22845,
+        "specification_bytes": 73260,
+        "task_bytes": 6080
+      },
+      "provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 41863,
+        "output_tokens": 11939,
+        "reasoning_tokens": 4147,
+        "total_tokens": 53802
+      },
+      "repair_calls": 2,
+      "repair_provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 1633,
+        "output_tokens": 745,
+        "reasoning_tokens": 543,
+        "total_tokens": 2378
+      },
+      "representation": "tacitra-ordinary",
+      "trials": 60
+    },
+    {
+      "accepted": 60,
+      "api_calls": 71,
+      "final_outcomes": {
+        "accepted": 60
+      },
+      "first_attempt_context_utf8_bytes": {
+        "initial_diagnostic_bytes": 1740,
+        "instruction_bytes": 13080,
+        "prompt_template_bytes": 23940,
+        "repository_context_bytes": 35480,
+        "specification_bytes": 27240,
+        "task_bytes": 0
+      },
+      "provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 36721,
+        "output_tokens": 27231,
+        "reasoning_tokens": 20490,
+        "total_tokens": 63952
+      },
+      "repair_calls": 11,
+      "repair_provider_usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 6925,
+        "output_tokens": 4091,
+        "reasoning_tokens": 3043,
+        "total_tokens": 11016
+      },
+      "representation": "tacitra-semantic",
+      "trials": 60
+    }
+  ],
+  "schema_version": 1
+}

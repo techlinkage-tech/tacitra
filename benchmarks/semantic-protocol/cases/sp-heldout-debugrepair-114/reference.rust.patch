@@ -1,0 +1,10 @@
+--- program.rs
++++ program.rs
+@@ -4,6 +4,6 @@
+ 
+ struct PacketSp114 { value: i64, enabled: bool }
+ 
+-fn solve_sp_114(packet: PacketSp114) -> i64 { if packet.enabled { packet.value + 3 } else { packet.value } }
++fn solve_sp_114(packet: PacketSp114) -> i64 { if packet.enabled { packet.value + 8 } else { packet.value } }
+ 
+ fn main() { println!("{}", solve_sp_114(PacketSp114 { value: 144, enabled: true })); }

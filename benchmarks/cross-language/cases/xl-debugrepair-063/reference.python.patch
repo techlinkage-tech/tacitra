@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -3,7 +3,7 @@
+     return value + offset
+ 
+ def main() -> int:
+-    return solve_063(93, 5)
++    return solve_063(93)
+ 
+ 
+ if __name__ == "__main__":

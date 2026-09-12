@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "error[E0061]: this function takes 1 argument but 2 arguments were supplied\n --> program.rs:7:20\n  |\n7 |     println!(\"{}\", solve_075(105, 5));\n  |                    ^^^^^^^^^      - unexpected argument #2 of type `{integer}`\n  |\nnote: function defined here\n --> program.rs:1:4\n  |\n1 | fn solve_075(value: i64) -> i64 {\n  |    ^^^^^^^^^ ----------\nhelp: remove the extra argument\n  |\n7 -     println!(\"{}\", solve_075(105, 5));\n7 +     println!(\"{}\", solve_075(105));\n  |\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0061`.\n",
+  "stdout": ""
+}

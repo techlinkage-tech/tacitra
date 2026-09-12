@@ -1,0 +1,56 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [
+      [
+        "sym:builtin:Err",
+        "fn(E) -> Result[T, E]"
+      ],
+      [
+        "sym:builtin:Ok",
+        "fn(T) -> Result[T, E]"
+      ]
+    ],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:ea1a54fafac0c3eaafba8a1317431cc18fb1c8b6abe0efcda512bcc16d0e820d",
+    "success": "Change `solve_sp_359` so zero is the only error and value 389 with divisor one returns 389.",
+    "target": {
+      "failure": "String",
+      "id": "sym:fn:solve_sp_359",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        },
+        {
+          "name": "divisor",
+          "type": "Int"
+        }
+      ],
+      "return": "Result[Int, String]",
+      "type": "fn(Int, Int) -> Result[Int, String]"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_359/param:divisor",
+        "Int"
+      ],
+      [
+        "sym:fn:solve_sp_359/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ if divisor <= 1 { Err(\"zero\") } else { Ok(value / divisor) } }"
+  },
+  "schema_version": 1
+}

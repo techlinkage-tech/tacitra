@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -4,7 +4,7 @@
+ 
+ func solve_081(value int64) int64 {
+ 	offset := int64(5)
+-	return step_081(value) + offset
++	return value + offset
+ }
+ 
+ func main() {

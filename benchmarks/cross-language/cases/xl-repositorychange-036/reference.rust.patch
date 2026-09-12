@@ -1,0 +1,11 @@
+--- program.rs
++++ program.rs
+@@ -1,6 +1,6 @@
+-fn step_036(value: i64) -> i64 { value * 3 }
++fn step_036(value: i64) -> i64 { value * 9 }
+ 
+-fn solve_036(value: i64) -> i64 { step_036(value) + 3 }
++fn solve_036(value: i64) -> i64 { step_036(value) + 9 }
+ 
+ fn main() {
+     println!("{}", solve_036(56));

@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:41a44cb129a2a3b524937b9ea58f830cb09c8804d3f25a9ce2b064dce2d61c03",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 10 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_354"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,11 @@
+{
+  "combined_limit": 750000,
+  "estimated_combined_tokens": 295615,
+  "estimated_phase_3_tokens": 88330,
+  "estimation_basis": "Phase 2 ordinary plus capsule-fragment measured tokens per trial multiplied by 120 confirmation trials",
+  "evidence": "estimated",
+  "maximum_api_calls": 360,
+  "phase_2_measured_tokens": 207285,
+  "phase_3_limit": 542715,
+  "schema_version": 1
+}

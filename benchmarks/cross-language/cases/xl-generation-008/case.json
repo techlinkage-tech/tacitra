@@ -1,0 +1,131 @@
+{
+  "acceptance": {
+    "description": "the complete program prints the required integer",
+    "expected_integer": 29
+  },
+  "category": "generation",
+  "id": "xl-generation-008",
+  "max_repair_rounds": 2,
+  "prompt": "task.md",
+  "representations": [
+    {
+      "artifact": "reference.python.py",
+      "artifact_kind": "source",
+      "compile_commands": [
+        [
+          "python3",
+          "-m",
+          "py_compile",
+          "{artifact}"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "python-source",
+      "language": "python",
+      "prepare_commands": [],
+      "repository_context": [],
+      "result_kind": "integer",
+      "setup_files": [],
+      "specification": [
+        "../../../specs/python-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "python3",
+          "{artifact}"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.go.go",
+      "artifact_kind": "source",
+      "compile_commands": [
+        [
+          "go",
+          "build",
+          "-o",
+          "{work}/program",
+          "{artifact}"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "go-source",
+      "language": "go",
+      "prepare_commands": [],
+      "repository_context": [],
+      "result_kind": "integer",
+      "setup_files": [],
+      "specification": [
+        "../../../specs/go-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{work}/program"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.rust.rs",
+      "artifact_kind": "source",
+      "compile_commands": [
+        [
+          "{rustc}",
+          "--edition=2021",
+          "--crate-name",
+          "program",
+          "-o",
+          "{work}/program",
+          "{artifact}"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "rust-source",
+      "language": "rust",
+      "prepare_commands": [],
+      "repository_context": [],
+      "result_kind": "integer",
+      "setup_files": [],
+      "specification": [
+        "../../../specs/rust-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{work}/program"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.tacitra.taci",
+      "artifact_kind": "source",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{artifact}"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "tacitra-source",
+      "language": "tacitra",
+      "prepare_commands": [],
+      "repository_context": [],
+      "result_kind": "integer",
+      "setup_files": [],
+      "specification": [
+        "../../tacitra-source-profile-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{artifact}"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

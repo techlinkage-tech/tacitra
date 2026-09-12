@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "program.taci:3:11: error[T0001]: type mismatch (expected `Int`, found `String`)\n  |\n 3 |   value + offset\n  |           ^^^^^^\n",
+  "stdout": ""
+}

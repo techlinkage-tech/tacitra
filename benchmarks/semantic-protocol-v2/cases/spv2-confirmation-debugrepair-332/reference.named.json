@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:4d7b222f10fba9d760a1b3f8da19652b3b7484017e75f46e2417a97d44d03191",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ value + 9 }",
+      "target": "sym:fn:solve_sp_332"
+    }
+  ],
+  "version": 1
+}

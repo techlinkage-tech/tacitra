@@ -1,0 +1,1002 @@
+{
+  "cases": [
+    {
+      "category": "generation",
+      "expected_integer": 9,
+      "family": "condition",
+      "features": [
+        "condition",
+        "boolean",
+        "integers"
+      ],
+      "id": "xl-generation-001",
+      "task": "Define `solve_001(value, enabled)` with an explicit boolean condition: add 3 when enabled and subtract 3 otherwise. The complete program must print `9` for value `6` and enabled `true`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 14,
+      "family": "locals",
+      "features": [
+        "locals",
+        "integers"
+      ],
+      "id": "xl-generation-002",
+      "task": "Define `solve_002(value)` using immutable local variables `offset = 4` and `bonus = 3`; return their sum with the input. The complete program must print `14` for input `7`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 8,
+      "family": "string",
+      "features": [
+        "condition",
+        "string",
+        "integers"
+      ],
+      "id": "xl-generation-003",
+      "task": "Define `solve_003(label)` over strings; return 8 for the exact label `ready_3` and 5 otherwise. The complete program must print `8` for that label."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 15,
+      "family": "record",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-generation-004",
+      "task": "Define a record-like `Packet004` with integer `value` and boolean `enabled`, plus `solve_004(packet)` that adds 6 only when enabled. Construct an enabled value `9` and print `15`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 10,
+      "family": "error",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-005",
+      "task": "Define `solve_005(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `10` for value `70` and divisor `7`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 11,
+      "family": "boundary",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-006",
+      "task": "Define `solve_006(value, limit)` using an inclusive integer boundary check. Return 11 when value is within the limit and 8 otherwise. Print `11` for value and limit both `8999999999999999994`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 14,
+      "family": "boolean",
+      "features": [
+        "boolean",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-007",
+      "task": "Define `solve_007(left, right, enabled)` using both a boolean conjunction and an integer comparison. Return left plus right only when enabled and left is positive; otherwise return zero. Print `14` for `12`, `2`, and true."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 29,
+      "family": "composition",
+      "features": [
+        "functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-generation-008",
+      "task": "Define `step_008(value)` to double an integer and `solve_008(value)` to add 3 after calling `step_008`. The complete program must print `29` for input `13`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 18,
+      "family": "condition",
+      "features": [
+        "condition",
+        "boolean",
+        "integers"
+      ],
+      "id": "xl-generation-009",
+      "task": "Define `solve_009(value, enabled)` with an explicit boolean condition: add 4 when enabled and subtract 4 otherwise. The complete program must print `18` for value `14` and enabled `true`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 23,
+      "family": "locals",
+      "features": [
+        "locals",
+        "integers"
+      ],
+      "id": "xl-generation-010",
+      "task": "Define `solve_010(value)` using immutable local variables `offset = 5` and `bonus = 3`; return their sum with the input. The complete program must print `23` for input `15`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 16,
+      "family": "string",
+      "features": [
+        "condition",
+        "string",
+        "integers"
+      ],
+      "id": "xl-generation-011",
+      "task": "Define `solve_011(label)` over strings; return 16 for the exact label `ready_11` and 6 otherwise. The complete program must print `16` for that label."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 24,
+      "family": "record",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-generation-012",
+      "task": "Define a record-like `Packet012` with integer `value` and boolean `enabled`, plus `solve_012(packet)` that adds 7 only when enabled. Construct an enabled value `17` and print `24`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 18,
+      "family": "error",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-013",
+      "task": "Define `solve_013(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `18` for value `144` and divisor `8`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 19,
+      "family": "boundary",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-014",
+      "task": "Define `solve_014(value, limit)` using an inclusive integer boundary check. Return 19 when value is within the limit and 2 otherwise. Print `19` for value and limit both `8999999999999999986`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 23,
+      "family": "boolean",
+      "features": [
+        "boolean",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-015",
+      "task": "Define `solve_015(left, right, enabled)` using both a boolean conjunction and an integer comparison. Return left plus right only when enabled and left is positive; otherwise return zero. Print `23` for `20`, `3`, and true."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 46,
+      "family": "composition",
+      "features": [
+        "functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-generation-016",
+      "task": "Define `step_016(value)` to double an integer and `solve_016(value)` to add 4 after calling `step_016`. The complete program must print `46` for input `21`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 27,
+      "family": "condition",
+      "features": [
+        "condition",
+        "boolean",
+        "integers"
+      ],
+      "id": "xl-generation-017",
+      "task": "Define `solve_017(value, enabled)` with an explicit boolean condition: add 5 when enabled and subtract 5 otherwise. The complete program must print `27` for value `22` and enabled `true`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 32,
+      "family": "locals",
+      "features": [
+        "locals",
+        "integers"
+      ],
+      "id": "xl-generation-018",
+      "task": "Define `solve_018(value)` using immutable local variables `offset = 6` and `bonus = 3`; return their sum with the input. The complete program must print `32` for input `23`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 24,
+      "family": "string",
+      "features": [
+        "condition",
+        "string",
+        "integers"
+      ],
+      "id": "xl-generation-019",
+      "task": "Define `solve_019(label)` over strings; return 24 for the exact label `ready_19` and 7 otherwise. The complete program must print `24` for that label."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 33,
+      "family": "record",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-generation-020",
+      "task": "Define a record-like `Packet020` with integer `value` and boolean `enabled`, plus `solve_020(packet)` that adds 8 only when enabled. Construct an enabled value `25` and print `33`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 26,
+      "family": "error",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-021",
+      "task": "Define `solve_021(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `26` for value `52` and divisor `2`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 27,
+      "family": "boundary",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-022",
+      "task": "Define `solve_022(value, limit)` using an inclusive integer boundary check. Return 27 when value is within the limit and 3 otherwise. Print `27` for value and limit both `8999999999999999978`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 32,
+      "family": "boolean",
+      "features": [
+        "boolean",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-023",
+      "task": "Define `solve_023(left, right, enabled)` using both a boolean conjunction and an integer comparison. Return left plus right only when enabled and left is positive; otherwise return zero. Print `32` for `28`, `4`, and true."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 63,
+      "family": "composition",
+      "features": [
+        "functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-generation-024",
+      "task": "Define `step_024(value)` to double an integer and `solve_024(value)` to add 5 after calling `step_024`. The complete program must print `63` for input `29`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 36,
+      "family": "condition",
+      "features": [
+        "condition",
+        "boolean",
+        "integers"
+      ],
+      "id": "xl-generation-025",
+      "task": "Define `solve_025(value, enabled)` with an explicit boolean condition: add 6 when enabled and subtract 6 otherwise. The complete program must print `36` for value `30` and enabled `true`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 41,
+      "family": "locals",
+      "features": [
+        "locals",
+        "integers"
+      ],
+      "id": "xl-generation-026",
+      "task": "Define `solve_026(value)` using immutable local variables `offset = 7` and `bonus = 3`; return their sum with the input. The complete program must print `41` for input `31`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 32,
+      "family": "string",
+      "features": [
+        "condition",
+        "string",
+        "integers"
+      ],
+      "id": "xl-generation-027",
+      "task": "Define `solve_027(label)` over strings; return 32 for the exact label `ready_27` and 8 otherwise. The complete program must print `32` for that label."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 35,
+      "family": "record",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-generation-028",
+      "task": "Define a record-like `Packet028` with integer `value` and boolean `enabled`, plus `solve_028(packet)` that adds 2 only when enabled. Construct an enabled value `33` and print `35`."
+    },
+    {
+      "category": "generation",
+      "expected_integer": 34,
+      "family": "error",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-generation-029",
+      "task": "Define `solve_029(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `34` for value `102` and divisor `3`."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 510,
+      "family": "multi-function",
+      "features": [
+        "multiple-functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-030",
+      "task": "Modify both `step_030` and `solve_030`: `step_030` must multiply by 10 instead of 2, and `solve_030` must add 10 instead of 2 after calling `step_030`. Keep the caller unchanged; it must print `510`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 62,
+      "family": "condition-boundary",
+      "features": [
+        "condition",
+        "boundary",
+        "integers"
+      ],
+      "id": "xl-repositorychange-031",
+      "task": "Change `solve_031` so its boundary is inclusive and its enabled branch adds 11 instead of subtracting 3. Keep the caller at the exact boundary `51`; it must print `62`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 64,
+      "family": "string-change",
+      "features": [
+        "string",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-032",
+      "task": "Change `solve_032` to recognize the exact string `active_32` instead of `ready_32` and return value plus 12 instead of plus 4. Keep the caller unchanged; it must print `64`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 66,
+      "family": "record-change",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-repositorychange-033",
+      "task": "In the record-based `solve_033`, change the enabled result from value minus 5 to value plus 13. Keep the enabled `Packet033` caller unchanged; it must print `66`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 54,
+      "family": "error-change",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-034",
+      "task": "Change `solve_034` so only divisor zero is an error; divisor one must succeed. Keep the caller using value `54` and divisor one unchanged, and print `54`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 63,
+      "family": "boundary-change",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-035",
+      "task": "Change `solve_035` from an exclusive to an inclusive check at the large integer boundary `8999999999999999965`, and change the successful result to value plus 8. Keep the exact-boundary caller unchanged; it must print `63`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 513,
+      "family": "multi-function",
+      "features": [
+        "multiple-functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-036",
+      "task": "Modify both `step_036` and `solve_036`: `step_036` must multiply by 9 instead of 3, and `solve_036` must add 9 instead of 3 after calling `step_036`. Keep the caller unchanged; it must print `513`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 67,
+      "family": "condition-boundary",
+      "features": [
+        "condition",
+        "boundary",
+        "integers"
+      ],
+      "id": "xl-repositorychange-037",
+      "task": "Change `solve_037` so its boundary is inclusive and its enabled branch adds 10 instead of subtracting 4. Keep the caller at the exact boundary `57`; it must print `67`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 69,
+      "family": "string-change",
+      "features": [
+        "string",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-038",
+      "task": "Change `solve_038` to recognize the exact string `active_38` instead of `ready_38` and return value plus 11 instead of plus 5. Keep the caller unchanged; it must print `69`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 71,
+      "family": "record-change",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-repositorychange-039",
+      "task": "In the record-based `solve_039`, change the enabled result from value minus 6 to value plus 12. Keep the enabled `Packet039` caller unchanged; it must print `71`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 60,
+      "family": "error-change",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-040",
+      "task": "Change `solve_040` so only divisor zero is an error; divisor one must succeed. Keep the caller using value `60` and divisor one unchanged, and print `60`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 75,
+      "family": "boundary-change",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-041",
+      "task": "Change `solve_041` from an exclusive to an inclusive check at the large integer boundary `8999999999999999959`, and change the successful result to value plus 14. Keep the exact-boundary caller unchanged; it must print `75`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 504,
+      "family": "multi-function",
+      "features": [
+        "multiple-functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-042",
+      "task": "Modify both `step_042` and `solve_042`: `step_042` must multiply by 8 instead of 4, and `solve_042` must add 8 instead of 4 after calling `step_042`. Keep the caller unchanged; it must print `504`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 72,
+      "family": "condition-boundary",
+      "features": [
+        "condition",
+        "boundary",
+        "integers"
+      ],
+      "id": "xl-repositorychange-043",
+      "task": "Change `solve_043` so its boundary is inclusive and its enabled branch adds 9 instead of subtracting 5. Keep the caller at the exact boundary `63`; it must print `72`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 74,
+      "family": "string-change",
+      "features": [
+        "string",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-044",
+      "task": "Change `solve_044` to recognize the exact string `active_44` instead of `ready_44` and return value plus 10 instead of plus 6. Keep the caller unchanged; it must print `74`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 76,
+      "family": "record-change",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-repositorychange-045",
+      "task": "In the record-based `solve_045`, change the enabled result from value minus 2 to value plus 11. Keep the enabled `Packet045` caller unchanged; it must print `76`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 66,
+      "family": "error-change",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-046",
+      "task": "Change `solve_046` so only divisor zero is an error; divisor one must succeed. Keep the caller using value `66` and divisor one unchanged, and print `66`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 80,
+      "family": "boundary-change",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-047",
+      "task": "Change `solve_047` from an exclusive to an inclusive check at the large integer boundary `8999999999999999953`, and change the successful result to value plus 13. Keep the exact-boundary caller unchanged; it must print `80`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 966,
+      "family": "multi-function",
+      "features": [
+        "multiple-functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-048",
+      "task": "Modify both `step_048` and `solve_048`: `step_048` must multiply by 14 instead of 5, and `solve_048` must add 14 instead of 5 after calling `step_048`. Keep the caller unchanged; it must print `966`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 77,
+      "family": "condition-boundary",
+      "features": [
+        "condition",
+        "boundary",
+        "integers"
+      ],
+      "id": "xl-repositorychange-049",
+      "task": "Change `solve_049` so its boundary is inclusive and its enabled branch adds 8 instead of subtracting 6. Keep the caller at the exact boundary `69`; it must print `77`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 79,
+      "family": "string-change",
+      "features": [
+        "string",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-050",
+      "task": "Change `solve_050` to recognize the exact string `active_50` instead of `ready_50` and return value plus 9 instead of plus 2. Keep the caller unchanged; it must print `79`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 81,
+      "family": "record-change",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-repositorychange-051",
+      "task": "In the record-based `solve_051`, change the enabled result from value minus 3 to value plus 10. Keep the enabled `Packet051` caller unchanged; it must print `81`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 72,
+      "family": "error-change",
+      "features": [
+        "error-handling",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-052",
+      "task": "Change `solve_052` so only divisor zero is an error; divisor one must succeed. Keep the caller using value `72` and divisor one unchanged, and print `72`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 85,
+      "family": "boundary-change",
+      "features": [
+        "boundary",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-053",
+      "task": "Change `solve_053` from an exclusive to an inclusive check at the large integer boundary `8999999999999999947`, and change the successful result to value plus 12. Keep the exact-boundary caller unchanged; it must print `85`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 975,
+      "family": "multi-function",
+      "features": [
+        "multiple-functions",
+        "composition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-054",
+      "task": "Modify both `step_054` and `solve_054`: `step_054` must multiply by 13 instead of 6, and `solve_054` must add 13 instead of 6 after calling `step_054`. Keep the caller unchanged; it must print `975`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 89,
+      "family": "condition-boundary",
+      "features": [
+        "condition",
+        "boundary",
+        "integers"
+      ],
+      "id": "xl-repositorychange-055",
+      "task": "Change `solve_055` so its boundary is inclusive and its enabled branch adds 14 instead of subtracting 2. Keep the caller at the exact boundary `75`; it must print `89`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 84,
+      "family": "string-change",
+      "features": [
+        "string",
+        "condition",
+        "integers"
+      ],
+      "id": "xl-repositorychange-056",
+      "task": "Change `solve_056` to recognize the exact string `active_56` instead of `ready_56` and return value plus 8 instead of plus 3. Keep the caller unchanged; it must print `84`. Return one unified diff."
+    },
+    {
+      "category": "repository-change",
+      "expected_integer": 86,
+      "family": "record-change",
+      "features": [
+        "record",
+        "condition",
+        "boolean"
+      ],
+      "id": "xl-repositorychange-057",
+      "task": "In the record-based `solve_057`, change the enabled result from value minus 4 to value plus 9. Keep the enabled `Packet057` caller unchanged; it must print `86`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 94,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-058",
+      "task": "Fix the string/integer type error in `solve_058` with the smallest change so the program prints `94`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 96,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-059",
+      "task": "Fix the wrong-arity call to `solve_059` with the smallest change so the program prints `96`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 92,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-060",
+      "task": "Fix the undefined local name in `solve_060` with the smallest change so the program prints `92`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 94,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-061",
+      "task": "Fix the undefined function call in `solve_061` with the smallest change so the program prints `94`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 96,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-062",
+      "task": "Fix the string/integer type error in `solve_062` with the smallest change so the program prints `96`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 98,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-063",
+      "task": "Fix the wrong-arity call to `solve_063` with the smallest change so the program prints `98`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 100,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-064",
+      "task": "Fix the undefined local name in `solve_064` with the smallest change so the program prints `100`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 102,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-065",
+      "task": "Fix the undefined function call in `solve_065` with the smallest change so the program prints `102`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 98,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-066",
+      "task": "Fix the string/integer type error in `solve_066` with the smallest change so the program prints `98`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 100,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-067",
+      "task": "Fix the wrong-arity call to `solve_067` with the smallest change so the program prints `100`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 102,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-068",
+      "task": "Fix the undefined local name in `solve_068` with the smallest change so the program prints `102`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 104,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-069",
+      "task": "Fix the undefined function call in `solve_069` with the smallest change so the program prints `104`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 106,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-070",
+      "task": "Fix the string/integer type error in `solve_070` with the smallest change so the program prints `106`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 108,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-071",
+      "task": "Fix the wrong-arity call to `solve_071` with the smallest change so the program prints `108`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 104,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-072",
+      "task": "Fix the undefined local name in `solve_072` with the smallest change so the program prints `104`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 106,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-073",
+      "task": "Fix the undefined function call in `solve_073` with the smallest change so the program prints `106`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 108,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-074",
+      "task": "Fix the string/integer type error in `solve_074` with the smallest change so the program prints `108`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 110,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-075",
+      "task": "Fix the wrong-arity call to `solve_075` with the smallest change so the program prints `110`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 112,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-076",
+      "task": "Fix the undefined local name in `solve_076` with the smallest change so the program prints `112`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 114,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-077",
+      "task": "Fix the undefined function call in `solve_077` with the smallest change so the program prints `114`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 110,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-078",
+      "task": "Fix the string/integer type error in `solve_078` with the smallest change so the program prints `110`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 112,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-079",
+      "task": "Fix the wrong-arity call to `solve_079` with the smallest change so the program prints `112`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 114,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-080",
+      "task": "Fix the undefined local name in `solve_080` with the smallest change so the program prints `114`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 116,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-081",
+      "task": "Fix the undefined function call in `solve_081` with the smallest change so the program prints `116`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 118,
+      "family": "type-error",
+      "features": [
+        "type-diagnostic",
+        "string",
+        "integers"
+      ],
+      "id": "xl-debugrepair-082",
+      "task": "Fix the string/integer type error in `solve_082` with the smallest change so the program prints `118`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 120,
+      "family": "wrong-arity",
+      "features": [
+        "type-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-083",
+      "task": "Fix the wrong-arity call to `solve_083` with the smallest change so the program prints `120`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 116,
+      "family": "undefined-name",
+      "features": [
+        "name-diagnostic",
+        "locals"
+      ],
+      "id": "xl-debugrepair-084",
+      "task": "Fix the undefined local name in `solve_084` with the smallest change so the program prints `116`. Return one unified diff."
+    },
+    {
+      "category": "debug-repair",
+      "expected_integer": 118,
+      "family": "undefined-function",
+      "features": [
+        "name-diagnostic",
+        "functions"
+      ],
+      "id": "xl-debugrepair-085",
+      "task": "Fix the undefined function call in `solve_085` with the smallest change so the program prints `118`. Return one unified diff."
+    }
+  ],
+  "language_neutral": true,
+  "schema_version": 1,
+  "suite": "cross-language-v1"
+}

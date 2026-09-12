@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/protocol/task-capsule-v1.schema.json",
+  "title": "Tacitra AI task context capsule v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "hash", "target", "values", "types", "calls", "effects", "capabilities", "contracts", "allowed", "success"],
+  "properties": {
+    "v": {"const": 1},
+    "hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "params", "return", "failure"],
+      "properties": {
+        "id": {"type": "string"},
+        "type": {"type": "string"},
+        "params": {"type": "array"},
+        "return": {"type": "string"},
+        "failure": {"type": ["string", "null"]}
+      }
+    },
+    "values": {"type": "array", "items": {"type": "array", "prefixItems": [{"type": "string"}, {"type": "string"}], "items": false}},
+    "types": {"type": "array"},
+    "calls": {"type": "array"},
+    "effects": {"type": "array"},
+    "capabilities": {"type": "array"},
+    "contracts": {"type": "array"},
+    "allowed": {"const": ["body", "expr"]},
+    "success": {"type": "string"}
+  }
+}

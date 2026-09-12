@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn solve_053(value: i64, limit: i64) -> i64 {
+-    if value < limit { 5 } else { 0 }
++    if value <= limit { 85 } else { 0 }
+ }
+ 
+ fn main() {

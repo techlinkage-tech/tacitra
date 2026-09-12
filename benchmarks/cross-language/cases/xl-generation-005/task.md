@@ -1,0 +1,1 @@
+Define `solve_005(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `10` for value `70` and divisor `7`.

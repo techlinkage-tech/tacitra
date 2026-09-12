@@ -1,0 +1,1 @@
+Modify both `step_048` and `solve_048`: `step_048` must multiply by 14 instead of 5, and `solve_048` must add 14 instead of 5 after calling `step_048`. Keep the caller unchanged; it must print `966`. Return one unified diff.

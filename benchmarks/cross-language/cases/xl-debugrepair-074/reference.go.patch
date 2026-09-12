@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_074(value int64) int64 {
+-	offset := "4"
++	offset := int64(4)
+ 	return value + offset
+ }
+ 

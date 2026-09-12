@@ -1,0 +1,98 @@
+{
+  "categories": [
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": 0,
+      "category": "debug-repair",
+      "compile_at_1": 1.0,
+      "input_tokens": 15962,
+      "output_tokens": 1516,
+      "pass_at_1": 1.0,
+      "patch_size": {
+        "mean": 38.9,
+        "median": 39.0,
+        "population_variance": 650.49
+      },
+      "reasoning_tokens": 877,
+      "repair_output_tokens": 0,
+      "repair_rounds": 0,
+      "representation": "capsule-fragment",
+      "total_tokens": 17478,
+      "total_tokens_per_accepted_solution": 582.6,
+      "trials": 30,
+      "wall_clock_time": 49.790406
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": 0,
+      "category": "debug-repair",
+      "compile_at_1": 1.0,
+      "input_tokens": 20295,
+      "output_tokens": 5199,
+      "pass_at_1": 1.0,
+      "patch_size": {
+        "mean": 365.43333333333334,
+        "median": 347.5,
+        "population_variance": 5154.3788888888885
+      },
+      "reasoning_tokens": 1184,
+      "repair_output_tokens": 0,
+      "repair_rounds": 0,
+      "representation": "ordinary",
+      "total_tokens": 25494,
+      "total_tokens_per_accepted_solution": 849.8,
+      "trials": 30,
+      "wall_clock_time": 85.744409
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": 0,
+      "category": "repository-change",
+      "compile_at_1": 1.0,
+      "input_tokens": 15785,
+      "output_tokens": 3755,
+      "pass_at_1": 1.0,
+      "patch_size": {
+        "mean": 55.833333333333336,
+        "median": 59.5,
+        "population_variance": 73.47222222222223
+      },
+      "reasoning_tokens": 2879,
+      "repair_output_tokens": 0,
+      "repair_rounds": 0,
+      "representation": "capsule-fragment",
+      "total_tokens": 19540,
+      "total_tokens_per_accepted_solution": 651.3333333333334,
+      "trials": 30,
+      "wall_clock_time": 73.645496
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": 0,
+      "category": "repository-change",
+      "compile_at_1": 1.0,
+      "input_tokens": 19545,
+      "output_tokens": 6242,
+      "pass_at_1": 1.0,
+      "patch_size": {
+        "mean": 358.4,
+        "median": 353.0,
+        "population_variance": 6719.173333333333
+      },
+      "reasoning_tokens": 2124,
+      "repair_output_tokens": 0,
+      "repair_rounds": 0,
+      "representation": "ordinary",
+      "total_tokens": 25787,
+      "total_tokens_per_accepted_solution": 859.5666666666667,
+      "trials": 30,
+      "wall_clock_time": 90.435139
+    }
+  ],
+  "evidence": "measured-confirmatory",
+  "schema_version": 1
+}

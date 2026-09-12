@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "program.taci:7:3: error[T0003]: wrong number of arguments to `solve_067` (expected `1`, found `2`)\n  |\n 7 |   solve_067(97, 3)\n  |   ^^^^^^^^^^^^^^^^\n",
+  "stdout": ""
+}

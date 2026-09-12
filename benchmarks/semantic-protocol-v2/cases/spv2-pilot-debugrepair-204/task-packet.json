@@ -1,0 +1,39 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:d86fdc3feb33c83c350be62bd32bb5405261700987739cb693de86f575ac3167",
+    "success": "Change `solve_sp_204` to add 7 instead of 1. Keep the caller unchanged; it must print 241.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_204",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_204/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ value + 1 }"
+  },
+  "schema_version": 1
+}

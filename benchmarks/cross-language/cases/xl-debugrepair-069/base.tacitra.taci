@@ -1,0 +1,8 @@
+fn solve_069(value: Int) -> Int {
+  let offset = 5;
+  step_069(value) + offset
+}
+
+fn main() -> Int {
+  solve_069(99)
+}

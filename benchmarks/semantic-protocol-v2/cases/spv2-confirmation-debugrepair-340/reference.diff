@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -11,7 +11,7 @@
+ }
+ 
+ fn solve_sp_340(value: Int) -> Int {
+-  value + 1
++  value + 10
+ }
+ 
+ fn main() -> Int {

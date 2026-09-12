@@ -1,0 +1,9 @@
+--- program.py
++++ program.py
+@@ -1,5 +1,5 @@
+ def solve_068(value: int) -> int:
+-    offset = missing
++    offset = 4
+     return value + offset
+ 
+ def main() -> int:

@@ -1,0 +1,14 @@
+--- program.taci
++++ program.taci
+@@ -1,9 +1,9 @@
+ fn step_030(value: Int) -> Int {
+-  value * 2
++  value * 10
+ }
+ 
+ fn solve_030(value: Int) -> Int {
+-  step_030(value) + 2
++  step_030(value) + 10
+ }
+ 
+ fn main() -> Int {

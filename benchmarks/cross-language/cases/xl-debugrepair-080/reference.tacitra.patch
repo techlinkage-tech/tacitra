@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn solve_080(value: Int) -> Int {
+-  let offset = missing;
++  let offset = 4;
+   value + offset
+ }
+ 

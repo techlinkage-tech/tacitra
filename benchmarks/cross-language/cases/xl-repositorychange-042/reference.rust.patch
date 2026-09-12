@@ -1,0 +1,11 @@
+--- program.rs
++++ program.rs
+@@ -1,6 +1,6 @@
+-fn step_042(value: i64) -> i64 { value * 4 }
++fn step_042(value: i64) -> i64 { value * 8 }
+ 
+-fn solve_042(value: i64) -> i64 { step_042(value) + 4 }
++fn solve_042(value: i64) -> i64 { step_042(value) + 8 }
+ 
+ fn main() {
+     println!("{}", solve_042(62));

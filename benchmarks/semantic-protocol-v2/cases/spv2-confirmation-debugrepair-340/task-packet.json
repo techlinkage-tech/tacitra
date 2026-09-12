@@ -1,0 +1,39 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:0ae6f867843fba37944989104aec3dba85abedb8490db0d192c887ea584e0ffc",
+    "success": "Change `solve_sp_340` to add 10 instead of 1. Keep the caller unchanged; it must print 380.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_340",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_340/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ value + 1 }"
+  },
+  "schema_version": 1
+}

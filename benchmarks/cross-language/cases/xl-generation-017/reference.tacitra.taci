@@ -1,0 +1,11 @@
+fn solve_017(value: Int, enabled: Bool) -> Int {
+  if enabled {
+    value + 5
+  } else {
+    value - 5
+  }
+}
+
+fn main() -> Int {
+  solve_017(22, true)
+}

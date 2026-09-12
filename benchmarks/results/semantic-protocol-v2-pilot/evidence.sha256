@@ -1,0 +1,6 @@
+a888e06939a625fcd047fe649fbf7f0a79a4e7df27d3c51329d80b2965c55d85  benchmarks/semantic-protocol-v2/pilot-preregistration-v3.json
+baf022bfc91b3a28192534c23ea025899f615a859d0e7ebea79d51d8e0c556b2  benchmarks/results/semantic-protocol-v2-pilot/raw.jsonl
+938a3ec1cb3c2aefb80d7d67cbf922a340d1add51cbe127811133c5d6ddd20b0  benchmarks/results/semantic-protocol-v2-pilot/raw.jsonl.events.jsonl
+6684b735b62bd95329e47e1cbfb23667efe6f36c783d5b46b02e832b1952d2f3  benchmarks/results/semantic-protocol-v2-pilot/aggregate.json
+fa41d4b4ef89f35c0bf2c1b296a7bcca7957e7cea0768630eb2854e1987fcaf4  benchmarks/results/semantic-protocol-v2-pilot/comparison.json
+3a6369bbd1ec920d81f7410117022e4fc3e09562c6b36887b6228446a11373b6  benchmarks/results/semantic-protocol-v2-pilot/report.md

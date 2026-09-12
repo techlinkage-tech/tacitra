@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "error[E0425]: cannot find function `step_073` in this scope\n --> program.rs:3:5\n  |\n3 |     step_073(value) + offset\n  |     ^^^^^^^^ not found in this scope\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+  "stdout": ""
+}

@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:7ee057420f688d50a1085f91fcfcc5f69a26a8958a52348038e6f3c65953e5d1",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 12 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_314"
+    }
+  ],
+  "version": 1
+}

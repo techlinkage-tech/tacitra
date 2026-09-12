@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "test",
+  "stderr": "Traceback (most recent call last):\n  File \"program.py\", line 10, in <module>\n    print(main())\n          ^^^^^^\n  File \"program.py\", line 6, in main\n    return solve_081(111)\n           ^^^^^^^^^^^^^^\n  File \"program.py\", line 3, in solve_081\n    return step_081(value) + offset\n           ^^^^^^^^\nNameError: name 'step_081' is not defined\n",
+  "stdout": ""
+}

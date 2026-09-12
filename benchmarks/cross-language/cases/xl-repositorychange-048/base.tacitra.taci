@@ -1,0 +1,11 @@
+fn step_048(value: Int) -> Int {
+  value * 5
+}
+
+fn solve_048(value: Int) -> Int {
+  step_048(value) + 5
+}
+
+fn main() -> Int {
+  solve_048(68)
+}

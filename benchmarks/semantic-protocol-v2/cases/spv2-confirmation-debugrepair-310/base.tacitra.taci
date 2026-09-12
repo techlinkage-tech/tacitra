@@ -1,0 +1,24 @@
+fn unrelated_alpha(value: Int) -> Int {
+  value * 2
+}
+
+fn unrelated_beta(value: Int) -> Int {
+  value - 3
+}
+
+fn unrelated_gamma(enabled: Bool) -> Int {
+  if enabled { 7 } else { 9 }
+}
+
+record PacketSp310 {
+  value: Int,
+  enabled: Bool,
+}
+
+fn solve_sp_310(packet: PacketSp310) -> Int {
+  if packet.enabled { packet.value + 3 } else { packet.value }
+}
+
+fn main() -> Int {
+  solve_sp_310(new PacketSp310 { value: 340, enabled: true })
+}

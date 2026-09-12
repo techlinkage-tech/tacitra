@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_034(value int64, divisor int64) (int64, bool) {
+-	if divisor <= 1 { return 0, false }
++	if divisor == 0 { return 0, false }
+ 	return value / divisor, true
+ }
+ 

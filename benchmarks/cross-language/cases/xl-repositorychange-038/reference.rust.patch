@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn solve_038(label: &str, value: i64) -> i64 {
+-    if label == "ready_38" { value + 5 } else { 0 }
++    if label == "active_38" { value + 11 } else { 0 }
+ }
+ 
+ fn main() {

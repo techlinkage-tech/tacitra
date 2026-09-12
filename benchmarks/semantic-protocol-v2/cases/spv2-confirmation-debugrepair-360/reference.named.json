@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:4a561a0cd1b9c7b80e9169acac190fdcc6c80ec9cb1d1deeb16a1cb7539b7d6d",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ value + 9 }",
+      "target": "sym:fn:solve_sp_360"
+    }
+  ],
+  "version": 1
+}

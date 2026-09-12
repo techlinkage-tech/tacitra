@@ -1,0 +1,14 @@
+--- program.py
++++ program.py
+@@ -1,9 +1,9 @@
+ def step_036(value: int) -> int:
+-    return value * 3
++    return value * 9
+ 
+ 
+ def solve_036(value: int) -> int:
+-    return step_036(value) + 3
++    return step_036(value) + 9
+ 
+ def main() -> int:
+     return solve_036(56)

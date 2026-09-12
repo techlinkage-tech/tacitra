@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn solve_074(value: Int) -> Int {
+-  let offset = "4";
++  let offset = 4;
+   value + offset
+ }
+ 

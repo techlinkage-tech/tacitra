@@ -1,0 +1,13 @@
+{
+  "cost_formula": "(input_tokens * account_input_rate + output_tokens * account_output_rate) / 1000000",
+  "estimated_cost_usd": null,
+  "estimated_phase_2_provider_tokens": 117754,
+  "estimated_phase_3_provider_tokens": 117754,
+  "estimated_total_provider_tokens": 235508,
+  "evidence": "estimated-from-semantic-protocol-v1-tacitra-ordinary-and-semantic-observed-tokens-per-trial",
+  "maximum_api_calls": 720,
+  "maximum_calls_at_historical_mean_attempt_tokens": 637465,
+  "price_note": "Current exact pinned-model price could not be verified; token budget is the execution boundary.",
+  "schema_version": 1,
+  "token_budget": 750000
+}

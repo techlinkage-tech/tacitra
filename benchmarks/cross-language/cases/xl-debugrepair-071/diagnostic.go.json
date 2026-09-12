@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "# command-line-arguments\n./program.go:11:29: too many arguments in call to solve_071\n\thave (number, number)\n\twant (int64)\n",
+  "stdout": ""
+}

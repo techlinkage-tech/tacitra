@@ -1,0 +1,14 @@
+--- program.py
++++ program.py
+@@ -1,9 +1,9 @@
+ def step_042(value: int) -> int:
+-    return value * 4
++    return value * 8
+ 
+ 
+ def solve_042(value: int) -> int:
+-    return step_042(value) + 4
++    return step_042(value) + 8
+ 
+ def main() -> int:
+     return solve_042(62)

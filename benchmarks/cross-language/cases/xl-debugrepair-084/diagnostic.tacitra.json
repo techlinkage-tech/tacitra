@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "program.taci:2:16: error[N0002]: undefined name `missing`\n  |\n 2 |   let offset = missing;\n  |                ^^^^^^^\n",
+  "stdout": ""
+}

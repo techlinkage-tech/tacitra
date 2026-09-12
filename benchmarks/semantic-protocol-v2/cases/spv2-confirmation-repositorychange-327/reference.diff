@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -11,7 +11,7 @@
+ }
+ 
+ fn solve_sp_327(value: Int, divisor: Int) -> Result[Int, String] {
+-  if divisor <= 1 { Err("zero") } else { Ok(value / divisor) }
++  if divisor == 0 { Err("zero") } else { Ok(value / divisor) }
+ }
+ 
+ fn consume(result: Result[Int, String]) -> Int {

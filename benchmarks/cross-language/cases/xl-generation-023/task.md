@@ -1,0 +1,1 @@
+Define `solve_023(left, right, enabled)` using both a boolean conjunction and an integer comparison. Return left plus right only when enabled and left is positive; otherwise return zero. Print `32` for `28`, `4`, and true.

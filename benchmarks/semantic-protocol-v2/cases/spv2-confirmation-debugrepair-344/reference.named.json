@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:1a5da321eb1a46999d94c3c9f8e77bc63db906b07dfc8cc65af67f0d7303c6c5",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ value + 7 }",
+      "target": "sym:fn:solve_sp_344"
+    }
+  ],
+  "version": 1
+}

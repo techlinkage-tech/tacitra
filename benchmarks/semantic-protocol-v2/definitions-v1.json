@@ -1,0 +1,437 @@
+{
+  "cases": [
+    {
+      "category": "repository-change",
+      "expected": 242,
+      "id": "spv2-pilot-repositorychange-201",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 244,
+      "id": "spv2-pilot-debugrepair-202",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 233,
+      "id": "spv2-pilot-repositorychange-203",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 241,
+      "id": "spv2-pilot-debugrepair-204",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 243,
+      "id": "spv2-pilot-repositorychange-205",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 245,
+      "id": "spv2-pilot-debugrepair-206",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 237,
+      "id": "spv2-pilot-repositorychange-207",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 249,
+      "id": "spv2-pilot-debugrepair-208",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 251,
+      "id": "spv2-pilot-repositorychange-209",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 246,
+      "id": "spv2-pilot-debugrepair-210",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 241,
+      "id": "spv2-pilot-repositorychange-211",
+      "phase": "pilot"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 250,
+      "id": "spv2-pilot-debugrepair-212",
+      "phase": "pilot"
+    },
+    {
+      "category": "repository-change",
+      "expected": 337,
+      "id": "spv2-confirmation-repositorychange-301",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 339,
+      "id": "spv2-confirmation-debugrepair-302",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 333,
+      "id": "spv2-confirmation-repositorychange-303",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 343,
+      "id": "spv2-confirmation-debugrepair-304",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 345,
+      "id": "spv2-confirmation-repositorychange-305",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 347,
+      "id": "spv2-confirmation-debugrepair-306",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 337,
+      "id": "spv2-confirmation-repositorychange-307",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 344,
+      "id": "spv2-confirmation-debugrepair-308",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 346,
+      "id": "spv2-confirmation-repositorychange-309",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 348,
+      "id": "spv2-confirmation-debugrepair-310",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 341,
+      "id": "spv2-confirmation-repositorychange-311",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 352,
+      "id": "spv2-confirmation-debugrepair-312",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 354,
+      "id": "spv2-confirmation-repositorychange-313",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 356,
+      "id": "spv2-confirmation-debugrepair-314",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 345,
+      "id": "spv2-confirmation-repositorychange-315",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 353,
+      "id": "spv2-confirmation-debugrepair-316",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 355,
+      "id": "spv2-confirmation-repositorychange-317",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 357,
+      "id": "spv2-confirmation-debugrepair-318",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 349,
+      "id": "spv2-confirmation-repositorychange-319",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 361,
+      "id": "spv2-confirmation-debugrepair-320",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 363,
+      "id": "spv2-confirmation-repositorychange-321",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 358,
+      "id": "spv2-confirmation-debugrepair-322",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 353,
+      "id": "spv2-confirmation-repositorychange-323",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 362,
+      "id": "spv2-confirmation-debugrepair-324",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 364,
+      "id": "spv2-confirmation-repositorychange-325",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 366,
+      "id": "spv2-confirmation-debugrepair-326",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 357,
+      "id": "spv2-confirmation-repositorychange-327",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 370,
+      "id": "spv2-confirmation-debugrepair-328",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 365,
+      "id": "spv2-confirmation-repositorychange-329",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 367,
+      "id": "spv2-confirmation-debugrepair-330",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 361,
+      "id": "spv2-confirmation-repositorychange-331",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 371,
+      "id": "spv2-confirmation-debugrepair-332",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 373,
+      "id": "spv2-confirmation-repositorychange-333",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 375,
+      "id": "spv2-confirmation-debugrepair-334",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 365,
+      "id": "spv2-confirmation-repositorychange-335",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 372,
+      "id": "spv2-confirmation-debugrepair-336",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 374,
+      "id": "spv2-confirmation-repositorychange-337",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 376,
+      "id": "spv2-confirmation-debugrepair-338",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 369,
+      "id": "spv2-confirmation-repositorychange-339",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 380,
+      "id": "spv2-confirmation-debugrepair-340",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 382,
+      "id": "spv2-confirmation-repositorychange-341",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 384,
+      "id": "spv2-confirmation-debugrepair-342",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 373,
+      "id": "spv2-confirmation-repositorychange-343",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 381,
+      "id": "spv2-confirmation-debugrepair-344",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 383,
+      "id": "spv2-confirmation-repositorychange-345",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 385,
+      "id": "spv2-confirmation-debugrepair-346",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 377,
+      "id": "spv2-confirmation-repositorychange-347",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 389,
+      "id": "spv2-confirmation-debugrepair-348",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 391,
+      "id": "spv2-confirmation-repositorychange-349",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 386,
+      "id": "spv2-confirmation-debugrepair-350",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 381,
+      "id": "spv2-confirmation-repositorychange-351",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 390,
+      "id": "spv2-confirmation-debugrepair-352",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 392,
+      "id": "spv2-confirmation-repositorychange-353",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 394,
+      "id": "spv2-confirmation-debugrepair-354",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 385,
+      "id": "spv2-confirmation-repositorychange-355",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 398,
+      "id": "spv2-confirmation-debugrepair-356",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 393,
+      "id": "spv2-confirmation-repositorychange-357",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 395,
+      "id": "spv2-confirmation-debugrepair-358",
+      "phase": "confirmation"
+    },
+    {
+      "category": "repository-change",
+      "expected": 389,
+      "id": "spv2-confirmation-repositorychange-359",
+      "phase": "confirmation"
+    },
+    {
+      "category": "debug-repair",
+      "expected": 399,
+      "id": "spv2-confirmation-debugrepair-360",
+      "phase": "confirmation"
+    }
+  ],
+  "schema_version": 1
+}

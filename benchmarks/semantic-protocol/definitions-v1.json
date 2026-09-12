@@ -1,0 +1,468 @@
+{
+  "cases": [
+    {
+      "category": "repository-change",
+      "expected": 38,
+      "id": "sp-dev-repositorychange-001",
+      "phase": "dev",
+      "task": "Change `solve_sp_01` so the boundary is inclusive and the accepted branch adds 7. The exact-boundary caller must print 38."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 40,
+      "id": "sp-dev-debugrepair-002",
+      "phase": "dev",
+      "task": "Change record-based `solve_sp_02` so an enabled packet adds 8 instead of 3. It must print 40."
+    },
+    {
+      "category": "repository-change",
+      "expected": 33,
+      "id": "sp-dev-repositorychange-003",
+      "phase": "dev",
+      "task": "Change `solve_sp_03` so zero is the only error and value 33 with divisor one returns 33."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 44,
+      "id": "sp-dev-debugrepair-004",
+      "phase": "dev",
+      "task": "Change `solve_sp_04` to add 10 instead of 1. Keep the caller unchanged; it must print 44."
+    },
+    {
+      "category": "repository-change",
+      "expected": 46,
+      "id": "sp-dev-repositorychange-005",
+      "phase": "dev",
+      "task": "Change `solve_sp_05` so the boundary is inclusive and the accepted branch adds 11. The exact-boundary caller must print 46."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 48,
+      "id": "sp-dev-debugrepair-006",
+      "phase": "dev",
+      "task": "Change record-based `solve_sp_06` so an enabled packet adds 12 instead of 3. It must print 48."
+    },
+    {
+      "category": "repository-change",
+      "expected": 140,
+      "id": "sp-heldout-repositorychange-101",
+      "phase": "heldout",
+      "task": "Change `solve_sp_101` so the boundary is inclusive and the accepted branch adds 9. The exact-boundary caller must print 140."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 142,
+      "id": "sp-heldout-debugrepair-102",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_102` so an enabled packet adds 10 instead of 3. It must print 142."
+    },
+    {
+      "category": "repository-change",
+      "expected": 133,
+      "id": "sp-heldout-repositorychange-103",
+      "phase": "heldout",
+      "task": "Change `solve_sp_103` so zero is the only error and value 133 with divisor one returns 133."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 146,
+      "id": "sp-heldout-debugrepair-104",
+      "phase": "heldout",
+      "task": "Change `solve_sp_104` to add 12 instead of 1. Keep the caller unchanged; it must print 146."
+    },
+    {
+      "category": "repository-change",
+      "expected": 141,
+      "id": "sp-heldout-repositorychange-105",
+      "phase": "heldout",
+      "task": "Change `solve_sp_105` so the boundary is inclusive and the accepted branch adds 6. The exact-boundary caller must print 141."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 143,
+      "id": "sp-heldout-debugrepair-106",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_106` so an enabled packet adds 7 instead of 3. It must print 143."
+    },
+    {
+      "category": "repository-change",
+      "expected": 137,
+      "id": "sp-heldout-repositorychange-107",
+      "phase": "heldout",
+      "task": "Change `solve_sp_107` so zero is the only error and value 137 with divisor one returns 137."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 147,
+      "id": "sp-heldout-debugrepair-108",
+      "phase": "heldout",
+      "task": "Change `solve_sp_108` to add 9 instead of 1. Keep the caller unchanged; it must print 147."
+    },
+    {
+      "category": "repository-change",
+      "expected": 149,
+      "id": "sp-heldout-repositorychange-109",
+      "phase": "heldout",
+      "task": "Change `solve_sp_109` so the boundary is inclusive and the accepted branch adds 10. The exact-boundary caller must print 149."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 151,
+      "id": "sp-heldout-debugrepair-110",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_110` so an enabled packet adds 11 instead of 3. It must print 151."
+    },
+    {
+      "category": "repository-change",
+      "expected": 141,
+      "id": "sp-heldout-repositorychange-111",
+      "phase": "heldout",
+      "task": "Change `solve_sp_111` so zero is the only error and value 141 with divisor one returns 141."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 148,
+      "id": "sp-heldout-debugrepair-112",
+      "phase": "heldout",
+      "task": "Change `solve_sp_112` to add 6 instead of 1. Keep the caller unchanged; it must print 148."
+    },
+    {
+      "category": "repository-change",
+      "expected": 150,
+      "id": "sp-heldout-repositorychange-113",
+      "phase": "heldout",
+      "task": "Change `solve_sp_113` so the boundary is inclusive and the accepted branch adds 7. The exact-boundary caller must print 150."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 152,
+      "id": "sp-heldout-debugrepair-114",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_114` so an enabled packet adds 8 instead of 3. It must print 152."
+    },
+    {
+      "category": "repository-change",
+      "expected": 145,
+      "id": "sp-heldout-repositorychange-115",
+      "phase": "heldout",
+      "task": "Change `solve_sp_115` so zero is the only error and value 145 with divisor one returns 145."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 156,
+      "id": "sp-heldout-debugrepair-116",
+      "phase": "heldout",
+      "task": "Change `solve_sp_116` to add 10 instead of 1. Keep the caller unchanged; it must print 156."
+    },
+    {
+      "category": "repository-change",
+      "expected": 158,
+      "id": "sp-heldout-repositorychange-117",
+      "phase": "heldout",
+      "task": "Change `solve_sp_117` so the boundary is inclusive and the accepted branch adds 11. The exact-boundary caller must print 158."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 160,
+      "id": "sp-heldout-debugrepair-118",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_118` so an enabled packet adds 12 instead of 3. It must print 160."
+    },
+    {
+      "category": "repository-change",
+      "expected": 149,
+      "id": "sp-heldout-repositorychange-119",
+      "phase": "heldout",
+      "task": "Change `solve_sp_119` so zero is the only error and value 149 with divisor one returns 149."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 157,
+      "id": "sp-heldout-debugrepair-120",
+      "phase": "heldout",
+      "task": "Change `solve_sp_120` to add 7 instead of 1. Keep the caller unchanged; it must print 157."
+    },
+    {
+      "category": "repository-change",
+      "expected": 159,
+      "id": "sp-heldout-repositorychange-121",
+      "phase": "heldout",
+      "task": "Change `solve_sp_121` so the boundary is inclusive and the accepted branch adds 8. The exact-boundary caller must print 159."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 161,
+      "id": "sp-heldout-debugrepair-122",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_122` so an enabled packet adds 9 instead of 3. It must print 161."
+    },
+    {
+      "category": "repository-change",
+      "expected": 153,
+      "id": "sp-heldout-repositorychange-123",
+      "phase": "heldout",
+      "task": "Change `solve_sp_123` so zero is the only error and value 153 with divisor one returns 153."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 165,
+      "id": "sp-heldout-debugrepair-124",
+      "phase": "heldout",
+      "task": "Change `solve_sp_124` to add 11 instead of 1. Keep the caller unchanged; it must print 165."
+    },
+    {
+      "category": "repository-change",
+      "expected": 167,
+      "id": "sp-heldout-repositorychange-125",
+      "phase": "heldout",
+      "task": "Change `solve_sp_125` so the boundary is inclusive and the accepted branch adds 12. The exact-boundary caller must print 167."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 162,
+      "id": "sp-heldout-debugrepair-126",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_126` so an enabled packet adds 6 instead of 3. It must print 162."
+    },
+    {
+      "category": "repository-change",
+      "expected": 157,
+      "id": "sp-heldout-repositorychange-127",
+      "phase": "heldout",
+      "task": "Change `solve_sp_127` so zero is the only error and value 157 with divisor one returns 157."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 166,
+      "id": "sp-heldout-debugrepair-128",
+      "phase": "heldout",
+      "task": "Change `solve_sp_128` to add 8 instead of 1. Keep the caller unchanged; it must print 166."
+    },
+    {
+      "category": "repository-change",
+      "expected": 168,
+      "id": "sp-heldout-repositorychange-129",
+      "phase": "heldout",
+      "task": "Change `solve_sp_129` so the boundary is inclusive and the accepted branch adds 9. The exact-boundary caller must print 168."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 170,
+      "id": "sp-heldout-debugrepair-130",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_130` so an enabled packet adds 10 instead of 3. It must print 170."
+    },
+    {
+      "category": "repository-change",
+      "expected": 161,
+      "id": "sp-heldout-repositorychange-131",
+      "phase": "heldout",
+      "task": "Change `solve_sp_131` so zero is the only error and value 161 with divisor one returns 161."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 174,
+      "id": "sp-heldout-debugrepair-132",
+      "phase": "heldout",
+      "task": "Change `solve_sp_132` to add 12 instead of 1. Keep the caller unchanged; it must print 174."
+    },
+    {
+      "category": "repository-change",
+      "expected": 169,
+      "id": "sp-heldout-repositorychange-133",
+      "phase": "heldout",
+      "task": "Change `solve_sp_133` so the boundary is inclusive and the accepted branch adds 6. The exact-boundary caller must print 169."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 171,
+      "id": "sp-heldout-debugrepair-134",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_134` so an enabled packet adds 7 instead of 3. It must print 171."
+    },
+    {
+      "category": "repository-change",
+      "expected": 165,
+      "id": "sp-heldout-repositorychange-135",
+      "phase": "heldout",
+      "task": "Change `solve_sp_135` so zero is the only error and value 165 with divisor one returns 165."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 175,
+      "id": "sp-heldout-debugrepair-136",
+      "phase": "heldout",
+      "task": "Change `solve_sp_136` to add 9 instead of 1. Keep the caller unchanged; it must print 175."
+    },
+    {
+      "category": "repository-change",
+      "expected": 177,
+      "id": "sp-heldout-repositorychange-137",
+      "phase": "heldout",
+      "task": "Change `solve_sp_137` so the boundary is inclusive and the accepted branch adds 10. The exact-boundary caller must print 177."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 179,
+      "id": "sp-heldout-debugrepair-138",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_138` so an enabled packet adds 11 instead of 3. It must print 179."
+    },
+    {
+      "category": "repository-change",
+      "expected": 169,
+      "id": "sp-heldout-repositorychange-139",
+      "phase": "heldout",
+      "task": "Change `solve_sp_139` so zero is the only error and value 169 with divisor one returns 169."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 176,
+      "id": "sp-heldout-debugrepair-140",
+      "phase": "heldout",
+      "task": "Change `solve_sp_140` to add 6 instead of 1. Keep the caller unchanged; it must print 176."
+    },
+    {
+      "category": "repository-change",
+      "expected": 178,
+      "id": "sp-heldout-repositorychange-141",
+      "phase": "heldout",
+      "task": "Change `solve_sp_141` so the boundary is inclusive and the accepted branch adds 7. The exact-boundary caller must print 178."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 180,
+      "id": "sp-heldout-debugrepair-142",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_142` so an enabled packet adds 8 instead of 3. It must print 180."
+    },
+    {
+      "category": "repository-change",
+      "expected": 173,
+      "id": "sp-heldout-repositorychange-143",
+      "phase": "heldout",
+      "task": "Change `solve_sp_143` so zero is the only error and value 173 with divisor one returns 173."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 184,
+      "id": "sp-heldout-debugrepair-144",
+      "phase": "heldout",
+      "task": "Change `solve_sp_144` to add 10 instead of 1. Keep the caller unchanged; it must print 184."
+    },
+    {
+      "category": "repository-change",
+      "expected": 186,
+      "id": "sp-heldout-repositorychange-145",
+      "phase": "heldout",
+      "task": "Change `solve_sp_145` so the boundary is inclusive and the accepted branch adds 11. The exact-boundary caller must print 186."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 188,
+      "id": "sp-heldout-debugrepair-146",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_146` so an enabled packet adds 12 instead of 3. It must print 188."
+    },
+    {
+      "category": "repository-change",
+      "expected": 177,
+      "id": "sp-heldout-repositorychange-147",
+      "phase": "heldout",
+      "task": "Change `solve_sp_147` so zero is the only error and value 177 with divisor one returns 177."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 185,
+      "id": "sp-heldout-debugrepair-148",
+      "phase": "heldout",
+      "task": "Change `solve_sp_148` to add 7 instead of 1. Keep the caller unchanged; it must print 185."
+    },
+    {
+      "category": "repository-change",
+      "expected": 187,
+      "id": "sp-heldout-repositorychange-149",
+      "phase": "heldout",
+      "task": "Change `solve_sp_149` so the boundary is inclusive and the accepted branch adds 8. The exact-boundary caller must print 187."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 189,
+      "id": "sp-heldout-debugrepair-150",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_150` so an enabled packet adds 9 instead of 3. It must print 189."
+    },
+    {
+      "category": "repository-change",
+      "expected": 181,
+      "id": "sp-heldout-repositorychange-151",
+      "phase": "heldout",
+      "task": "Change `solve_sp_151` so zero is the only error and value 181 with divisor one returns 181."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 193,
+      "id": "sp-heldout-debugrepair-152",
+      "phase": "heldout",
+      "task": "Change `solve_sp_152` to add 11 instead of 1. Keep the caller unchanged; it must print 193."
+    },
+    {
+      "category": "repository-change",
+      "expected": 195,
+      "id": "sp-heldout-repositorychange-153",
+      "phase": "heldout",
+      "task": "Change `solve_sp_153` so the boundary is inclusive and the accepted branch adds 12. The exact-boundary caller must print 195."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 190,
+      "id": "sp-heldout-debugrepair-154",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_154` so an enabled packet adds 6 instead of 3. It must print 190."
+    },
+    {
+      "category": "repository-change",
+      "expected": 185,
+      "id": "sp-heldout-repositorychange-155",
+      "phase": "heldout",
+      "task": "Change `solve_sp_155` so zero is the only error and value 185 with divisor one returns 185."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 194,
+      "id": "sp-heldout-debugrepair-156",
+      "phase": "heldout",
+      "task": "Change `solve_sp_156` to add 8 instead of 1. Keep the caller unchanged; it must print 194."
+    },
+    {
+      "category": "repository-change",
+      "expected": 196,
+      "id": "sp-heldout-repositorychange-157",
+      "phase": "heldout",
+      "task": "Change `solve_sp_157` so the boundary is inclusive and the accepted branch adds 9. The exact-boundary caller must print 196."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 198,
+      "id": "sp-heldout-debugrepair-158",
+      "phase": "heldout",
+      "task": "Change record-based `solve_sp_158` so an enabled packet adds 10 instead of 3. It must print 198."
+    },
+    {
+      "category": "repository-change",
+      "expected": 189,
+      "id": "sp-heldout-repositorychange-159",
+      "phase": "heldout",
+      "task": "Change `solve_sp_159` so zero is the only error and value 189 with divisor one returns 189."
+    },
+    {
+      "category": "debug-repair",
+      "expected": 202,
+      "id": "sp-heldout-debugrepair-160",
+      "phase": "heldout",
+      "task": "Change `solve_sp_160` to add 12 instead of 1. Keep the caller unchanged; it must print 202."
+    }
+  ],
+  "schema_version": 1,
+  "suite": "semantic-protocol-v1"
+}

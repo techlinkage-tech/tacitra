@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/benchmarks/cross-language-config-v1.schema.json",
+  "title": "Tacitra cross-language-v1 model configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "provider", "model", "settings", "request_timeout_seconds", "max_output_characters", "schedule_seed"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "provider": {"const": "openai-responses"},
+    "model": {"const": "gpt-5.6-luna"},
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_output_tokens", "reasoning"],
+      "properties": {
+        "max_output_tokens": {"const": 2048},
+        "reasoning": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["effort"],
+          "properties": {"effort": {"const": "low"}}
+        }
+      }
+    },
+    "request_timeout_seconds": {"const": 120},
+    "max_output_characters": {"const": 40000},
+    "schedule_seed": {"const": 20260912}
+  }
+}

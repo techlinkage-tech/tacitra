@@ -1,0 +1,754 @@
+{
+  "categories": [
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "debug-repair",
+      "compile_at_1_rate": 1.0,
+      "input_tokens": {
+        "mean": 390.5,
+        "median": 390.5,
+        "population_variance": 552.25
+      },
+      "output_tokens": {
+        "mean": 138.76666666666668,
+        "median": 142.0,
+        "population_variance": 131.84555555555556
+      },
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 287.96666666666664,
+        "median": 302.0,
+        "population_variance": 3175.1655555555553
+      },
+      "reasoning_tokens": {
+        "mean": 34.7,
+        "median": 34.5,
+        "population_variance": 17.01
+      },
+      "repair_rounds": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "representation": "python-ordinary",
+      "total_tokens": {
+        "mean": 529.2666666666667,
+        "median": 535.0,
+        "population_variance": 792.1955555555555
+      },
+      "total_tokens_per_accepted_solution": 529.2666666666667,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 2.8531394999999997,
+        "median": 2.7537304999999996,
+        "population_variance": 0.09901717201205001
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "debug-repair",
+      "compile_at_1_rate": 0.9666666666666667,
+      "input_tokens": {
+        "mean": 404.8666666666667,
+        "median": 384.5,
+        "population_variance": 12973.582222222221
+      },
+      "output_tokens": {
+        "mean": 194.16666666666666,
+        "median": 168.0,
+        "population_variance": 12963.872222222222
+      },
+      "pass_at_1_rate": 0.9666666666666667,
+      "patch_size": {
+        "mean": 414.9,
+        "median": 421.0,
+        "population_variance": 3614.69
+      },
+      "reasoning_tokens": {
+        "mean": 47.93333333333333,
+        "median": 28.5,
+        "population_variance": 8740.862222222222
+      },
+      "repair_rounds": {
+        "mean": 0.03333333333333333,
+        "median": 0.0,
+        "population_variance": 0.03222222222222222
+      },
+      "representation": "go-ordinary",
+      "total_tokens": {
+        "mean": 599.0333333333333,
+        "median": 565.0,
+        "population_variance": 51590.898888888885
+      },
+      "total_tokens_per_accepted_solution": 599.0333333333333,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 6.191501733333334,
+        "median": 5.9433715,
+        "population_variance": 1.8661430727517287
+      }
+    },
+    {
+      "acceptance_rate": 0.0,
+      "accepted": 0,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "debug-repair",
+      "compile_at_1_rate": 0.0,
+      "input_tokens": {
+        "mean": 1523.1666666666667,
+        "median": 1557.5,
+        "population_variance": 6273.138888888889
+      },
+      "output_tokens": {
+        "mean": 557.2333333333333,
+        "median": 546.5,
+        "population_variance": 20073.91222222222
+      },
+      "pass_at_1_rate": 0.0,
+      "patch_size": {
+        "mean": 367.4,
+        "median": 412.0,
+        "population_variance": 4293.573333333334
+      },
+      "reasoning_tokens": {
+        "mean": 127.7,
+        "median": 104.0,
+        "population_variance": 13886.676666666666
+      },
+      "repair_rounds": {
+        "mean": 2.0,
+        "median": 2.0,
+        "population_variance": 0
+      },
+      "representation": "rust-ordinary",
+      "total_tokens": {
+        "mean": 2080.4,
+        "median": 2135.0,
+        "population_variance": 39191.04
+      },
+      "total_tokens_per_accepted_solution": null,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 8.272420566666666,
+        "median": 7.904427,
+        "population_variance": 4.085869224998313
+      }
+    },
+    {
+      "acceptance_rate": 0.9666666666666667,
+      "accepted": 29,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "debug-repair",
+      "compile_at_1_rate": 0.9666666666666667,
+      "input_tokens": {
+        "mean": 736.9333333333333,
+        "median": 702.0,
+        "population_variance": 84183.99555555555
+      },
+      "output_tokens": {
+        "mean": 190.0,
+        "median": 170.5,
+        "population_variance": 16677.266666666666
+      },
+      "pass_at_1_rate": 0.9666666666666667,
+      "patch_size": {
+        "mean": 341.3333333333333,
+        "median": 327.5,
+        "population_variance": 3544.6222222222223
+      },
+      "reasoning_tokens": {
+        "mean": 57.46666666666667,
+        "median": 38.0,
+        "population_variance": 9376.448888888888
+      },
+      "repair_rounds": {
+        "mean": 0.06666666666666667,
+        "median": 0.0,
+        "population_variance": 0.1288888888888889
+      },
+      "representation": "tacitra-ordinary",
+      "total_tokens": {
+        "mean": 926.9333333333333,
+        "median": 855.5,
+        "population_variance": 175492.7288888889
+      },
+      "total_tokens_per_accepted_solution": 958.8965517241379,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 3.3297048,
+        "median": 2.870568,
+        "population_variance": 3.360470087178893
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "debug-repair",
+      "compile_at_1_rate": 0.8666666666666667,
+      "input_tokens": {
+        "mean": 634.8333333333334,
+        "median": 505.5,
+        "population_variance": 130651.40555555555
+      },
+      "output_tokens": {
+        "mean": 346.06666666666666,
+        "median": 222.0,
+        "population_variance": 80412.99555555555
+      },
+      "pass_at_1_rate": 0.8666666666666667,
+      "patch_size": {
+        "mean": 175.03333333333333,
+        "median": 175.0,
+        "population_variance": 654.0322222222222
+      },
+      "reasoning_tokens": {
+        "mean": 236.56666666666666,
+        "median": 131.0,
+        "population_variance": 55992.112222222226
+      },
+      "repair_rounds": {
+        "mean": 0.2,
+        "median": 0.0,
+        "population_variance": 0.29333333333333333
+      },
+      "representation": "tacitra-semantic",
+      "total_tokens": {
+        "mean": 980.9,
+        "median": 727.0,
+        "population_variance": 394520.89
+      },
+      "total_tokens_per_accepted_solution": 980.9,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 5.125628533333333,
+        "median": 3.677725,
+        "population_variance": 14.090432932270781
+      }
+    },
+    {
+      "acceptance_rate": 0.9,
+      "accepted": 27,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 0.7666666666666667,
+      "input_tokens": {
+        "mean": 535.2666666666667,
+        "median": 381.0,
+        "population_variance": 116474.46222222222
+      },
+      "output_tokens": {
+        "mean": 292.8333333333333,
+        "median": 179.5,
+        "population_variance": 64802.40555555555
+      },
+      "pass_at_1_rate": 0.7666666666666667,
+      "patch_size": {
+        "mean": 267.7,
+        "median": 282.5,
+        "population_variance": 1906.0766666666666
+      },
+      "reasoning_tokens": {
+        "mean": 149.83333333333334,
+        "median": 73.5,
+        "population_variance": 47019.73888888889
+      },
+      "repair_rounds": {
+        "mean": 0.3333333333333333,
+        "median": 0.0,
+        "population_variance": 0.4222222222222222
+      },
+      "representation": "python-ordinary",
+      "total_tokens": {
+        "mean": 828.1,
+        "median": 549.0,
+        "population_variance": 300786.2233333333
+      },
+      "total_tokens_per_accepted_solution": 920.1111111111111,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 4.6396185,
+        "median": 3.16589,
+        "population_variance": 9.884767906828252
+      }
+    },
+    {
+      "acceptance_rate": 0.9666666666666667,
+      "accepted": 29,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 0.6333333333333333,
+      "input_tokens": {
+        "mean": 654.7666666666667,
+        "median": 373.0,
+        "population_variance": 180132.7788888889
+      },
+      "output_tokens": {
+        "mean": 439.8666666666667,
+        "median": 291.0,
+        "population_variance": 59151.182222222225
+      },
+      "pass_at_1_rate": 0.6333333333333333,
+      "patch_size": {
+        "mean": 504.53333333333336,
+        "median": 514.0,
+        "population_variance": 23726.84888888889
+      },
+      "reasoning_tokens": {
+        "mean": 173.76666666666668,
+        "median": 114.0,
+        "population_variance": 26636.178888888888
+      },
+      "repair_rounds": {
+        "mean": 0.5,
+        "median": 0.0,
+        "population_variance": 0.5166666666666667
+      },
+      "representation": "go-ordinary",
+      "total_tokens": {
+        "mean": 1094.6333333333334,
+        "median": 662.0,
+        "population_variance": 424742.49888888886
+      },
+      "total_tokens_per_accepted_solution": 1132.3793103448277,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 8.607633866666667,
+        "median": 7.230473,
+        "population_variance": 7.97758979755025
+      }
+    },
+    {
+      "acceptance_rate": 0.0,
+      "accepted": 0,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 0.0,
+      "input_tokens": {
+        "mean": 1573.1666666666667,
+        "median": 1568.0,
+        "population_variance": 11844.805555555555
+      },
+      "output_tokens": {
+        "mean": 810.9333333333333,
+        "median": 822.5,
+        "population_variance": 5925.262222222223
+      },
+      "pass_at_1_rate": 0.0,
+      "patch_size": {
+        "mean": 514.2333333333333,
+        "median": 500.5,
+        "population_variance": 10423.17888888889
+      },
+      "reasoning_tokens": {
+        "mean": 219.2,
+        "median": 203.0,
+        "population_variance": 4887.093333333333
+      },
+      "repair_rounds": {
+        "mean": 2.0,
+        "median": 2.0,
+        "population_variance": 0
+      },
+      "representation": "rust-ordinary",
+      "total_tokens": {
+        "mean": 2384.1,
+        "median": 2447.5,
+        "population_variance": 27629.623333333333
+      },
+      "total_tokens_per_accepted_solution": null,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 10.289711166666667,
+        "median": 10.0710105,
+        "population_variance": 1.6340495969098054
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 1.0,
+      "input_tokens": {
+        "mean": 658.5,
+        "median": 658.5,
+        "population_variance": 306.25
+      },
+      "output_tokens": {
+        "mean": 207.96666666666667,
+        "median": 199.5,
+        "population_variance": 2547.3655555555556
+      },
+      "pass_at_1_rate": 1.0,
+      "patch_size": {
+        "mean": 325.43333333333334,
+        "median": 321.0,
+        "population_variance": 6526.3788888888885
+      },
+      "reasoning_tokens": {
+        "mean": 80.76666666666667,
+        "median": 64.0,
+        "population_variance": 2471.5788888888887
+      },
+      "repair_rounds": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "representation": "tacitra-ordinary",
+      "total_tokens": {
+        "mean": 866.4666666666667,
+        "median": 847.5,
+        "population_variance": 2026.4488888888889
+      },
+      "total_tokens_per_accepted_solution": 866.4666666666667,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 3.4065391999999997,
+        "median": 3.2327684999999997,
+        "population_variance": 0.4528478543470266
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 30,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "category": "repository-change",
+      "compile_at_1_rate": 0.8333333333333334,
+      "input_tokens": {
+        "mean": 589.2,
+        "median": 507.0,
+        "population_variance": 47207.82666666667
+      },
+      "output_tokens": {
+        "mean": 561.6333333333333,
+        "median": 561.5,
+        "population_variance": 34624.032222222224
+      },
+      "pass_at_1_rate": 0.8333333333333334,
+      "patch_size": {
+        "mean": 197.06666666666666,
+        "median": 195.0,
+        "population_variance": 130.92888888888888
+      },
+      "reasoning_tokens": {
+        "mean": 446.43333333333334,
+        "median": 455.0,
+        "population_variance": 28637.37888888889
+      },
+      "repair_rounds": {
+        "mean": 0.16666666666666666,
+        "median": 0.0,
+        "population_variance": 0.1388888888888889
+      },
+      "representation": "tacitra-semantic",
+      "total_tokens": {
+        "mean": 1150.8333333333333,
+        "median": 1070.0,
+        "population_variance": 127802.13888888889
+      },
+      "total_tokens_per_accepted_solution": 1150.8333333333333,
+      "trials": 30,
+      "wall_clock_time": {
+        "mean": 7.189941166666667,
+        "median": 6.849582,
+        "population_variance": 5.391244326198671
+      }
+    }
+  ],
+  "evidence": "measured",
+  "representations": [
+    {
+      "acceptance_rate": 0.95,
+      "accepted": 57,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "compile_at_1_rate": 0.8833333333333333,
+      "input_tokens": {
+        "mean": 462.8833333333333,
+        "median": 381.0,
+        "population_variance": 63752.703055555554
+      },
+      "output_tokens": {
+        "mean": 215.8,
+        "median": 149.5,
+        "population_variance": 38401.26
+      },
+      "pass_at_1_rate": 0.8833333333333333,
+      "patch_size": {
+        "mean": 277.8333333333333,
+        "median": 289.0,
+        "population_variance": 2643.3055555555557
+      },
+      "reasoning_tokens": {
+        "mean": 92.26666666666667,
+        "median": 41.5,
+        "population_variance": 26832.295555555556
+      },
+      "repair_rounds": {
+        "mean": 0.16666666666666666,
+        "median": 0.0,
+        "population_variance": 0.2388888888888889
+      },
+      "representation": "python-ordinary",
+      "total_tokens": {
+        "mean": 678.6833333333333,
+        "median": 548.0,
+        "population_variance": 173114.54972222223
+      },
+      "total_tokens_per_accepted_solution": 714.4035087719299,
+      "trials": 60,
+      "wall_clock_time": {
+        "mean": 3.7463789999999997,
+        "median": 2.9444109999999997,
+        "population_variance": 5.7897693437804
+      }
+    },
+    {
+      "acceptance_rate": 0.9833333333333333,
+      "accepted": 59,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "compile_at_1_rate": 0.8,
+      "input_tokens": {
+        "mean": 529.8166666666667,
+        "median": 373.0,
+        "population_variance": 112165.68305555555
+      },
+      "output_tokens": {
+        "mean": 317.01666666666665,
+        "median": 208.0,
+        "population_variance": 51149.649722222224
+      },
+      "pass_at_1_rate": 0.8,
+      "patch_size": {
+        "mean": 459.71666666666664,
+        "median": 451.5,
+        "population_variance": 15679.303055555556
+      },
+      "reasoning_tokens": {
+        "mean": 110.85,
+        "median": 44.0,
+        "population_variance": 21647.0275
+      },
+      "repair_rounds": {
+        "mean": 0.26666666666666666,
+        "median": 0.0,
+        "population_variance": 0.3288888888888889
+      },
+      "representation": "go-ordinary",
+      "total_tokens": {
+        "mean": 846.8333333333334,
+        "median": 593.0,
+        "population_variance": 299571.5388888889
+      },
+      "total_tokens_per_accepted_solution": 861.1864406779661,
+      "trials": 60,
+      "wall_clock_time": {
+        "mean": 7.3995678,
+        "median": 6.240567,
+        "population_variance": 6.38129005658246
+      }
+    },
+    {
+      "acceptance_rate": 0.0,
+      "accepted": 0,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "compile_at_1_rate": 0.0,
+      "input_tokens": {
+        "mean": 1548.1666666666667,
+        "median": 1557.5,
+        "population_variance": 9683.972222222223
+      },
+      "output_tokens": {
+        "mean": 684.0833333333334,
+        "median": 671.5,
+        "population_variance": 29090.50972222222
+      },
+      "pass_at_1_rate": 0.0,
+      "patch_size": {
+        "mean": 440.81666666666666,
+        "median": 418.0,
+        "population_variance": 12748.383055555556
+      },
+      "reasoning_tokens": {
+        "mean": 173.45,
+        "median": 139.5,
+        "population_variance": 11479.9475
+      },
+      "repair_rounds": {
+        "mean": 2.0,
+        "median": 2.0,
+        "population_variance": 0
+      },
+      "representation": "rust-ordinary",
+      "total_tokens": {
+        "mean": 2232.25,
+        "median": 2168.0,
+        "population_variance": 56468.754166666666
+      },
+      "total_tokens_per_accepted_solution": null,
+      "trials": 60,
+      "wall_clock_time": {
+        "mean": 9.281065866666667,
+        "median": 8.9826995,
+        "population_variance": 3.877324752166149
+      }
+    },
+    {
+      "acceptance_rate": 0.9833333333333333,
+      "accepted": 59,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "compile_at_1_rate": 0.9833333333333333,
+      "input_tokens": {
+        "mean": 697.7166666666667,
+        "median": 676.0,
+        "population_variance": 43783.06972222222
+      },
+      "output_tokens": {
+        "mean": 198.98333333333332,
+        "median": 175.5,
+        "population_variance": 9693.01638888889
+      },
+      "pass_at_1_rate": 0.9833333333333333,
+      "patch_size": {
+        "mean": 333.3833333333333,
+        "median": 322.0,
+        "population_variance": 5098.703055555556
+      },
+      "reasoning_tokens": {
+        "mean": 69.11666666666666,
+        "median": 45.5,
+        "population_variance": 6059.7363888888885
+      },
+      "repair_rounds": {
+        "mean": 0.03333333333333333,
+        "median": 0.0,
+        "population_variance": 0.06555555555555556
+      },
+      "representation": "tacitra-ordinary",
+      "total_tokens": {
+        "mean": 896.7,
+        "median": 847.5,
+        "population_variance": 89673.64333333333
+      },
+      "total_tokens_per_accepted_solution": 911.8983050847457,
+      "trials": 60,
+      "wall_clock_time": {
+        "mean": 3.368122,
+        "median": 2.989819,
+        "population_variance": 1.9081348520187997
+      }
+    },
+    {
+      "acceptance_rate": 1.0,
+      "accepted": 60,
+      "cached_input_tokens": {
+        "mean": 0.0,
+        "median": 0.0,
+        "population_variance": 0
+      },
+      "compile_at_1_rate": 0.85,
+      "input_tokens": {
+        "mean": 612.0166666666667,
+        "median": 507.0,
+        "population_variance": 89450.21638888889
+      },
+      "output_tokens": {
+        "mean": 453.85,
+        "median": 428.5,
+        "population_variance": 69135.76083333333
+      },
+      "pass_at_1_rate": 0.85,
+      "patch_size": {
+        "mean": 186.05,
+        "median": 194.0,
+        "population_variance": 513.8475
+      },
+      "reasoning_tokens": {
+        "mean": 341.5,
+        "median": 331.0,
+        "population_variance": 53325.75
+      },
+      "repair_rounds": {
+        "mean": 0.18333333333333332,
+        "median": 0.0,
+        "population_variance": 0.21638888888888888
+      },
+      "representation": "tacitra-semantic",
+      "total_tokens": {
+        "mean": 1065.8666666666666,
+        "median": 943.5,
+        "population_variance": 268380.8488888889
+      },
+      "total_tokens_per_accepted_solution": 1065.8666666666666,
+      "trials": 60,
+      "wall_clock_time": {
+        "mean": 6.15778485,
+        "median": 5.432313000000001,
+        "population_variance": 10.806185291269626
+      }
+    }
+  ],
+  "schema_version": 1,
+  "trials": 300
+}

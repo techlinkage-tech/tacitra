@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -1,6 +1,6 @@
+ fn solve_032(label: String, value: Int) -> Int {
+-  if label == "ready_32" {
+-    value + 4
++  if label == "active_32" {
++    value + 12
+   } else {
+     0
+   }

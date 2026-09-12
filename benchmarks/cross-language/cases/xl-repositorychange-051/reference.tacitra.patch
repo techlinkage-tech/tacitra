@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -5,7 +5,7 @@
+ 
+ fn solve_051(packet: Packet051) -> Int {
+   if packet.enabled {
+-    packet.value - 3
++    packet.value + 10
+   } else {
+     packet.value
+   }

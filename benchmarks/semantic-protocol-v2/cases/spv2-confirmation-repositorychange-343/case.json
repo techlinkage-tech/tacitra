@@ -1,0 +1,202 @@
+{
+  "acceptance": {
+    "expected_integer": 373
+  },
+  "category": "repository-change",
+  "id": "spv2-confirmation-repositorychange-343",
+  "max_repair_rounds": 2,
+  "phase": "confirmation",
+  "prompt": "task.md",
+  "representations": [
+    {
+      "artifact": "reference.diff",
+      "artifact_kind": "unified_diff",
+      "base_hash": "sha256:b3258368a71685bd4eae5868703dca2e5cf299e2d0e5b82c923d5b3f247aa648",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "ordinary",
+      "language": "tacitra",
+      "repository_context": [
+        "base.tacitra.taci"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../../cross-language/tacitra-source-profile-v1.md"
+      ],
+      "surface": "human-source",
+      "target": "sym:fn:solve_sp_343",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.diff",
+      "artifact_kind": "unified_diff",
+      "base_hash": "sha256:b3258368a71685bd4eae5868703dca2e5cf299e2d0e5b82c923d5b3f247aa648",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "capsule-diff",
+      "language": "tacitra",
+      "repository_context": [
+        "task-packet.json"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../task-profile-v1.md",
+        "../../output-diff-v1.md"
+      ],
+      "surface": "task-capsule",
+      "target": "sym:fn:solve_sp_343",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.fragment.taci",
+      "artifact_kind": "source_fragment",
+      "base_hash": "sha256:b3258368a71685bd4eae5868703dca2e5cf299e2d0e5b82c923d5b3f247aa648",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "capsule-fragment",
+      "language": "tacitra",
+      "repository_context": [
+        "task-packet.json"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../task-profile-v1.md",
+        "../../output-fragment-v1.md"
+      ],
+      "surface": "task-capsule",
+      "target": "sym:fn:solve_sp_343",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.named.json",
+      "artifact_kind": "named_edit",
+      "base_hash": "sha256:b3258368a71685bd4eae5868703dca2e5cf299e2d0e5b82c923d5b3f247aa648",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "capsule-named",
+      "language": "tacitra",
+      "repository_context": [
+        "task-packet.json"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../task-profile-v1.md",
+        "../../output-named-v1.md"
+      ],
+      "surface": "task-capsule",
+      "target": "sym:fn:solve_sp_343",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.compact.json",
+      "artifact_kind": "compact_edit",
+      "base_hash": "sha256:b3258368a71685bd4eae5868703dca2e5cf299e2d0e5b82c923d5b3f247aa648",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "compact-control",
+      "language": "tacitra",
+      "repository_context": [
+        "task-packet.json"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../task-profile-v1.md",
+        "../../output-compact-v1.md"
+      ],
+      "surface": "task-capsule",
+      "target": "sym:fn:solve_sp_343",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 1
+}

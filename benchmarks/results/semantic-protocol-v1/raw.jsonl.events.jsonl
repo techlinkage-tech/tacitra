@@ -1,0 +1,601 @@
+{"event": "run_started", "run_id": "semantic-protocol-v1", "schedule_revision": "sha256:bd537d92e4d761d4e89be92a17d75cb9199119ebb49b040aeb0f6a7910db586b", "trials": 300}
+{"case_id": "sp-heldout-debugrepair-138", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 3, "case_id": "sp-heldout-debugrepair-138", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-138", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-138", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-138", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-138", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-138", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-138", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-138", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-138", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-151", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-151", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-151", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-151", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-151", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-151", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-151", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-151", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-151", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-151", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-136", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-136", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-136", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-136", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-136", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-136", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-136", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-136", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-136", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-136", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-157", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-157", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-157", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-157", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-157", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-157", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-157", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-157", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-157", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-157", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-121", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-121", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-121", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-121", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-121", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-121", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-121", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-121", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-121", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-121", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-132", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-132", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-132", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-132", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-132", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-132", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-132", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-132", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-132", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-132", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-107", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-107", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-107", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-107", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-107", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-107", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-107", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-107", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-107", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-107", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-110", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-110", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-110", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-110", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-110", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-110", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-110", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-110", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-110", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-110", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-158", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-158", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-158", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-158", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-158", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-158", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-158", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-158", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-158", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-158", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-123", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-123", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-123", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-123", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-123", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-123", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-123", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-123", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-123", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-123", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-102", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-102", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-102", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-102", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-102", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-102", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-102", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-102", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-102", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-102", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-112", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-112", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-112", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-112", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-112", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-112", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-112", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-112", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-112", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-112", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-127", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-127", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-127", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-127", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-127", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-127", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-127", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-127", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-127", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-127", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-146", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-146", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-146", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-146", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-146", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-146", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-146", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-146", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-146", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-146", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-105", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-105", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-105", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-105", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-105", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-105", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-105", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-105", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-105", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-105", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-111", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-111", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-111", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-111", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-111", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-111", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-111", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-111", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-111", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-111", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-160", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-160", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-160", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-160", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-160", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-160", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-160", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-160", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-160", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-160", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-104", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-104", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-104", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-104", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-104", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-104", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-104", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-104", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-104", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-104", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-142", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-142", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-142", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-142", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-142", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-142", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-142", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-142", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-142", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-142", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-139", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-139", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-139", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-139", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-139", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-139", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-139", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-139", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-139", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-139", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-140", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-140", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-140", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-140", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-140", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-140", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-140", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-140", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-140", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-140", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-101", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-101", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-101", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-101", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-101", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-101", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-101", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-101", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-101", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-101", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-149", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-149", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-149", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-149", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-149", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-149", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-149", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-149", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-149", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-149", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-159", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-159", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-159", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-159", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-159", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-159", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-159", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-159", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-159", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-159", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-125", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-125", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-125", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-125", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-125", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-125", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-125", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-125", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-125", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-125", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-124", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-124", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-124", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-124", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-124", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-124", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-124", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-124", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-124", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-124", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-113", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-113", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-113", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-113", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-113", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-113", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-113", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-113", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-113", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 3, "case_id": "sp-heldout-repositorychange-113", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-135", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-135", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-135", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-135", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-135", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-135", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-135", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-135", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-135", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-135", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-106", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-106", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-106", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-106", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-106", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-106", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-106", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-106", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-106", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-106", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-137", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-137", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-137", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-137", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-137", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-137", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-137", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-137", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-137", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-137", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-131", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-131", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-131", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-131", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-131", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-131", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-131", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 3, "case_id": "sp-heldout-repositorychange-131", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-131", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-131", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-134", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-debugrepair-134", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-134", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-134", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-134", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-134", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-134", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-134", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-134", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-134", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-116", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-116", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-116", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-116", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-116", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-116", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-116", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-116", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-116", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-116", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-156", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-156", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-156", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-156", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-156", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-156", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-156", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-156", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-156", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-156", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-115", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-115", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-115", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-115", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-115", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-115", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-115", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-115", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-115", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-115", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-129", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-129", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-129", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-129", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-129", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-129", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-129", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-129", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-129", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-129", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-120", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-120", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-120", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-120", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-120", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-120", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-120", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-120", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-120", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-120", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-117", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-117", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-117", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-117", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-117", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-117", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-117", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-117", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-117", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-117", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-103", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-103", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-103", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-103", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-103", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-103", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-103", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-103", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-103", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-103", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-133", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-133", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-133", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-133", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-133", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-133", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-133", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-133", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-133", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-133", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-122", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-debugrepair-122", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-122", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-122", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-122", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-122", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-122", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-122", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-122", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-122", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-118", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-118", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-118", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-118", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-118", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-118", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-118", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-118", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-118", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-118", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-109", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-109", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-109", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-109", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-109", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-109", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-109", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-109", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-109", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-109", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-128", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-128", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-128", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-128", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-128", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-128", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-128", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-128", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-128", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-128", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-152", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-152", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-152", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-152", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-152", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-152", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-152", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-152", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-152", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-152", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-147", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-147", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-147", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 3, "case_id": "sp-heldout-repositorychange-147", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-147", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-147", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-147", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-147", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-147", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-147", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-108", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-108", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-108", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-108", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-108", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-108", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-108", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-108", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-108", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-108", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-144", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-144", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-144", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-144", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-144", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-144", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-144", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-144", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-144", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-144", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-154", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-154", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-154", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-154", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-154", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-154", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-154", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-debugrepair-154", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-154", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-154", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-150", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 3, "case_id": "sp-heldout-debugrepair-150", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-150", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-150", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-150", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-150", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-150", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-150", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-150", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-150", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-148", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-148", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-148", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-148", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-148", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-148", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-148", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-148", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-148", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-148", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-143", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-143", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-143", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-143", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-143", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-143", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-143", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-143", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-143", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-143", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-153", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-153", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-153", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-153", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-153", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-153", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-153", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-153", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-153", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-153", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-145", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-145", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-145", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-145", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-145", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-145", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-145", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-145", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-145", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-145", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-130", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-130", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-130", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-130", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-130", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-130", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-130", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-130", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-130", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-130", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-126", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-126", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-126", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-126", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-126", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-126", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-126", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-126", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-126", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-126", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-141", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-141", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-141", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 2, "case_id": "sp-heldout-repositorychange-141", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-141", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-141", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-141", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-141", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-141", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-141", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-155", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-155", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-155", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-155", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-repositorychange-155", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-155", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-155", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-155", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-155", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-155", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-119", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-repositorychange-119", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-repositorychange-119", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-119", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-repositorychange-119", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-119", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-repositorychange-119", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-119", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-repositorychange-119", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-repositorychange-119", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}
+{"case_id": "sp-heldout-debugrepair-114", "event": "trial_started", "repetition": 1, "representation": "tacitra-semantic"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-114", "event": "trial_completed", "repetition": 1, "representation": "tacitra-semantic"}
+{"case_id": "sp-heldout-debugrepair-114", "event": "trial_started", "repetition": 1, "representation": "python-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-114", "event": "trial_completed", "repetition": 1, "representation": "python-ordinary"}
+{"case_id": "sp-heldout-debugrepair-114", "event": "trial_started", "repetition": 1, "representation": "go-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-114", "event": "trial_completed", "repetition": 1, "representation": "go-ordinary"}
+{"case_id": "sp-heldout-debugrepair-114", "event": "trial_started", "repetition": 1, "representation": "rust-ordinary"}
+{"accepted": false, "attempts": 3, "case_id": "sp-heldout-debugrepair-114", "event": "trial_completed", "repetition": 1, "representation": "rust-ordinary"}
+{"case_id": "sp-heldout-debugrepair-114", "event": "trial_started", "repetition": 1, "representation": "tacitra-ordinary"}
+{"accepted": true, "attempts": 1, "case_id": "sp-heldout-debugrepair-114", "event": "trial_completed", "repetition": 1, "representation": "tacitra-ordinary"}

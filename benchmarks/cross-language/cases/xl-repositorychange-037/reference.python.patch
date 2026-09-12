@@ -1,0 +1,9 @@
+--- program.py
++++ program.py
+@@ -1,5 +1,5 @@
+ def solve_037(value: int, limit: int) -> int:
+-    return value - 4 if value > limit else 0
++    return value + 10 if value >= limit else 0
+ 
+ def main() -> int:
+     return solve_037(57, 57)

@@ -1,0 +1,45 @@
+{
+  "budget": {
+    "cost_formula": "(measured_input_tokens * account_input_rate + measured_output_tokens * account_output_rate) / 1000000",
+    "estimated_cost_usd": null,
+    "estimated_first_attempt_provider_tokens": 208610,
+    "estimated_rust_only_first_attempt_provider_tokens": 36301,
+    "evidence": "estimated-from-semantic-protocol-v1-first-attempt-usage",
+    "maximum_api_calls_full": 900,
+    "maximum_api_calls_rust_only": 180,
+    "price_note": "No public price is available for the exact pinned model; do not invent a dollar estimate."
+  },
+  "cases": {
+    "description": "environment-corrected replication of the already-used frozen cases, not a new held-out confirmation",
+    "independent_cases": 60,
+    "reused_suite": "semantic-protocol-v1"
+  },
+  "design": {
+    "alternative": {
+      "name": "rust-environment-recovery-v1",
+      "purpose": "technical Rust recovery only",
+      "total_trials": 60
+    },
+    "recommended": {
+      "interleaving": "new seed, five-condition case blocks",
+      "name": "semantic-protocol-replication-v1",
+      "purpose": "restore contemporaneous cross-language comparisons",
+      "total_trials": 300
+    }
+  },
+  "model_condition": {
+    "max_output_tokens": 2048,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "low",
+    "substitution_allowed": false
+  },
+  "required_before_freeze": [
+    "assign a new schedule seed",
+    "pin runtime_environment.py, semantic_protocol_recovery.py, semantic_protocol_compare_v2.py, and all inherited inputs",
+    "run API-free preflight and 60/60 Rust fixture prevalidation",
+    "choose a new unused output directory",
+    "freeze hashes and decision rules before provider access"
+  ],
+  "schema_version": 1,
+  "status": "draft-not-authorized-for-model-run"
+}

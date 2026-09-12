@@ -1,0 +1,29 @@
+{
+  "$id": "https://tacitra.dev/schema/named-edit-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "base_hash": {"pattern": "^sha256:[0-9a-f]{64}$", "type": "string"},
+    "capabilities": {"items": {"type": "string"}, "type": "array"},
+    "operations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "operation": {
+            "enum": ["replace_function_body", "replace_expression"]
+          },
+          "replacement": {"type": "string"},
+          "target": {"minLength": 1, "type": "string"}
+        },
+        "required": ["operation", "target", "replacement"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "version": {"const": 1}
+  },
+  "required": ["version", "base_hash", "capabilities", "operations"],
+  "title": "Tacitra named structured edit v1",
+  "type": "object"
+}

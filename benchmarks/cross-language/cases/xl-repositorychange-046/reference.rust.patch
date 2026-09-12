@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -1,5 +1,5 @@
+ fn solve_046(value: i64, divisor: i64) -> Result<i64, &'static str> {
+-    if divisor <= 1 { Err("zero") } else { Ok(value / divisor) }
++    if divisor == 0 { Err("zero") } else { Ok(value / divisor) }
+ }
+ 
+ fn consume(result: Result<i64, &'static str>) -> i64 {

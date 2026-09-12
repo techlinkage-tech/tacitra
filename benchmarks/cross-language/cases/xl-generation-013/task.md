@@ -1,0 +1,1 @@
+Define `solve_013(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `18` for value `144` and divisor `8`.

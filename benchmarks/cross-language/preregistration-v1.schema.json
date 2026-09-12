@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/benchmarks/cross-language-preregistration-v1.schema.json",
+  "title": "Tacitra cross-language-v1 preregistration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "status", "research_question", "design", "fairness", "statistics", "decision_rule", "model_condition", "budget", "pins"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"const": "cross-language-v1"},
+    "status": {"const": "frozen-before-run"},
+    "research_question": {"type": "string"},
+    "design": {"type": "object"},
+    "fairness": {"type": "object"},
+    "statistics": {"type": "object"},
+    "decision_rule": {"type": "object"},
+    "model_condition": {"type": "object"},
+    "budget": {"type": "object"},
+    "pins": {"type": "object"}
+  }
+}

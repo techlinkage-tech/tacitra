@@ -1,0 +1,11 @@
+fn solve_037(value: Int, limit: Int) -> Int {
+  if value > limit {
+    value - 4
+  } else {
+    0
+  }
+}
+
+fn main() -> Int {
+  solve_037(57, 57)
+}

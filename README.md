@@ -17,8 +17,12 @@ rather than making only the final source code shorter.
 - **Reuse without foreign source:** typed manifests summarize Python, Go, and Rust
   APIs and execute them behind a validated, process-isolated JSON-RPC boundary.
 
-The practical benefit is lower model cost and less context-window pressure while
-preserving correctness checks and human-reviewable source diffs.
+The intended benefit is lower model cost and less context-window pressure while
+preserving correctness checks and human-reviewable source diffs. Tacitra source
+alone has not shown that benefit: in `cross-language-v1` it used about 50–60%
+more provider tokens than Python, Go, and Rust. A separate AI semantic surface has
+now reduced tokens relative to ordinary Tacitra editing, but has not been fairly
+shown to outperform those other languages.
 
 ### Measured result
 
@@ -59,6 +63,17 @@ target/debug/tacitra patch.validate examples/sample-project/main.taci \
   examples/sample-project/increment-by-two.patch.json
 ```
 
+Generate a source-free task capsule and preview a compact typed edit:
+
+```sh
+target/debug/tacitra ai.context examples/ai-surface/main.taci increment \
+  --success 'increment adds two'
+target/debug/tacitra ai.edit.validate examples/ai-surface/main.taci \
+  examples/ai-surface/increment-by-two.edit.json
+target/debug/tacitra ai.edit.diff examples/ai-surface/main.taci \
+  examples/ai-surface/increment-by-two.edit.json
+```
+
 Inspect and call the typed Python example without reading its implementation:
 
 ```sh
@@ -86,3 +101,14 @@ python3 scripts/release_check.py
 For scope and evidence boundaries, see [status](docs/status.md),
 [known limitations](docs/known-limitations.md), [security](docs/security.md), and
 the [measurement contract](docs/metrics.md).
+
+Benchmark toolchain failures are diagnosed before provider access by the
+[replication preflight](docs/rust-benchmark-recovery.md); the original failed
+Rust evidence remains preserved rather than rewritten.
+
+The follow-up semantic-protocol-v2 confirmation kept Tacitra syntax unchanged and
+used normal Tacitra function-body fragments. Both conditions accepted 60/60 held-out
+changes; tokens per accepted solution fell from 854.68 to 616.97, a preregistered
+27.81% observed reduction. This confirms the protocol relative to ordinary Tacitra
+for these tasks and this model, not superiority over Python, Go, or Rust; see the
+[v2 confirmation results](docs/semantic-protocol-v2-results.md).

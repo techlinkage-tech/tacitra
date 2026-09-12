@@ -1,0 +1,11 @@
+fn solve_035(value: Int, limit: Int) -> Int {
+  if value < limit {
+    2
+  } else {
+    0
+  }
+}
+
+fn main() -> Int {
+  solve_035(8999999999999999965, 8999999999999999965)
+}

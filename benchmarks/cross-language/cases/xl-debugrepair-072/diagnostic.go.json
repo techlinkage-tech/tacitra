@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "# command-line-arguments\n./program.go:6:12: undefined: missing\n",
+  "stdout": ""
+}

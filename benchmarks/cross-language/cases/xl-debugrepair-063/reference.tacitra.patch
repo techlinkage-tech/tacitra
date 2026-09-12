@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -4,5 +4,5 @@
+ }
+ 
+ fn main() -> Int {
+-  solve_063(93, 5)
++  solve_063(93)
+ }

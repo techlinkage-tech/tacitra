@@ -1,0 +1,9 @@
+--- program.go
++++ program.go
+@@ -8,5 +8,5 @@
+ }
+ 
+ func main() {
+-	fmt.Println(solve_079(109, 3))
++	fmt.Println(solve_079(109))
+ }

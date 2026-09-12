@@ -1,0 +1,105 @@
+{
+  "budgets": {
+    "combined_provider_tokens": 750000,
+    "phase_3_provider_tokens": 542715,
+    "pilot_tokens": 207285
+  },
+  "decision_rule": {
+    "classifications": [
+      "supports_semantic_protocol_v2",
+      "does_not_support_semantic_protocol_v2",
+      "inconclusive",
+      "not_estimable_environment_failure"
+    ],
+    "difference": "capsule-fragment minus ordinary",
+    "supports_semantic_protocol_v2_requires": [
+      "one-sided 95% optimized-loss upper <= 0.05",
+      "paired-bootstrap total-token difference 95% upper < 0",
+      "observed total-token reduction >= 0.05",
+      "optimized acceptance in both categories",
+      "no material environment, provider, validator, or fixture anomaly"
+    ]
+  },
+  "design": {
+    "bootstrap_seed": 20260917,
+    "categories": {
+      "debug-repair": 30,
+      "repository-change": 30
+    },
+    "conditions": [
+      "ordinary",
+      "capsule-fragment"
+    ],
+    "independent_cases": 60,
+    "maximum_api_calls": 360,
+    "maximum_repairs_per_trial": 2,
+    "schedule_seed": 20260916,
+    "stateless": true,
+    "timeout_seconds": 30,
+    "trials": 120
+  },
+  "id": "semantic-protocol-v2-confirmation",
+  "interruptions": {
+    "resume_skips_completed_trial_ids": true,
+    "retain_completed_rows": true,
+    "stop_before_next_call_at_token_limit": true,
+    "stop_on_model_mismatch": true,
+    "stop_on_provider_failure": true
+  },
+  "model_condition": {
+    "model": "gpt-5.6-luna",
+    "provider": "openai-responses",
+    "settings": {
+      "max_output_tokens": 2048,
+      "reasoning": {
+        "effort": "low"
+      },
+      "store": false
+    },
+    "substitution_allowed": false
+  },
+  "pilot_evidence_revision": "sha256:9536929838aef30e98cf241b4609488c220c47465f7fe7578a0acaa18577f6ca",
+  "pilot_preregistration_revision": "sha256:a888e06939a625fcd047fe649fbf7f0a79a4e7df27d3c51329d80b2965c55d85",
+  "pins": {
+    "budget_revision": "sha256:e4798a41d5b59bb75748d5b6fc84cb30b21fe46756e0d33bdec84a47995598bf",
+    "capsule_generation_revision": "sha256:dc4e6caf2f182dc1d763a1d61c587e7a3d5e60a308e06e934e3e2c21cb1fd34b",
+    "case_manifest_revision": "sha256:cb46158f1f02af03079f71fed40d3eea3cc16b50654d772b73f39163d68007fb",
+    "cli_revision": "sha256:19772ae1d5f58c9b7b24118862257291fdf2d1d86b7333008a52724da9a8da83",
+    "comparator_revision": "sha256:57e1b16b79f926ca9f84a97b52265b6c7598a2e8fdde3c1db4cc2df8b66706ac",
+    "confirmation_tests_revision": "sha256:4616490fab39f80f457585c7c397e132ac326002105409fcdb9b9b1602ba1e6e",
+    "fragment_binding_revision": "sha256:72836bc5c9a8eb45dca4a621c0015e43d66ac8fc2a5ffc9cdf4e0a4d50bfdc2b",
+    "fragment_contract_revision": "sha256:cdb3eb5164f3008d6a67415ac122891c82bf1512beead2b73e8a85f0f657a9e0",
+    "pilot_comparison_revision": "sha256:fa41d4b4ef89f35c0bf2c1b296a7bcca7957e7cea0768630eb2854e1987fcaf4",
+    "pilot_evidence_manifest_revision": "sha256:9536929838aef30e98cf241b4609488c220c47465f7fe7578a0acaa18577f6ca",
+    "pilot_harness_revision": "sha256:ed1d199724a03f07db205b4af54985c523f7dac6b0156ab3a54c0fe738127352",
+    "pilot_preregistration_revision": "sha256:a888e06939a625fcd047fe649fbf7f0a79a4e7df27d3c51329d80b2965c55d85",
+    "prompt_revision": "sha256:8ae2c83da444878f4e280cf764b7366e359ec08eabfc8cf34b30717758ea14ba",
+    "provider_adapter_revision": "sha256:934e094e066df3eeb44b7dfa2cecd44b3554fedb4439902de1abdea18c488624",
+    "provider_instructions_revision": "sha256:bbbc614af7a07e2eaf829749f552f3466862eed8960157b2d36219d77f07fbd1",
+    "report_generator_revision": "sha256:f24f9bdc8bd0aa6edb0a0e074cadd160a6e03094a8ad808bc7f088e5b17eb10d",
+    "runner_revision": "sha256:495cc698d5d1896ac22513b495d16ca214df15299fb99495a9246ac7d83fa574",
+    "schedule_revision": "sha256:1a2fc9f8227a0adbec68e4e47a0920319d8332603bce27123b6dee947f739833",
+    "subprocess_runtime_revision": "sha256:0dc6932f6b3568eea6450a36f242cb41ff5b9053b3c0068afca35853999adb25",
+    "task_profile_revision": "sha256:ef07f54601dae25cb3aa1203ade93e3d5d5eca65f54d1684e96dcdca2660f198"
+  },
+  "processing": {
+    "cached_tokens": "recorded subset; never subtracted",
+    "capsule": "task_context_capsule plus frozen task-packet.json",
+    "confidence_interval": "20000-draw paired case bootstrap, two-sided 95%; decision uses upper endpoint",
+    "fragment": "function_body_edit then checked ai.fragment.apply",
+    "ordinary": "GNU patch unified diff then identical Tacitra check/run",
+    "provider_retry": "none; provider failure aborts and is retained as an event",
+    "repair": "ordinary retains its frozen repair context; fragment receives only the frozen minimal repair document and not the initial prompt",
+    "token_formula": "sum provider total_tokens over successful and failed initial/repair attempts divided by accepted trials"
+  },
+  "prompt_roles": {
+    "developer": null,
+    "provider_instructions": "persistent-instructions-v1.md",
+    "system": null,
+    "user_template": "prompt-v1.md for capsule-fragment; frozen model-prompt-v1.md for ordinary"
+  },
+  "schema_version": 1,
+  "selected_by_pilot": "capsule-fragment",
+  "selected_candidate": "capsule-fragment",
+  "status": "frozen-before-run"
+}

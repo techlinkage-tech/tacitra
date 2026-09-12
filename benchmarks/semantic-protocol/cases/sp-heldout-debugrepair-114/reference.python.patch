@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -16,7 +16,7 @@
+         self.enabled = enabled
+ 
+ def solve_sp_114(packet: PacketSp114) -> int:
+-    return packet.value + 3 if packet.enabled else packet.value
++    return packet.value + 8 if packet.enabled else packet.value
+ 
+ 
+ if __name__ == "__main__":

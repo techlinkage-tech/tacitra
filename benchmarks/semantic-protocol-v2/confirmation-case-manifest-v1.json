@@ -1,0 +1,844 @@
+{
+  "cases": [
+    {
+      "case_id": "spv2-confirmation-debugrepair-302",
+      "case_revision": "sha256:2c398556fc63613ebbdfb44f1ead04a026e14621b633da6827de1a7906fac118",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:284bf6e70ef4e8696b2abbc2a511559043d511f809779ef2d96f3c0fa70084ca",
+        "fragment_reference": "sha256:56badd779681ce090d8f739d611ab062deed0ca36e8bec1a16a65e468fe5348f",
+        "initial_source": "sha256:5806293be1c8d9e36295948e59a5fe3156f8b5508b9edb756552d6b5c5d5de35",
+        "ordinary_reference": "sha256:02265b33439788580a5ec1d9d2e514cc73f227a7b0e9a3011d0dab5f05718fe6",
+        "task": "sha256:287d432078c07555138bf1b0a39888c6921491d6b2bd97c425e8930489782932"
+      },
+      "composite_revision": "sha256:c31cb69844c65df580a5cb27416362dede4c724fd47fe867d3978a31101bb16a"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-304",
+      "case_revision": "sha256:ddef22eec444af1ddc1b7d099c16ea5102167bde72e08cca92298dc943f1ae3c",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:25fd152642bcf8a53840f52616b7c40b54849dd9d2ec3b1bc3aa84244ef8a88f",
+        "fragment_reference": "sha256:75b8c8a17e7b6ae76a614f1611e838179db8d033724defd96e405bca3c36aa53",
+        "initial_source": "sha256:a33f46bd86652738aec7a9d793b75f8ed28167f26fa9b1a7df07c12a1f0e16cf",
+        "ordinary_reference": "sha256:7f5d9539d4f83e7825ccac0440ae479f0b47eab43bb9b1a45ab6541febc84b69",
+        "task": "sha256:87b8f71ba8b2523aa1df9bf04e5b05e525130ca3959d261f5015934dfeaaa05c"
+      },
+      "composite_revision": "sha256:85b17153bf03c9fdecf3180cd7acac308dd33d91b5b8c7ebca9a67e0b7e257b8"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-306",
+      "case_revision": "sha256:071e97378cc855be96b341796f1def20d40622b883119623c270b769d3a54583",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:5c9653cacc52a8ab688034ee3c86e5a37464ba28f69e7e7162a395fece145121",
+        "fragment_reference": "sha256:8a708e59b4d038be32b5a55a089685820091d77011ec45d5e355e26d6f058bab",
+        "initial_source": "sha256:b2a4a6f8f418e39cb9068d20447319e4921f36977dad76146dbc2811b7fa49ba",
+        "ordinary_reference": "sha256:6d62dfc28e4b48bd84c591070abfe0e3477ac0f9b556d2ff36980f95aab595c2",
+        "task": "sha256:a3a8bc61735977faf2ae0176273025189e1a258e0a2b9db7b444e3886a9caaf7"
+      },
+      "composite_revision": "sha256:a9014be12ea8e7783db9517141d74287334d0ccf2a221d525a6ca4900c45456b"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-308",
+      "case_revision": "sha256:b4e1f6f319e51babb3b16c05d0aec231e3ac11dd333f3eaf04cc0c3ad779e2a0",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:657ed2fd95749618e875385a8612bbc6f8dddb899264162eb7810c24b244acec",
+        "fragment_reference": "sha256:bac84f046350a83146009ab9f984a56b252f3e959e77587c9e78c3c3461f7230",
+        "initial_source": "sha256:739e7412e4dbe47da06cdba5ac3fda69c5e4abb538769c0cefd5fdc96ae718e6",
+        "ordinary_reference": "sha256:c427664f4f7e265dbb70ef42506be967485d60cfcb27d9282fdca19392fbe075",
+        "task": "sha256:4b45e0efe8e5f48a70796fa9c56679039d2c7f6dcdb935108a2b28a19854954e"
+      },
+      "composite_revision": "sha256:f9d54f23a0914e569789b39e5cf5314b20a3ac013258e42017b33d484351b718"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-310",
+      "case_revision": "sha256:192143a3950c3a3c5b1417c5b6615e0a89b7f4543f8684c1eefa6d35dc35a37d",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:e587730be9d3bd88d0db200b754995e5514b8acd2a8a4c6d3ba929cf8c108966",
+        "fragment_reference": "sha256:4022d2ab6d0b94b00114db7971e9d03cca90c2f2d9997e7032ba3b7b6014aa7a",
+        "initial_source": "sha256:f3976df1d1df91662fa25cf0df5a7a9283f52006b3e964ac45c7648698516ab2",
+        "ordinary_reference": "sha256:9c65de1a414fd9a5f875b0ebbb5fc7d0c5d75431491593850d3ac3dfb4810b65",
+        "task": "sha256:12ed9d43575ca16bca0f2aee0099a70b4f232a93f4be240ea47dc233f5430ee8"
+      },
+      "composite_revision": "sha256:5f1d23f3276a504d3a43f1b3170234684c25f89059f910573b4bba1177f53621"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-312",
+      "case_revision": "sha256:0a0b78d839509dd31c8cd5561deb32d4ff5041fe385b3a37f926e7ee1c5264fc",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:97a6a0f3fa19b85be4c75a298726d91a8c7be45e137ff68dea0cb7f989c8cc87",
+        "fragment_reference": "sha256:533945b6281f7ab6442e91aaada7b35f12a082ccff034b6f756ef78a21346c93",
+        "initial_source": "sha256:d9c28e6f86d82b25f1e141197068aef94140c0aab83769589e1e4540a1631162",
+        "ordinary_reference": "sha256:8b7b7bc07a076edccd1ea12f99277d08fdabc4e7717e74be8a1516a080662aae",
+        "task": "sha256:10f6039cea9f6698d7108b8b0309817faa851f161b546041f308e2ebcab29424"
+      },
+      "composite_revision": "sha256:d702db53b70fc2ec4f9912cb27df50e6c5aa08cd6f879416a514ab6082954eb7"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-314",
+      "case_revision": "sha256:f1ebf1ccf1c779c4c6060441a42a8267be9fbb9baf1051e55c8c5c5826658e35",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:c4580e5383da2583c6801a2192f7c6c2adb0bb619b4e082f6085f14147a3e247",
+        "fragment_reference": "sha256:fa72b04ad2021f6af3323d8f6c7cab5c8aa49bbb7118f5865e26108559b6524a",
+        "initial_source": "sha256:399dc8f817eb13dc5541afece8f5a7b9d54c706148b18c327a2bb6f3b08830c7",
+        "ordinary_reference": "sha256:cd834714a445d68c4526a17fa647017e65a3a5fb9b584990b3919b1796d15530",
+        "task": "sha256:56cd914760fb9e542a0b7cd514b90f1418b2dd657c0dc7ab34244be6038e6d91"
+      },
+      "composite_revision": "sha256:337f625801ff3c16cc45c62fb5bc4eba210b9b24b5278666ca4d914673b154fe"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-316",
+      "case_revision": "sha256:895b892158e9a760c93fd5a4b021120986aec345650f0645aee23e305301f4d2",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:e2eda7dc3151fa1e0de84be8a3eca5a6c7f8fde0f90df3d39cdb5e77467d888a",
+        "fragment_reference": "sha256:10482dc8608d26025297aae6fcbbc0f368ff0119eee367f605182bf42f9a5016",
+        "initial_source": "sha256:c82fc806502fca2e0d5dd5edaaf20ae8bd4be27b24e89ed187da1b903b300229",
+        "ordinary_reference": "sha256:06592675a353fa8f863f24d84e908487f12cfb558e60129b4d9a3c614d935fcf",
+        "task": "sha256:f7d7e685b48a68576c913cfa02cb6ad01bbc519663011c6fe67a562cf0deb12e"
+      },
+      "composite_revision": "sha256:87120fbe712d66596fc6db2ff985bd6ae977f19e209bed20e459cdcf3f1fbafe"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-318",
+      "case_revision": "sha256:42caa5b9eee0b307d1eb4b41a6f3bfafa01a221a07688c7e004c9a3d06ba1c57",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:fa809d18e160cea6cfc92aad7a053f009c9b80787307311b5034b9e6c5d4f77b",
+        "fragment_reference": "sha256:c56021487a4c3f2f39685a73ac23baaf417334effe71560aa89a504fa6e2d28c",
+        "initial_source": "sha256:a2f95080bf20f0244533989872b1c93165c923bb9fba292d68760112e3df322e",
+        "ordinary_reference": "sha256:f4376bbc8f6d120384f4ad00940a7b748522c8f443268ce7c0251668706ec9c4",
+        "task": "sha256:af04d8211c1f0038cb01ccc613f905a9032edaa146d7dabcb2f3e6ebeb629d9c"
+      },
+      "composite_revision": "sha256:d10e9ecf63098bfb2d7cba9c732485e28235d22567da0f8ceb70187bfc023f2f"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-320",
+      "case_revision": "sha256:cd845af2a2f38a3609a809aabde15e9c61e82ab741e69701495e420e40323e8c",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:ea87c265f2dfa799941a5ba102c2a1373d6dfabf1a1b22c66ac9d8f1cc4dce47",
+        "fragment_reference": "sha256:941089fc7bdd105f59fe3432c5e79286c65c9a2ecad55c93b4cda8650fb4f4c6",
+        "initial_source": "sha256:dab8d5ad3b5733aa681776ee651a5b621a69d71f3643bda85a71749816aa3ed8",
+        "ordinary_reference": "sha256:3dc53714ddfe725526cad75b69e981c49dbaec9bac91b7199155b8c7829dd378",
+        "task": "sha256:0e91b390421e953d545fc2f705ff446626099c554531fa4e9d719fbb510d9d79"
+      },
+      "composite_revision": "sha256:16592ac725a33ab6ae305a6d6a656b9d753f8ab98f98a951899ae9677c642cd1"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-322",
+      "case_revision": "sha256:4d17f82fbfeeb62e269e2dc1033d444253dbcfb78ef4cc79d60542baa1dc3c48",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:a521dd5066a2f065c9c0ba0315355afffb3dd2b2148b7f6ca2375103844e101c",
+        "fragment_reference": "sha256:b03c7b07cbcdfcba95d1f8f0df4eef105bb881677a09227e77af4443d3f353be",
+        "initial_source": "sha256:482decb4eff6e2fe5aeba5779d55d78bd41eec4c336e0c511b502a426f5d128a",
+        "ordinary_reference": "sha256:815edd6f7a226a8b4028a3e50a94505d3b5cb50feeeb1a33c09d6c94652940cb",
+        "task": "sha256:9a208acd61a752f0c84fe70abc2ce43158ed9aae62e2a6efe694fd1c7e58eede"
+      },
+      "composite_revision": "sha256:6e607b80ccca615058b099805c55d0d3a4021e5c6dcf81407d06451c7f2b90bc"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-324",
+      "case_revision": "sha256:5dedefebc8a8a1df7528d5d3f85736eabcabda3f1e5fc234abc79c0068597cd7",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:80b69d345ca63870c4396d2c3a9e0536f5d9397d4d4e33c73e758704d409ac32",
+        "fragment_reference": "sha256:ceb506c694dbf49eef9c2d316e745e82ea4898f6233bf99e954236f11052c244",
+        "initial_source": "sha256:df2b9f485aea33ac9c1968b8ce39560f289cf03d2786df484e2fc0225a6049a5",
+        "ordinary_reference": "sha256:04436a8c730d341f1777e1a9481089d9305ad9d3cdf1c5fa65b8c45eef90021f",
+        "task": "sha256:f29f4a0afe569c8afa3852d0876656a5865dc679643d3c08877a329cc6145c25"
+      },
+      "composite_revision": "sha256:70f12dbb36fe00ab9857a32c0aff6c4347ef59f19c7cc3e328fd4dba6899e731"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-326",
+      "case_revision": "sha256:b02786e62152dc9e34b86cb923630fa27fb32796036d75d15fecafa28d78257a",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:74df29c5bdefef14efa86d09aa0f81edf3773d67993f6373b55593b8dd22b6b0",
+        "fragment_reference": "sha256:0373435d77b38dfef0e2d03eb9d63b29ce8250989fec27b0b1735b5d74bd3d08",
+        "initial_source": "sha256:db1530aab5d013bd7aa6f6188689bc7a1b04c12289fc0d715440859de1653d51",
+        "ordinary_reference": "sha256:0299956372c94052e13e04494db2edba29269f301629775624a4b6e943bf81a7",
+        "task": "sha256:573bc586239561efea9f89cf7407949b17d7f08af5adc1640e33ade880ad2d60"
+      },
+      "composite_revision": "sha256:dbf418009e746563f33bff03c32541040171fb6cb80e0af83aa3321331a73ebd"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-328",
+      "case_revision": "sha256:c4e79bf1ed116d41c1ccc7ad6bf269e0c830a5ca85a6773aaefcaa0f4acc9f6c",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:77310e4167b009005ddf322b7d1fe0d0bf774e53fd9166f6008a7f11713a1c3b",
+        "fragment_reference": "sha256:b68dad9d3d7e16639a9fdf6f1a635307ebb3381f26db293fbb113e40bbd102e0",
+        "initial_source": "sha256:3c30ad570f94d5253595e03dc3c5f828198eae861d1c30fb4a4570223bfab9d5",
+        "ordinary_reference": "sha256:ee87b5cb6f7b253701926b8ce40fc83d843379fb92dcf10290334a6ecc32291f",
+        "task": "sha256:8f0a299e2ceaae4d96bf3a15e8e660bbd3ad596f51824e7770fd535c8847ac46"
+      },
+      "composite_revision": "sha256:1f665cd5920551a7acdccac38f491f0d4eb36c31204e2153f4f0e1627352f7de"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-330",
+      "case_revision": "sha256:c43cd3035f5a4d760f17eeebfebea42a8a8b1f8b179d0bdab1c295c4e567dc59",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:88e25220c8f725ca4e10ecfdfd2b1b615fbcad852d95d9a622372563f7579f7f",
+        "fragment_reference": "sha256:56badd779681ce090d8f739d611ab062deed0ca36e8bec1a16a65e468fe5348f",
+        "initial_source": "sha256:f90fa80bb800833af4d1248b46524e41e12317ac77d28010694a80709cf925a8",
+        "ordinary_reference": "sha256:eeb6e21b336f38148358406cd7c0e84c999f83d1b0334e73367916e3db51af2d",
+        "task": "sha256:893dd41f9e18ab7eeaa236a780532a07dc26139c7ca332056dd4a4d1f0a93fbe"
+      },
+      "composite_revision": "sha256:fbe1e8675b19611d3fbf175354d3823fbad2160c555d13db25e2d7c59f18bcfe"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-332",
+      "case_revision": "sha256:ba58f7aab3e34bd4f9ea0f75a15160b96dad68d502f4eb28f92a009f6b198c36",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:e19764c33348b466bf6105e42556c588dbccf26a757abac5e9dc418218b78a81",
+        "fragment_reference": "sha256:75b8c8a17e7b6ae76a614f1611e838179db8d033724defd96e405bca3c36aa53",
+        "initial_source": "sha256:bed1ac39760eee006d86766a63da16875a5209b8abc6d8cf9eca2f30fcad6e3c",
+        "ordinary_reference": "sha256:9154eacb93eb1c85a62ab8443548f671775bbe11ce50cd55f0bed12a8e4abddd",
+        "task": "sha256:83905887fe0d6bb7039ad463083b9acf2b782bae4d5e087ca9f092b0c801df82"
+      },
+      "composite_revision": "sha256:1537d8d33c4471af2ef4ad7d738b20828d9209a5d02adf1881f159750eb56afb"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-334",
+      "case_revision": "sha256:0c40e4420e11dd5dd7784b2ca1e94ef9aeb1c4348531c88821ce6c46dcd895e2",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:96b82e1e093f5b9c98f514107070c84e56768b4e724d7b9602149a2a9270872e",
+        "fragment_reference": "sha256:8a708e59b4d038be32b5a55a089685820091d77011ec45d5e355e26d6f058bab",
+        "initial_source": "sha256:d36121e0574284b7bad71b077643f1d911ddb64ea7d40797882247e3b06c5b1d",
+        "ordinary_reference": "sha256:b4632720c606a0cf449c5ba3278097c9ce607b3e8b527b2da02060d7a4c49fab",
+        "task": "sha256:7a9bced69fe74196b5a4f1a1313d28a06b715831b7e194aea155af4726361e29"
+      },
+      "composite_revision": "sha256:5eaa569d1096bc4722fa79311e90db6a214adf213bff3efbdbd4f9a987f67e0e"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-336",
+      "case_revision": "sha256:1eb76326d83e9fc3d75529d2aeab59e4f9ab14d92c263c9008bcc658164a82a0",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:23312cc1c977861a26de1fcd7d1639ae0e77ba44020047b36f77f14e1d3a124c",
+        "fragment_reference": "sha256:bac84f046350a83146009ab9f984a56b252f3e959e77587c9e78c3c3461f7230",
+        "initial_source": "sha256:c9c789e972a55c7d4459f8166468851be368f22cac8088d9592d1f08b56edd35",
+        "ordinary_reference": "sha256:389268696ebbe4eebfeb6451ae88d96107a54a4f12a98bfecfa169c70b5513c7",
+        "task": "sha256:e7443f3ac1d3f21d6553fac000e21fb49f38a330d091ea7e7e12acfc9484e049"
+      },
+      "composite_revision": "sha256:8d5f1be96f07007e493a4ca8054185a1111b355053e50442b9af471d46f59289"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-338",
+      "case_revision": "sha256:a84c76c17e2cc35ae2d1a3bdacc3b9ed22f80c71545257bf28788b6f663a2469",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:c281185e19f511a48d70ec19afbdb23b7de8bd0d1c5bd0b947a2da96969fbc1d",
+        "fragment_reference": "sha256:4022d2ab6d0b94b00114db7971e9d03cca90c2f2d9997e7032ba3b7b6014aa7a",
+        "initial_source": "sha256:b388cd60f8cf1bf65291ceb04aa717a3fff652a1409aa1105c620c37a2afb0e3",
+        "ordinary_reference": "sha256:72e00edd1cc6d7805e2303bddb4eedb09350ed6d50fcfb56142b605dc0abec12",
+        "task": "sha256:4edf7298a038305b40d55b69491954d8681b67685998e40b9138c6087f244661"
+      },
+      "composite_revision": "sha256:747ee1d630f8a7225224befd23c75cebd6de1c91d14c00ada9d239e37a77dbcb"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-340",
+      "case_revision": "sha256:aa984a50922fcfb0af19f21651cf02af5841317c0e6ee16bf5668d0311003bde",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:ce3a9b291b0ccc4882e891836c622a79ed3115fbadba3650f4ef7349de21e16f",
+        "fragment_reference": "sha256:533945b6281f7ab6442e91aaada7b35f12a082ccff034b6f756ef78a21346c93",
+        "initial_source": "sha256:e0fcc16f985a499124dd2f222b667e9c9e40141023370f2763277b502e483bf3",
+        "ordinary_reference": "sha256:3d8048d3e767ddeca04c7d44dd37e821cf03c7b21e5274768d8de38403895ead",
+        "task": "sha256:8317d89ef0096745f836ede5152012683b327ad2df6cf47f95ed0437733dc4a1"
+      },
+      "composite_revision": "sha256:074b29533b1caac359c5f306547aa7a31ce2cf1424d03a64fe4b0f996a2c1ee3"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-342",
+      "case_revision": "sha256:8f096380288a041de743b15bd1881ac192ec985a0b00b64bcfc3390e78626c2d",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:ca0624d7340b4ed7a2db164d7661e0e222b6321cd0a46eb66628efd4ae86fafe",
+        "fragment_reference": "sha256:fa72b04ad2021f6af3323d8f6c7cab5c8aa49bbb7118f5865e26108559b6524a",
+        "initial_source": "sha256:84b968030d8ce61b104d00e1fe824763096350014728838da7acbd934c846025",
+        "ordinary_reference": "sha256:ab33e8316587fbc172d1cf1eca2432c1f66962c2844c5fafebcec4aac41e4531",
+        "task": "sha256:70209c27fd1a9621c22c1a621aac5c21ec74837100c2dce6bf6e1d685504b384"
+      },
+      "composite_revision": "sha256:d862bd25e4f513e66e275eca5f1dfe1d8e7ff90c3611d23aee42adacf7aa491b"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-344",
+      "case_revision": "sha256:17b65c8d5375e9cfaac26e1a8d9d68bd1e6de23a1d872b8261951008ef66a452",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:7daea1616c40b7fc6a39c2bf1da6c35ea21180c002e913c78132501ae38f41fa",
+        "fragment_reference": "sha256:10482dc8608d26025297aae6fcbbc0f368ff0119eee367f605182bf42f9a5016",
+        "initial_source": "sha256:f38e58baf13081f9aaedc67f9d326ecc20a900783e8727a7f10ae080f3cc4674",
+        "ordinary_reference": "sha256:2ab820183d9036829a78ffd256a7fd61e12f9cab1f6b4cef0e795527353deba9",
+        "task": "sha256:bdf42503d89b2d2c1337ee8d7d105def9780b23d27d7c83d4cbf70964a977dfa"
+      },
+      "composite_revision": "sha256:4295394fb6fe9759c1e4d3af82c3ed0bf1fc4bd95c3c236cb5b9970f53832d43"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-346",
+      "case_revision": "sha256:998e016ca20a988fa83e128a08abcf74eb44bbf839d449a5e7ba0bf86dfc795d",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:cde77877d64255d5777059d47f87cd2705c51f0c6cba56acbf65e26af07809e8",
+        "fragment_reference": "sha256:c56021487a4c3f2f39685a73ac23baaf417334effe71560aa89a504fa6e2d28c",
+        "initial_source": "sha256:5bc5e0429d3b25227ac027f43b17e0d4d17234c5d91816fd0a15e83e2660a2b5",
+        "ordinary_reference": "sha256:54a1df18b9ea67cc2f4d9069c124fcb0351850ef8ff5b7daf9d85ee6f7ef0782",
+        "task": "sha256:fd0b16f810d9b03208b134676a31384a41c8d12fac1cb7e90c7599268d740387"
+      },
+      "composite_revision": "sha256:7fc7e0b3be4e4c028dfd24688d4728df36b2cb6a745d8d7744221f2fbb4a75fd"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-348",
+      "case_revision": "sha256:5526148e79dc1b4ef2f8667306869cc718ab9512e8a810c542b8bc117efcf1a6",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:34ce334fbc55a8759fd7cc7db7f23084d482553e5d9e30bc0e3344a9d238c5b0",
+        "fragment_reference": "sha256:941089fc7bdd105f59fe3432c5e79286c65c9a2ecad55c93b4cda8650fb4f4c6",
+        "initial_source": "sha256:ca35210a6ee452031f62609618a682a5f359388653442f51313d4166cbfdf779",
+        "ordinary_reference": "sha256:e89342b643ff05bcab861d7c2b28c3edd35ea8881ed729d435c15795619d4247",
+        "task": "sha256:bb766c4915dd8b1c1e0ab04b32389a00230de813dd555485d0ecee4d09da7890"
+      },
+      "composite_revision": "sha256:08707667f92d58a56c7af29f3fcc7446ff9d794814820138d6b7d404b564a95a"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-350",
+      "case_revision": "sha256:9995534233e5b5d64776c8081799c6fca6f2b2d08be04aee33bbae4db92ce304",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:0c7d0f49c0fd752f8182351f4833ff44659f7db3942a770c3f082823330e2318",
+        "fragment_reference": "sha256:b03c7b07cbcdfcba95d1f8f0df4eef105bb881677a09227e77af4443d3f353be",
+        "initial_source": "sha256:d0675423269f354847836e84514eb0decc409af5262777834c69986732ba00ea",
+        "ordinary_reference": "sha256:639ab8fab066fdc358da82a07d753d35c073ab36eece73e8ba01a4471a3369ab",
+        "task": "sha256:5645f2b22c1c82eff1c59bf983b45a88d93b302bd665afcda9ed64fe333ef771"
+      },
+      "composite_revision": "sha256:a9c7e6173e0495ca018f687744885b87e8abb17c76689c26f103c4774e18ff5d"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-352",
+      "case_revision": "sha256:3e13c37c3396ccf62c4269b87c83b0ceef049ea50ade459397d3cbfbc6f6d63f",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:09c079888a088b71cb4838f18f7ab7117f3e230ccc7ba195270234342e96f373",
+        "fragment_reference": "sha256:ceb506c694dbf49eef9c2d316e745e82ea4898f6233bf99e954236f11052c244",
+        "initial_source": "sha256:651302911bef4ffe89baf608bd3fba73764bdad87e972b1308659a7eb94a238c",
+        "ordinary_reference": "sha256:f0d712e269979055e8680adeef488fdb899855218603ee4facf84644bc3e43f8",
+        "task": "sha256:9ed6c11880787bb6f0d0d79e05f03b88ac72e29a975dde9ab8ee77271052fa5a"
+      },
+      "composite_revision": "sha256:6c5561931f3b2c981e8fc684eea069d1da27291ee1cf6349b2f6853295e79e5d"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-354",
+      "case_revision": "sha256:b54e63bd7acdd9559fb3b4398bc17593a7ef88023f4a57e47f23a0dd4b4b4082",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:8109f5454a3f3ef23ee9203f5620217a024a7743c9f97fd90a6f0eea4baf6c63",
+        "fragment_reference": "sha256:0373435d77b38dfef0e2d03eb9d63b29ce8250989fec27b0b1735b5d74bd3d08",
+        "initial_source": "sha256:12cec60f791ec2c7e6d17ba385e9c7ef3ad26d4e76f3eb8b85cee27de7b412f3",
+        "ordinary_reference": "sha256:5b3c61874fddcd94bab56498527d3e6606994198ff84448b20bf471f20fb8f76",
+        "task": "sha256:b19038725bbcadf7f6d8849c8521b4586ed93474ee84a671613b19d7a769a586"
+      },
+      "composite_revision": "sha256:023e9fcf50486d7d6802de263fbfa2252d265d5815dd8ba7c07f0adda2f422d8"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-356",
+      "case_revision": "sha256:c8285f58630144e1526ab53bc4d0efd49acfded9bfb8ad90530caed54ddf283b",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:a45eff41d99c753bad9814db3a9bd4a02b82684da15e1b00b6c7966728617c3d",
+        "fragment_reference": "sha256:b68dad9d3d7e16639a9fdf6f1a635307ebb3381f26db293fbb113e40bbd102e0",
+        "initial_source": "sha256:f1ae3613ed31856a2fe1218da06e3d198b4f31c5b8e319ad020902f3f62809b2",
+        "ordinary_reference": "sha256:4b5bcd13db5eb2a89dac68e5772715acbf71939bdd1211e41430cb12e4022047",
+        "task": "sha256:03a3b468f70680215062c27d5adf3244c1d0641b9bc631d9583221fa6d8a0481"
+      },
+      "composite_revision": "sha256:d805ce15672820de280bb6def9e996ca68adeeace96886e7dab82c653d3ae5bd"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-358",
+      "case_revision": "sha256:2a05063e10ad09f2df28db54cfeb89eb6c7eb2f10aa55f9c96109934073e811e",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:4e9db2db5973ff7bee0efe7d21bebcfef2a33ad4aca9758cf1ac439feeef0fda",
+        "fragment_reference": "sha256:56badd779681ce090d8f739d611ab062deed0ca36e8bec1a16a65e468fe5348f",
+        "initial_source": "sha256:b0bbeef1a15a32e31b165eedfb6feb455bad05b0d2ad1e0bbe3822b5626a851f",
+        "ordinary_reference": "sha256:d2bec3987b5194d1f6044040afdd504d9003a6e17821f7a7a70f4ba8f0580434",
+        "task": "sha256:505e1bc5fcebbf8a6c58f8f851a8f981dd2962ded3d7f2fa97a8faa1798876a2"
+      },
+      "composite_revision": "sha256:61d3031ea4b2178e27580b4c7bdef327280b90025cf5251e904891ba4610f1ba"
+    },
+    {
+      "case_id": "spv2-confirmation-debugrepair-360",
+      "case_revision": "sha256:7ae042b3979ca0b935d0ea6ddfb4720fd8205a25418747d87462062b275b77d3",
+      "category": "debug-repair",
+      "components": {
+        "acceptance": "sha256:f5ddbee47505067015fe86b24f5d523de1e0c997f69ceae5bed0888597c60d53",
+        "fragment_reference": "sha256:75b8c8a17e7b6ae76a614f1611e838179db8d033724defd96e405bca3c36aa53",
+        "initial_source": "sha256:c91c1dd7dd388c9bf6e2b43def4b54bbe2da06a120d25a89b634e683f2d4a3a0",
+        "ordinary_reference": "sha256:86d55221889f8a82e7cb2b93cd9c8a9055e482d909ad321c02db401768797705",
+        "task": "sha256:ed83184a204e2982658cfb5cadb6bc598dfc1c88f50108b01d7b8b0578adceb1"
+      },
+      "composite_revision": "sha256:9e3d6efae9e119bc613983dac14d6f5da3a8c31ec219a52cf1e23055e610391e"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-301",
+      "case_revision": "sha256:7096ee8ba63b7b7d0c9acf57ea05b53f445d12ff5a74a5c74c98365a2e34bbe6",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:1dfb6f3cf6fc85bdcc2f37f70d80d30c29bbe24c7f0a7fa287896f4c97af8f46",
+        "fragment_reference": "sha256:edcf00851b878cdc697a081b450c385636729f3848dd8e826235fda83b7b4b5f",
+        "initial_source": "sha256:87765060dd6f39f9eb3e858bf7bd206113b2e74945d4ca5f7d6d93cf92568e2d",
+        "ordinary_reference": "sha256:9a792242ef66de5cd4016d02bed2d749c7e46fb59437a4c2f7aa507d5001f244",
+        "task": "sha256:c16c27a869b1e5a4c76ea23dd72e81d882a6f34fbc9145ee5b4dd3a93a18dd2c"
+      },
+      "composite_revision": "sha256:77d0581dc8ef6e5d200bf65a7a3308b1a9cb22aa018bd3e37e974ddb2f44f153"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-303",
+      "case_revision": "sha256:4dfc03207595873169eea1da03309465656e8ebb7bee404c7081aed8475dd099",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:ca799d36b454d34143ffcf2883c0c599153ead613bb6d1432cb324d4cf3fbae7",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:c1599187d5530fd2f31a21714c3429e4746fda24ea21923c653bfe926ec5513d",
+        "ordinary_reference": "sha256:bca05824027e1616a54f662b1f585a09a2987f2e5124ea8cf764dd2c6e9f55e7",
+        "task": "sha256:943fdb96636cb37487f258c9f00b140b5756b9982f3f60492a28d3fad01e2b11"
+      },
+      "composite_revision": "sha256:04f4894f290fcef861dfffab4be116ac9e49e3878d7c9f965b280bb5fb65d531"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-305",
+      "case_revision": "sha256:02f603c32eec745a40a668423c590693cc7cef9a69bd45f1b406707e0b23c109",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:d43494f7049de0247cf496a7c85c5bb25e011912af0cb495a8e361bb3f0cfc18",
+        "fragment_reference": "sha256:7166280bb835045ab448c1ad59813592dfdd57ce1c1964c31c5899c79ce0ff18",
+        "initial_source": "sha256:514c07a536b24956c5b7980b1067f6a2b3ac540bf385076316a57d546a47079f",
+        "ordinary_reference": "sha256:4d6e41d6ff976fec50c416e35017e0518de91cebbdafa371bfd4df9970a10d7b",
+        "task": "sha256:d093ad4c096cffd3c9535d85aef1e91f9a671db75f4c64afb0b529f86efd8ca5"
+      },
+      "composite_revision": "sha256:a13f9ddc666f8fd9e2543b52fb5375c4df56214fcdb71d5fc5ca7fe0ce2c19f0"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-307",
+      "case_revision": "sha256:7822eec2172869117ede4bd4cbff6d1cecfb7c4ba4622db4f9d391491d8c42fc",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:1dfb6f3cf6fc85bdcc2f37f70d80d30c29bbe24c7f0a7fa287896f4c97af8f46",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:a609ccb753b1bc463362f26ee4d26abc3f82248792000d0b9a8ab43573ee16df",
+        "ordinary_reference": "sha256:1aed296d62fa0ce5cac91d62e411420b6d5bd7f03b4701b19a0adb7c17053d47",
+        "task": "sha256:3ee772dfd8c9e697de85c2e00a0d0347755043ee406fce51bee7c43385e78521"
+      },
+      "composite_revision": "sha256:e393415139c67e5d3f7396833b986ad9b2a5257c19c42119af8f751dae40b86d"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-309",
+      "case_revision": "sha256:ec6b7870d400107ceceffac66618334272c6d29da91733f1217d9b307c1763fc",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:52d3a457d26ed87e8bad0fb7ae588dbdba67d9f0da5d2badcc03f7ec4d43c507",
+        "fragment_reference": "sha256:16784588a167eec98ba29b16a8be00409d94946865d864a67dc3a62ca67a48e5",
+        "initial_source": "sha256:1c974262b3a0efe3530772ee29d6be74f63c48a40f1727a842a9bed143ee93eb",
+        "ordinary_reference": "sha256:93e0beb3207bce96101bc0b73ff9c5386fa4540d4c9ca6129f633376277528e1",
+        "task": "sha256:9e48a2d8337e0814774ece68c6d0a4004ea912795cca5014a52c6ac6e3d1f191"
+      },
+      "composite_revision": "sha256:be24af64665c18e4cc228be4af945380bede9bd05d7bb035e44d461007dd3a59"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-311",
+      "case_revision": "sha256:eb182872b6b44cd6410149b1873189c7c5804973889759c53569946275908131",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:664f2f1e2b8e20437fcbc713f530b34b7288e4441256514bde2e382ad47efdce",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:85fadd388b3f60aa750071acedaf4ebc0a0ec2b41f5510185cf8c65ed61f5086",
+        "ordinary_reference": "sha256:4c4a6bb3c408ef53587bacdfcb1bb177bd6cdf72a015347aacb8069f4f1c411e",
+        "task": "sha256:c733dfd3f740df158296572715db0ec62e9c1b148dbfd08c149bce61e2725b22"
+      },
+      "composite_revision": "sha256:933f9dd914af5b0c0211ad9b24fc069d8c4d67b0510776ee093cc65f11fc9e40"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-313",
+      "case_revision": "sha256:08d41b0641f543dca7b941b3a6afa8b8a57296c18a0958d190324cc3da2777f7",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:c21594c7eafc331b012b1c7ff6f00f6927d11beb0230348498eaff59467e3d0e",
+        "fragment_reference": "sha256:7a92a69af932282af18e018ef37a556a8229a0e4022879ee647e202b90169f59",
+        "initial_source": "sha256:2a6f4db90765512040a058afb870df118299d7d3c0e359a5b2b10ea3fd34baac",
+        "ordinary_reference": "sha256:1cbfed402d9e00317b3fe9a9831021b138b98e923cd45603fa93d09278550418",
+        "task": "sha256:2aa28d1860ec4e6db4e20df9d53ed97a3028ba8fb88054c544b13baa1118a7c9"
+      },
+      "composite_revision": "sha256:9f9d4c200175d7ce3d32a644408e97a18e89c66d5e5fabe38caa001e82edf32c"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-315",
+      "case_revision": "sha256:434e7226b6b60462338a3d924747a2217b0115be692e2de0d4480d3be2d796fa",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:d43494f7049de0247cf496a7c85c5bb25e011912af0cb495a8e361bb3f0cfc18",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:b402bdf21a71000aa6018df86eeef1532ab224a21dd3a7e921493dc5ed5bce96",
+        "ordinary_reference": "sha256:6ed48fc9e88091f4a995dfba0b597e6c18b79d6201f9fd12a174b2b71651f216",
+        "task": "sha256:e05db23ab06cd9e6a9112b1075eaba30a8a7619b89b0d8fa3cd0d0154a3af1b0"
+      },
+      "composite_revision": "sha256:da623470a86a7796d06993756d8f4c7ed93d52f7b88baf0aad5eafa15a848d91"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-317",
+      "case_revision": "sha256:cc6eff280631a2745cd18bda03ccc579ee616090c61e503ac88e76be94dfaa47",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:d7589e313fe7e2c7d81cb6a8ddbbc6b04c3510ba0af3b7a378d0cb40570d07fb",
+        "fragment_reference": "sha256:7bbcce987cc33219540951d27cba397f9fdf1ec92703f0f8c0c9e6b449c8dac5",
+        "initial_source": "sha256:e2f60b5f53ce2d4dc9a8075f7669bf020c2cee152de0bec170c796186aeddd2f",
+        "ordinary_reference": "sha256:3e170d61c86df6f68052fb45a7351194a4d274d605c3374229c9b923baadc88f",
+        "task": "sha256:3a6da266890f1fe70af08931d3d55ea5ce8d5c5ae0c6f566b3433824f6fea386"
+      },
+      "composite_revision": "sha256:f13dbc75e2e9c4d0ae1f4147c66d37434fb8327fe9c73a6cc32d776c0168236f"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-319",
+      "case_revision": "sha256:8c30c181433cbec44baede7b31308dfa263fcf101911f574aaa354d019d6dc24",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:441419a17362bcd4c085002c4f94ac191bf955c754ec04489532cb205a87ecc3",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:9bf089675e14edd049bfde5994072da20677a4ea95358b6f2f9f054d3bcb075c",
+        "ordinary_reference": "sha256:ca2fcaa9464a06d8088b50cb906645b58635de8cc52159aac78e5b1c7f930b37",
+        "task": "sha256:81b31484bf96999e2f775bee7e264674a974d8a4d786227c8f67a29ee2cd6d1b"
+      },
+      "composite_revision": "sha256:bf53e95e5f3487e73d5227cb0ec10436e9b4e48ddefc200c0b735c6d53a63d0f"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-321",
+      "case_revision": "sha256:c19eebe45b77cdae1a521400da3210b8942bc94c05add9b19882b132393a6fde",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:3b911eec814f97356d2d8fea66b3cc216ed3682ec541186cfc43b4c4d3c3c024",
+        "fragment_reference": "sha256:a220db5f21c13d9c547194729c73239aae3ff6acd272995fc191a0fff716a4ef",
+        "initial_source": "sha256:8494420dbf67f5bc8a2ccb1923e74408fa40d1e248a291c9aa00a3a55a51e924",
+        "ordinary_reference": "sha256:1ad84c37c913ce103b87dce9b8b0d828729b7e4e8f6f7ae1309c138c0f42432b",
+        "task": "sha256:bccac8cee102c604caee035a0eb8170a0d83cda2660e67e6c12a9f4473133bb6"
+      },
+      "composite_revision": "sha256:2746aeee8b7324665fea9efd271e9054797d1196eb1fbc4f2fa32f0992e144ff"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-323",
+      "case_revision": "sha256:515b6eadf930b65430935783c1b839aeea010f4d0ba2b968a2b662a67e7d189e",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:e2eda7dc3151fa1e0de84be8a3eca5a6c7f8fde0f90df3d39cdb5e77467d888a",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:e22f149d8de877d976d738cdb44cd9d707916964be8ec0c1460d5e7925df4eea",
+        "ordinary_reference": "sha256:c937c2a16bb860231a8e89b6a45113cdf413a4f296d016fd9e82e2611b13e16d",
+        "task": "sha256:0a561af737a9e439d35cd5db4914db7b8714da69b86dddae4cd7da53ca9d65fd"
+      },
+      "composite_revision": "sha256:83bc4a2f7f1e73b82acbebe4fa1f23bd6afe769082e752fa5a4445a486f0d82d"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-325",
+      "case_revision": "sha256:73f4d854585a99ee2315129901cff157f3c5ad1c687a56be99c0ad9188dc0dc2",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:b9a4f17c1b12613e770cdbc6e5d8318847cb799a6d5ed2beb48e80300f87aa93",
+        "fragment_reference": "sha256:2534668847330139ebc17a693809ff80b82ecb246bb26a9d1760829985d43a88",
+        "initial_source": "sha256:8abe52b93ee880864d135c8d1df1f3149eb3b00cdbc811080e9b771c29566617",
+        "ordinary_reference": "sha256:0a3c0939104bc91299a509b884ffe5281998e658bd74c649ab44abbf27977f3c",
+        "task": "sha256:f44ce5d65c8a4a223b1615a5fc0bed82f22db357bb1078729aea443a338e04db"
+      },
+      "composite_revision": "sha256:e37821ffb482a15b36880e3c56976d970af93498af0b8f117b662e4cd062c259"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-327",
+      "case_revision": "sha256:986a519cd5f561ee065c2ee5c5d8527f3196e80203d5a47f264001766221ccb2",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:fa809d18e160cea6cfc92aad7a053f009c9b80787307311b5034b9e6c5d4f77b",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:5b1210ee0c9b84578f3f80800431ecbdd8dfbf6892666d044a6d7eadc1532c65",
+        "ordinary_reference": "sha256:42a3c59ab3f502ba9a7d4c8da83025b95b47acc69181e6a91d87a8cf29d96e80",
+        "task": "sha256:84a714cf6b5b332c5343439460f01824e1234e7764fc768f97b691fafa724772"
+      },
+      "composite_revision": "sha256:06dbcfb4cca0b69d1dab50fade419da0e4cede3d1f1fb11daaf1433846ced4da"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-329",
+      "case_revision": "sha256:7ea26c2e84c8681833cb5a4af58a03584d25869669fbd8ee860c7dcc85872e56",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:8a593e291698a09c85944d2e5f0ff658c418ae1062817292aae63ef94d0ffc3a",
+        "fragment_reference": "sha256:edcf00851b878cdc697a081b450c385636729f3848dd8e826235fda83b7b4b5f",
+        "initial_source": "sha256:4afa5480d4fbcea4b0531df245d35f9d1464f42e07d1b49dd900d6320bceeb4a",
+        "ordinary_reference": "sha256:5730f222b07c26ae2b74694c0a39a591988fede0539bbc4ee4406ed3926a055c",
+        "task": "sha256:51a6bd09786b4bb947994e0ecb672a7e72765115e75e83ff6c697e1a2e4b71d5"
+      },
+      "composite_revision": "sha256:50cf8fac5bfb86b7eb63de70f75a395af6c9b63a304b8eb37b5781d0d637eb7f"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-331",
+      "case_revision": "sha256:fa9e36f952012b494cb2784eec64cf609e18d7d30c65ef80eb4e1b16e976ead1",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:ea87c265f2dfa799941a5ba102c2a1373d6dfabf1a1b22c66ac9d8f1cc4dce47",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:597a1af4e240dff7dfd1766985cbe48d37fdd7c8650eb743715569eae416abed",
+        "ordinary_reference": "sha256:26541c0d8f94edfb304099d6c489c57a99ba442ff205a41148555eaea96f6101",
+        "task": "sha256:b340cdfc0eb4f7b6cbc36a64f01e7f9a9baece93e3eb82113654fc87d4a3ed83"
+      },
+      "composite_revision": "sha256:e8b2b8b9599a9d94df882277dffd1f65149cd6ead2d3b41b4bbcaf463a1c2fc1"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-333",
+      "case_revision": "sha256:d43479ffa234b8337d760bd52e7c3c5204e63a95cf8ab9a6fade65fe4a439899",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:32baff564c325b5f9028d10bdc0aae471a5165aa2e8f79500af83e2d4f4de65f",
+        "fragment_reference": "sha256:7166280bb835045ab448c1ad59813592dfdd57ce1c1964c31c5899c79ce0ff18",
+        "initial_source": "sha256:fe171e3af088ea4a8d1e7cef4d98503375eacbb91f9831e0c38915894acc6ed0",
+        "ordinary_reference": "sha256:8d41e869c2bc094e4036113bb5999030394517c289d64cd143b3007090cf5924",
+        "task": "sha256:380925a0042ad2c1d3ec8a334e3992ebcb7e3c8e660a0391ed2c7828ae087a2b"
+      },
+      "composite_revision": "sha256:dab6911d4e7c3b0aa9aeb1b52a91723a9d61d37d04f9821e590231ec8bd38664"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-335",
+      "case_revision": "sha256:a12e5a12dfee38b5ab8dfe302dbf82896a3e95636eb4b2d2642c9a0e367f4b54",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:8a593e291698a09c85944d2e5f0ff658c418ae1062817292aae63ef94d0ffc3a",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:7c2dfd7ebde06fc71811c95aab8c7634ab86037af742bc5e9c083a822e6f89ab",
+        "ordinary_reference": "sha256:6e6d18009b25a4977e9a62d440f2580c485d5000b734536b1ec3767a4cae0f6c",
+        "task": "sha256:18eca3765ebff1a20c6b051c2af5113aef1f46ce1e46b9cd8b1e1916ea589d19"
+      },
+      "composite_revision": "sha256:3e7462b3234c0387473a370066c2a82eb9c849946ad1ea8fc29f0733274ff7da"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-337",
+      "case_revision": "sha256:bf744cd3936fc07537ed9ae1a2c69ac2ca4ad767b29b6eb6ad92d86381155a66",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:404ee0b8b47cab2dcb88a49901540793170514ca1fcca64f2b6af35cd20a7ac4",
+        "fragment_reference": "sha256:16784588a167eec98ba29b16a8be00409d94946865d864a67dc3a62ca67a48e5",
+        "initial_source": "sha256:612a02b726aaa689f10fc434cdb791a50225ecdf1e0888ca7650269aa868d5e5",
+        "ordinary_reference": "sha256:697d1cb5f2e45cf21388a9e4c6e7091eed08a03a7c4782e6cf9c68fd436906d3",
+        "task": "sha256:43b28fa9d085054e47cf66d5ad3d9f694fb2a3ee2d8bc01fd4c963bd81c3df9c"
+      },
+      "composite_revision": "sha256:03e3063c8b9f986a30c765f0a6e6e3d08a618adce4b288e06fa1064c63a8108c"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-339",
+      "case_revision": "sha256:dcb13f7495d1b89dba18964f28945c7fbccd83115d30674ae6233a0d838d82b5",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:53e61784b3a237ae7736de62da3d7d78f0a2c6c4663a0aaaa83aaf2d2dd58133",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:4de9a0df90c39c7c99b4d677069ef66376cad9125418dc79dd40b7dd1bdd969e",
+        "ordinary_reference": "sha256:1959c74b88914a4079e3b9c94c8b0f98911ff8000125155e3cfc9bf8efe678bb",
+        "task": "sha256:1c0f98b79496a9186d29e3eea445a780bd3ecc3a4c333b25f013689c4231f20c"
+      },
+      "composite_revision": "sha256:1b21c033eb4bfd49a9b90d5de5f92638a9ba5d9682644171111df94aa1f4e9f7"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-341",
+      "case_revision": "sha256:853e7f517fae76d384bf1c2bea3cc0195e8fad6bf7443fa9e985de3c570f9c90",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:fafb7d9ad49fa09937ef6449bedeae6cb47b1ecad5333308369617f3779d517a",
+        "fragment_reference": "sha256:7a92a69af932282af18e018ef37a556a8229a0e4022879ee647e202b90169f59",
+        "initial_source": "sha256:a090b887aec89fe84c4b8c72daad22b4856ca0aace2682d32dfe08540ed36891",
+        "ordinary_reference": "sha256:616a5d0818e9d2fd03881a38277f02c378b915249c2b4946f21538656a2f06d2",
+        "task": "sha256:ba163732728d8670b4e1381cd690f3040b433d5d459a2e1a2352d6952aafe5be"
+      },
+      "composite_revision": "sha256:1d0db458c03dab0ae7bc889f2b567801142ca4791d1805d302435062c8f20ab5"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-343",
+      "case_revision": "sha256:5dd87383169b40b64b8979a87ef4c28fb9d01d5a0b486441c310ab954267cf10",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:32baff564c325b5f9028d10bdc0aae471a5165aa2e8f79500af83e2d4f4de65f",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:88b55d052d5402882c81ca9896e617c2c727f1e6425c1eb2785db82a3f73d756",
+        "ordinary_reference": "sha256:45dbd2f2499560d999f0b08e598e4d0818d550990e3837fd4b03e89a8751625f",
+        "task": "sha256:4d46ba96c06e80c587acd4845bbb10d311d7b774eaf401abba929710ba6e78d5"
+      },
+      "composite_revision": "sha256:99dd251e75b7356d320ac0b832566904c49d02b82952e3e2499554a93bffc473"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-345",
+      "case_revision": "sha256:4e5ed78cd0129935b7218b67fa43011e60178a3f80947ad61ac32ab48d5955da",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:2a987571e9c7a974bae340e15b8f3605655af675ecdd1cada8d33f596db762cc",
+        "fragment_reference": "sha256:7bbcce987cc33219540951d27cba397f9fdf1ec92703f0f8c0c9e6b449c8dac5",
+        "initial_source": "sha256:accbc6a8a32cbe804bc4eedaa3c9f2b2fdedbe1e891599b141d1e1aa18151fa4",
+        "ordinary_reference": "sha256:6692099f940477203d536b8a55bedacf4acaa1dad4fad543636a2caa799cf103",
+        "task": "sha256:1d5a4452b591cd5ad2e2d471d1140c51925d58c4ea23a5d422949d2f67a74a95"
+      },
+      "composite_revision": "sha256:62894a70dc442be9d93dc8c66d703f9d1f8e362e4f7aaabbfa94cdba2b02d112"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-347",
+      "case_revision": "sha256:f2ea453cee6e5c49cc01f13d80048027f806eff58473a731e345cde817eddaac",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:1f3855ab5f2b0b8561c507b2e902eafbce6081c4c4dbb00b271d2aa2d50b7662",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:ac86fec19d050853dca63efc535e7c8121e635a435cc33a0ce8df86fc6ed18e6",
+        "ordinary_reference": "sha256:b0fa40e97969bd7ac10856637ab8667a201709251a004ac6d36569bbd1d53baf",
+        "task": "sha256:596ce1bdea95b7c8c50d39cc7f308471cae4bfd54ab2777f02f2f4c87b1fae14"
+      },
+      "composite_revision": "sha256:e6c662564b37ed605c3caa3d1ff55f3180ec101df4b912ba84b24d1e4824b595"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-349",
+      "case_revision": "sha256:b004eb772b5bec94b12ca221c46f370b60ce26d83749841734d3abaa63364a57",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:1a8c7ae83e6471ba7e9ac20e87224a9f8623ea809e5649a5bd06a676178d3659",
+        "fragment_reference": "sha256:a220db5f21c13d9c547194729c73239aae3ff6acd272995fc191a0fff716a4ef",
+        "initial_source": "sha256:bf8a0f76e863a94fa595b649856c6c916abf5d4ff047a35f70c75574798d2692",
+        "ordinary_reference": "sha256:09a53a9e6bef58a16874e870a030d2f6d4fe38682935461b40fc76fa33a2dcd8",
+        "task": "sha256:c297c48f9f21ae2dfd6d520f57af4639f364ea1002efdc1797f8f2dd1e52d234"
+      },
+      "composite_revision": "sha256:2e23a1af5308824affd7bc055bda7e9ab452b139155eaf29d98ded46b7a02a43"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-351",
+      "case_revision": "sha256:482cfe6c9218b51cfdcbfcb3bb128d2f9435118acbd13322b3220530e6965e04",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:7daea1616c40b7fc6a39c2bf1da6c35ea21180c002e913c78132501ae38f41fa",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:265a94021064f5892bedd90b405546fbca3aa8d8ad9fff0962a57c14ff5989fa",
+        "ordinary_reference": "sha256:ef19e330ab6a21f9562cb0e13f5b7d67716f68dc2a2aefadbbac27546e3cadac",
+        "task": "sha256:c391ffde6a21be4983458be044b4f47378be20972f53d7cb566c022bcf48e8d4"
+      },
+      "composite_revision": "sha256:f2c3adf11c5cef88d99cbe5091cdaae9a34981ff7a32f24ed4ffbb5111170d7d"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-353",
+      "case_revision": "sha256:fc012748538cc9764b15c2009253c8cd662fab9378d0d93f19c9a3360eb0ab1d",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:73391eb6ba1c32a3587d8ee0648f55deb2e205bf980174377b780735f36b813b",
+        "fragment_reference": "sha256:2534668847330139ebc17a693809ff80b82ecb246bb26a9d1760829985d43a88",
+        "initial_source": "sha256:d57408c1e6d51e6cd487fcbeed5862c1f6489e113868e7712301686ce203c147",
+        "ordinary_reference": "sha256:845db7a8054d27b4958dd9790ff700fd150e6764d874b4d5f23450a6f780e303",
+        "task": "sha256:f0f9effeb8da883cdfab85afa916f80d35fdda59ef22405c6f39dc6f82adab40"
+      },
+      "composite_revision": "sha256:331ec866d7a36838ac4d596bf43682c37e779241c6a70315ccdd35e347db250c"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-355",
+      "case_revision": "sha256:dd01adfa366f817dc47ca4db59240a666e970a02e9b34da64abf7edec404f8b0",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:cde77877d64255d5777059d47f87cd2705c51f0c6cba56acbf65e26af07809e8",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:47adba6e6e4b79b4cd731bca08c58402eb1447425e77cdf296927b7a81adb07a",
+        "ordinary_reference": "sha256:bf1ef2dfbcd15163ca4f63ab0e8812575469dcf6dcd3ff62d11a3e87bad6f0c8",
+        "task": "sha256:9aafa5cfde43e7dfdc731d94428467aa70cc18daab21cd568f0d0da1213b2f7a"
+      },
+      "composite_revision": "sha256:dc09075c2275ce7e46d4fa66b7d8e270c39737fef4af9b29cd0e793072f118de"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-357",
+      "case_revision": "sha256:d23936dbd1074c7bea3b1964824b0cb83b13d6ec852c8f3f66277f04ea0e767f",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:9cb8181918ee79004fca6343a38a30cc51a0a6c2620bd16183438e73edaa4e91",
+        "fragment_reference": "sha256:edcf00851b878cdc697a081b450c385636729f3848dd8e826235fda83b7b4b5f",
+        "initial_source": "sha256:ce28cd9002dfaf9eda06128c645f074349d32caef1904b6df5d3464d787efc12",
+        "ordinary_reference": "sha256:3b35c111cb93a5662a087e9f5f88d8e329e97771bad47782f984d59ab4dd7d20",
+        "task": "sha256:22813ac6fc325f358ec531c77fa73e1185d73c280d5994aab40b826d1908f7a6"
+      },
+      "composite_revision": "sha256:dc5318180dc5f5488344f3842a6ef684e1bcccfb89ad76dbda050644308fb3c1"
+    },
+    {
+      "case_id": "spv2-confirmation-repositorychange-359",
+      "case_revision": "sha256:24b2d8626d323091ca2abda0255047a6f7a4d6562515f1496c54d12963eb2b89",
+      "category": "repository-change",
+      "components": {
+        "acceptance": "sha256:34ce334fbc55a8759fd7cc7db7f23084d482553e5d9e30bc0e3344a9d238c5b0",
+        "fragment_reference": "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+        "initial_source": "sha256:c7964a798cb8c7ce35bf8583e6b9cd532556de1d1d8b0e85769b36cc6d5be53a",
+        "ordinary_reference": "sha256:987ff58b78896c2a32fd8ef1bbba99be1b825c768599f594f2124c5b516daf91",
+        "task": "sha256:1778caaa4a2c1c235cc5517af64141c613f47b9f0bc3e93d27d175f91c633469"
+      },
+      "composite_revision": "sha256:6fe3af9f5d5c943829d6f9a71931dbb4a9e46b59a836ec568ca0837d9109a374"
+    }
+  ],
+  "counts": {
+    "debug-repair": 30,
+    "repository-change": 30,
+    "total": 60
+  },
+  "experiment": "semantic-protocol-v2-confirmation",
+  "overlaps": {
+    "acceptance_command_note": "command templates are intentionally shared; expected values participate in each acceptance hash and composite revision",
+    "acceptance_hashes": [],
+    "case_ids": [],
+    "composite_revisions": [],
+    "initial_source_hashes": [],
+    "interpretation": "component matches are retained for audit; a case is previously used only when its ID, task, initial state, or full composite revision matches",
+    "reference_hashes": [
+      "sha256:10482dc8608d26025297aae6fcbbc0f368ff0119eee367f605182bf42f9a5016",
+      "sha256:7a92a69af932282af18e018ef37a556a8229a0e4022879ee647e202b90169f59",
+      "sha256:7bbcce987cc33219540951d27cba397f9fdf1ec92703f0f8c0c9e6b449c8dac5",
+      "sha256:941089fc7bdd105f59fe3432c5e79286c65c9a2ecad55c93b4cda8650fb4f4c6",
+      "sha256:a220db5f21c13d9c547194729c73239aae3ff6acd272995fc191a0fff716a4ef",
+      "sha256:b03c7b07cbcdfcba95d1f8f0df4eef105bb881677a09227e77af4443d3f353be",
+      "sha256:c56021487a4c3f2f39685a73ac23baaf417334effe71560aa89a504fa6e2d28c",
+      "sha256:ceb506c694dbf49eef9c2d316e745e82ea4898f6233bf99e954236f11052c244",
+      "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+      "sha256:fa72b04ad2021f6af3323d8f6c7cab5c8aa49bbb7118f5865e26108559b6524a"
+    ],
+    "task_hashes": []
+  },
+  "prior_case_records_checked": 218,
+  "schema_version": 1,
+  "within_confirmation_duplicates": {
+    "case_ids": [],
+    "composite_revisions": [],
+    "fragment_reference_hashes": [
+      "sha256:0373435d77b38dfef0e2d03eb9d63b29ce8250989fec27b0b1735b5d74bd3d08",
+      "sha256:10482dc8608d26025297aae6fcbbc0f368ff0119eee367f605182bf42f9a5016",
+      "sha256:16784588a167eec98ba29b16a8be00409d94946865d864a67dc3a62ca67a48e5",
+      "sha256:2534668847330139ebc17a693809ff80b82ecb246bb26a9d1760829985d43a88",
+      "sha256:4022d2ab6d0b94b00114db7971e9d03cca90c2f2d9997e7032ba3b7b6014aa7a",
+      "sha256:533945b6281f7ab6442e91aaada7b35f12a082ccff034b6f756ef78a21346c93",
+      "sha256:56badd779681ce090d8f739d611ab062deed0ca36e8bec1a16a65e468fe5348f",
+      "sha256:7166280bb835045ab448c1ad59813592dfdd57ce1c1964c31c5899c79ce0ff18",
+      "sha256:75b8c8a17e7b6ae76a614f1611e838179db8d033724defd96e405bca3c36aa53",
+      "sha256:7a92a69af932282af18e018ef37a556a8229a0e4022879ee647e202b90169f59",
+      "sha256:7bbcce987cc33219540951d27cba397f9fdf1ec92703f0f8c0c9e6b449c8dac5",
+      "sha256:8a708e59b4d038be32b5a55a089685820091d77011ec45d5e355e26d6f058bab",
+      "sha256:941089fc7bdd105f59fe3432c5e79286c65c9a2ecad55c93b4cda8650fb4f4c6",
+      "sha256:a220db5f21c13d9c547194729c73239aae3ff6acd272995fc191a0fff716a4ef",
+      "sha256:b03c7b07cbcdfcba95d1f8f0df4eef105bb881677a09227e77af4443d3f353be",
+      "sha256:b68dad9d3d7e16639a9fdf6f1a635307ebb3381f26db293fbb113e40bbd102e0",
+      "sha256:bac84f046350a83146009ab9f984a56b252f3e959e77587c9e78c3c3461f7230",
+      "sha256:c56021487a4c3f2f39685a73ac23baaf417334effe71560aa89a504fa6e2d28c",
+      "sha256:ceb506c694dbf49eef9c2d316e745e82ea4898f6233bf99e954236f11052c244",
+      "sha256:edcf00851b878cdc697a081b450c385636729f3848dd8e826235fda83b7b4b5f",
+      "sha256:f9a1e78eea9fd70fb8d77d1dc213d4d7bd1ddd8977bcf81a8e60f8c8438aca48",
+      "sha256:fa72b04ad2021f6af3323d8f6c7cab5c8aa49bbb7118f5865e26108559b6524a"
+    ],
+    "initial_source_hashes": [],
+    "ordinary_reference_hashes": [],
+    "task_hashes": []
+  }
+}

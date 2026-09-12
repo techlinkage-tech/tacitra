@@ -1,0 +1,39 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:a10ae28c4b97c7521cc9e75267cc61dbffa4a5ae83984db6098ba4a0865ece01",
+    "success": "Change `solve_sp_212` to add 8 instead of 1. Keep the caller unchanged; it must print 250.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_212",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_212/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ value + 1 }"
+  },
+  "schema_version": 1
+}

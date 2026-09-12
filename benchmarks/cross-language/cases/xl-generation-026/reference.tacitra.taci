@@ -1,0 +1,9 @@
+fn solve_026(value: Int) -> Int {
+  let offset = 7;
+  let bonus = 3;
+  value + offset + bonus
+}
+
+fn main() -> Int {
+  solve_026(31)
+}

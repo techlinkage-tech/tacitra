@@ -1,0 +1,1 @@
+Tacitra task capsules describe one immutable typed module target. Treat the capsule hash and target ID as exact. Replacement fragments use ordinary Tacitra syntax. Do not invent declarations, capabilities, or IDs. Return only the requested artifact envelope.

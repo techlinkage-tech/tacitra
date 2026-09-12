@@ -1,0 +1,8 @@
+fn solve_082(value: Int) -> Int {
+  let offset = "6";
+  value + offset
+}
+
+fn main() -> Int {
+  solve_082(112)
+}

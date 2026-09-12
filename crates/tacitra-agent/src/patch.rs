@@ -221,11 +221,14 @@ fn evaluate_patch(
             .into_iter()
             .collect::<Vec<_>>()
             .join(", ");
-        AgentError::new(
+        let error = AgentError::new(
             "A0005",
             format!("patched module does not compile: {codes}"),
             None,
-        )
+        );
+        diagnostics.first().map_or(error.clone(), |diagnostic| {
+            error.with_diagnostic(diagnostic)
+        })
     })?;
     let updated_source = updated.canonical_source.clone();
     let changed = updated_source != module.canonical_source;

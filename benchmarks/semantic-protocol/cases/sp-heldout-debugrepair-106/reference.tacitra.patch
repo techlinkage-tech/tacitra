@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -16,7 +16,7 @@
+ }
+ 
+ fn solve_sp_106(packet: PacketSp106) -> Int {
+-  if packet.enabled { packet.value + 3 } else { packet.value }
++  if packet.enabled { packet.value + 7 } else { packet.value }
+ }
+ 
+ fn main() -> Int {

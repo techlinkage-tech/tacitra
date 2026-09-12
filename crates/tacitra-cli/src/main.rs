@@ -1,8 +1,10 @@
 use std::{env, fs, path::Path, process::ExitCode};
 use tacitra_agent::{
-    apply_patch as apply_structural_patch, module_summary, parse_patch, symbol_describe,
-    symbol_edit_context, symbol_references, type_describe, validate_patch, AgentError,
-    SemanticModule,
+    apply_patch as apply_structural_patch, apply_typed_edit, compact_legacy_patch,
+    expand_typed_edit, function_body_edit, module_summary, parse_named_typed_edit, parse_patch,
+    parse_typed_edit, symbol_describe, symbol_edit_context, symbol_references,
+    task_context_capsule, task_context_size, type_describe, validate_patch, validate_typed_edit,
+    AgentError, PatchOutcome, RepairContext, SemanticModule,
 };
 use tacitra_interop::{
     call_context, export_describe, invoke, manifest_summary, parse_manifest, InteropError,
@@ -32,6 +34,21 @@ fn run(arguments: &[String]) -> Result<(), u8> {
         | "symbol.references"
         | "type.describe" => semantic_query(command, &arguments[1..]),
         "patch.validate" | "patch.apply" => patch_command(command, &arguments[1..]),
+        "ai.context" | "ai.context-size" => ai_context(command, &arguments[1..]),
+        "ai.edit.validate"
+        | "ai.edit.dry-run"
+        | "ai.edit.apply"
+        | "ai.edit.diff"
+        | "ai.repair-context"
+        | "ai.edit.named.validate"
+        | "ai.edit.named.dry-run"
+        | "ai.edit.named.apply"
+        | "ai.edit.named.diff" => ai_edit(command, &arguments[1..]),
+        "ai.fragment.validate"
+        | "ai.fragment.dry-run"
+        | "ai.fragment.apply"
+        | "ai.fragment.diff" => ai_fragment(command, &arguments[1..]),
+        "ai.edit.compact" | "ai.edit.expand" => ai_convert(command, &arguments[1..]),
         "interop.inspect" | "external.summary" | "external.describe" | "external.call-context" => {
             interop_query(command, &arguments[1..])
         }
@@ -50,6 +67,153 @@ fn run(arguments: &[String]) -> Result<(), u8> {
             usage()
         }
     }
+}
+
+fn ai_context(command: &str, arguments: &[String]) -> Result<(), u8> {
+    if arguments.len() != 4 || arguments[2] != "--success" {
+        return usage();
+    }
+    let source = read(&arguments[0])?;
+    let module = build_module(&arguments[0], &source)?;
+    let result = if command == "ai.context" {
+        task_context_capsule(&module, &arguments[1], &arguments[3])
+    } else {
+        task_context_size(&module, &arguments[1], &arguments[3])
+    };
+    result.map_or_else(
+        |error| {
+            emit_agent_error(&error);
+            Err(1)
+        },
+        |value| {
+            println!("{value}");
+            Ok(())
+        },
+    )
+}
+
+fn ai_convert(command: &str, arguments: &[String]) -> Result<(), u8> {
+    if arguments.len() != 1 {
+        return usage();
+    }
+    let source = read(&arguments[0])?;
+    let result = if command == "ai.edit.compact" {
+        compact_legacy_patch(&source)
+    } else {
+        parse_typed_edit(&source).map(|edit| expand_typed_edit(&edit))
+    };
+    result.map_or_else(
+        |error| {
+            emit_agent_error(&error);
+            Err(1)
+        },
+        |value| {
+            println!("{value}");
+            Ok(())
+        },
+    )
+}
+
+fn ai_edit(command: &str, arguments: &[String]) -> Result<(), u8> {
+    if arguments.len() != 2 {
+        return usage();
+    }
+    let path = &arguments[0];
+    let source = read(path)?;
+    let edit_source = read(&arguments[1])?;
+    let module = build_module(path, &source)?;
+    let edit = match if command.starts_with("ai.edit.named.") {
+        parse_named_typed_edit(&edit_source)
+    } else {
+        parse_typed_edit(&edit_source)
+    } {
+        Ok(value) => value,
+        Err(error) => {
+            emit_agent_error(&error);
+            return Err(1);
+        }
+    };
+    let applies = matches!(command, "ai.edit.apply" | "ai.edit.named.apply");
+    let emits_diff = matches!(command, "ai.edit.diff" | "ai.edit.named.diff");
+    let result = if applies {
+        apply_typed_edit(&module, &edit)
+    } else {
+        validate_typed_edit(&module, &edit)
+    };
+    match result {
+        Ok(outcome) => {
+            if applies {
+                write_atomic(path, &outcome.updated_source)?;
+            }
+            if emits_diff {
+                print!("{}", outcome.diff);
+            } else if command == "ai.repair-context" {
+                println!("{{\"v\":1,\"valid\":true,\"repair\":null}}");
+            } else {
+                println!("{}", ai_outcome_json(&outcome));
+            }
+            Ok(())
+        }
+        Err(repair) => {
+            emit_repair_context(&repair);
+            Err(1)
+        }
+    }
+}
+
+fn ai_fragment(command: &str, arguments: &[String]) -> Result<(), u8> {
+    if arguments.len() != 4 {
+        return usage();
+    }
+    let path = &arguments[0];
+    let source = read(path)?;
+    let replacement = read(&arguments[3])?;
+    let module = build_module(path, &source)?;
+    let edit = function_body_edit(&arguments[2], &arguments[1], replacement.trim());
+    let applies = command == "ai.fragment.apply";
+    let emits_diff = command == "ai.fragment.diff";
+    let result = if applies {
+        apply_typed_edit(&module, &edit)
+    } else {
+        validate_typed_edit(&module, &edit)
+    };
+    match result {
+        Ok(outcome) => {
+            if applies {
+                write_atomic(path, &outcome.updated_source)?;
+            }
+            if emits_diff {
+                print!("{}", outcome.diff);
+            } else {
+                println!("{}", ai_outcome_json(&outcome));
+            }
+            Ok(())
+        }
+        Err(repair) => {
+            emit_repair_context(&repair);
+            Err(1)
+        }
+    }
+}
+
+fn ai_outcome_json(outcome: &PatchOutcome) -> String {
+    serde_json::to_string(&serde_json::json!({
+        "v": 1,
+        "valid": true,
+        "base_hash": outcome.base_hash,
+        "result_hash": outcome.result_hash,
+        "changed": outcome.changed,
+        "operations": outcome.descriptions,
+        "diff": outcome.diff,
+    }))
+    .unwrap_or_default()
+}
+
+fn emit_repair_context(repair: &RepairContext) {
+    println!(
+        "{{\"v\":1,\"valid\":false,\"repair\":{}}}",
+        repair.to_json()
+    );
 }
 
 fn interop_query(command: &str, arguments: &[String]) -> Result<(), u8> {
@@ -383,5 +547,8 @@ fn print_usage() {
 }
 
 fn print_help() {
-    println!("Tacitra {} (experimental)\n\nUsage:\n  tacitra COMMAND [OPTIONS]\n\nCompiler commands:\n  parse [--json] FILE       Parse and print the source-positioned AST\n  fmt [--write|--check] FILE\n                            Print, write, or verify canonical formatting\n  check [--json] FILE       Parse, resolve names, and type-check\n  run [--json] FILE         Execute a checked zero-argument main function\n\nSemantic commands:\n  module.summary FILE\n  symbol.describe FILE ID_OR_NAME\n  symbol.edit-context FILE ID_OR_NAME\n  symbol.references FILE ID_OR_NAME\n  type.describe FILE ID_OR_NAME\n  patch.validate FILE PATCH.json\n  patch.apply FILE PATCH.json\n\nExternal module commands:\n  interop.inspect MANIFEST.json\n  interop.call MANIFEST.json EXPORT ARGUMENTS.json [--timeout-ms N]\n               [--allow-effect NAME] [--allow-capability NAME]\n  external.summary MANIFEST.json\n  external.describe MANIFEST.json EXPORT\n  external.call-context MANIFEST.json EXPORT\n\nGlobal options:\n  -h, --help                Show this help\n  -V, --version             Show the CLI version\n\nJSON diagnostics conform to protocol/schema/diagnostics-v1.schema.json.", env!("CARGO_PKG_VERSION"));
+    println!(
+        "Tacitra {} (experimental)\n\nUsage:\n  tacitra COMMAND [OPTIONS]\n\nCompiler commands:\n  parse [--json] FILE       Parse and print the source-positioned AST\n  fmt [--write|--check] FILE\n                            Print, write, or verify canonical formatting\n  check [--json] FILE       Parse, resolve names, and type-check\n  run [--json] FILE         Execute a checked zero-argument main function\n\nSemantic commands:\n  module.summary FILE\n  symbol.describe FILE ID_OR_NAME\n  symbol.edit-context FILE ID_OR_NAME\n  symbol.references FILE ID_OR_NAME\n  type.describe FILE ID_OR_NAME\n  patch.validate FILE PATCH.json\n  patch.apply FILE PATCH.json\n\nAI surface v1 commands:\n  ai.context FILE ID --success TEXT\n  ai.context-size FILE ID --success TEXT\n  ai.edit.validate FILE EDIT.json\n  ai.edit.dry-run FILE EDIT.json\n  ai.edit.apply FILE EDIT.json\n  ai.edit.diff FILE EDIT.json\n  ai.repair-context FILE EDIT.json\n  ai.edit.compact PATCH.json\n  ai.edit.expand EDIT.json\n  ai.edit.named.validate FILE EDIT.json\n  ai.edit.named.dry-run FILE EDIT.json\n  ai.edit.named.apply FILE EDIT.json\n  ai.edit.named.diff FILE EDIT.json\n  ai.fragment.validate FILE ID HASH FRAGMENT.taci\n  ai.fragment.dry-run FILE ID HASH FRAGMENT.taci\n  ai.fragment.apply FILE ID HASH FRAGMENT.taci\n  ai.fragment.diff FILE ID HASH FRAGMENT.taci\n\nExternal module commands:\n  interop.inspect MANIFEST.json\n  interop.call MANIFEST.json EXPORT ARGUMENTS.json [--timeout-ms N]\n               [--allow-effect NAME] [--allow-capability NAME]\n  external.summary MANIFEST.json\n  external.describe MANIFEST.json EXPORT\n  external.call-context MANIFEST.json EXPORT\n\nGlobal options:\n  -h, --help                Show this help\n  -V, --version             Show the CLI version\n\nJSON diagnostics conform to protocol/schema/diagnostics-v1.schema.json.",
+        env!("CARGO_PKG_VERSION")
+    );
 }

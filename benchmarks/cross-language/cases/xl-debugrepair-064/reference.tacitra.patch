@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn solve_064(value: Int) -> Int {
+-  let offset = missing;
++  let offset = 6;
+   value + offset
+ }
+ 

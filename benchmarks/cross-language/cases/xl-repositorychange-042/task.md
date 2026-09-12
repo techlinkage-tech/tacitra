@@ -1,0 +1,1 @@
+Modify both `step_042` and `solve_042`: `step_042` must multiply by 8 instead of 4, and `solve_042` must add 8 instead of 4 after calling `step_042`. Keep the caller unchanged; it must print `504`. Return one unified diff.

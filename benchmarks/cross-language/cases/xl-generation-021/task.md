@@ -1,0 +1,1 @@
+Define `solve_021(value, divisor)` with an explicit recoverable error for divisor zero and integer division otherwise. Handle success and failure in the caller, and print `26` for value `52` and divisor `2`.

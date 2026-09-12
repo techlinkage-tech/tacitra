@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "program.taci:3:3: error[N0002]: undefined name `step_077`\n  |\n 3 |   step_077(value) + offset\n  |   ^^^^^^^^\n",
+  "stdout": ""
+}

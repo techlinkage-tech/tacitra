@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tacitra.dev/protocol/typed-edit-v1.schema.json",
+  "title": "Tacitra compact typed edit v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "h", "cap", "ops"],
+  "properties": {
+    "v": {"const": 1},
+    "h": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "cap": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "ops": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          {"enum": ["body", "expr"]},
+          {"type": "string", "minLength": 1},
+          {"type": "string"}
+        ],
+        "items": false
+      }
+    }
+  }
+}

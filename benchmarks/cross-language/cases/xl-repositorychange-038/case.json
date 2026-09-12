@@ -1,0 +1,187 @@
+{
+  "acceptance": {
+    "description": "the complete program prints the required integer",
+    "expected_integer": 69
+  },
+  "category": "repository-change",
+  "id": "xl-repositorychange-038",
+  "max_repair_rounds": 2,
+  "prompt": "task.md",
+  "representations": [
+    {
+      "artifact": "reference.python.patch",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "python3",
+          "-m",
+          "py_compile",
+          "{work}/program.py"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "python-unified-diff",
+      "language": "python",
+      "prepare_commands": [
+        [
+          "patch",
+          "--silent",
+          "{work}/program.py",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "base.python.py"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.python.py",
+          "target": "program.py"
+        }
+      ],
+      "specification": [
+        "../../../specs/python-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "python3",
+          "{work}/program.py"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.go.patch",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "go",
+          "build",
+          "-o",
+          "{work}/program",
+          "{work}/program.go"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "go-unified-diff",
+      "language": "go",
+      "prepare_commands": [
+        [
+          "patch",
+          "--silent",
+          "{work}/program.go",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "base.go.go"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.go.go",
+          "target": "program.go"
+        }
+      ],
+      "specification": [
+        "../../../specs/go-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{work}/program"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.rust.patch",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "{rustc}",
+          "--edition=2021",
+          "--crate-name",
+          "program",
+          "-o",
+          "{work}/program",
+          "{work}/program.rs"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "rust-unified-diff",
+      "language": "rust",
+      "prepare_commands": [
+        [
+          "patch",
+          "--silent",
+          "{work}/program.rs",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "base.rust.rs"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.rust.rs",
+          "target": "program.rs"
+        }
+      ],
+      "specification": [
+        "../../../specs/rust-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{work}/program"
+        ]
+      ]
+    },
+    {
+      "artifact": "reference.tacitra.patch",
+      "artifact_kind": "patch",
+      "compile_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "check",
+          "{work}/program.taci"
+        ]
+      ],
+      "diagnostic_context": [],
+      "id": "tacitra-unified-diff",
+      "language": "tacitra",
+      "prepare_commands": [
+        [
+          "patch",
+          "--silent",
+          "{work}/program.taci",
+          "{artifact}"
+        ]
+      ],
+      "repository_context": [
+        "base.tacitra.taci"
+      ],
+      "result_kind": "integer",
+      "setup_files": [
+        {
+          "source": "base.tacitra.taci",
+          "target": "program.taci"
+        }
+      ],
+      "specification": [
+        "../../tacitra-source-profile-v1.md"
+      ],
+      "surface": "human-source",
+      "test_commands": [
+        [
+          "{repo}/target/debug/tacitra",
+          "run",
+          "{work}/program.taci"
+        ]
+      ]
+    }
+  ],
+  "schema_version": 2
+}

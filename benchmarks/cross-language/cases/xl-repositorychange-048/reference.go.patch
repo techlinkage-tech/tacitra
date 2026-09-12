@@ -1,0 +1,14 @@
+--- program.go
++++ program.go
+@@ -2,9 +2,9 @@
+ 
+ import "fmt"
+ 
+-func step_048(value int64) int64 { return value * 5 }
++func step_048(value int64) int64 { return value * 14 }
+ 
+-func solve_048(value int64) int64 { return step_048(value) + 5 }
++func solve_048(value int64) int64 { return step_048(value) + 14 }
+ 
+ func main() {
+ 	fmt.Println(solve_048(68))

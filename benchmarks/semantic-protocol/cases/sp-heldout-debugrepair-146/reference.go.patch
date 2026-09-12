@@ -1,0 +1,10 @@
+--- program.go
++++ program.go
+@@ -8,6 +8,6 @@
+ 
+ type PacketSp146 struct { value int64; enabled bool }
+ 
+-func solve_sp_146(packet PacketSp146) int64 { if packet.enabled { return packet.value + 3 }; return packet.value }
++func solve_sp_146(packet PacketSp146) int64 { if packet.enabled { return packet.value + 12 }; return packet.value }
+ 
+ func main() { fmt.Println(solve_sp_146(PacketSp146{value: 176, enabled: true})) }

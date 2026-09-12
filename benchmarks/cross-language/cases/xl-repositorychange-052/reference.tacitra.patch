@@ -1,0 +1,9 @@
+--- program.taci
++++ program.taci
+@@ -1,5 +1,5 @@
+ fn solve_052(value: Int, divisor: Int) -> Result[Int, String] {
+-  if divisor <= 1 {
++  if divisor == 0 {
+     Err("zero")
+   } else {
+     Ok(value / divisor)

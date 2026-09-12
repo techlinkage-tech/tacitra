@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "error[E0425]: cannot find value `missing` in this scope\n --> program.rs:2:18\n  |\n2 |     let offset = missing;\n  |                  ^^^^^^^ not found in this scope\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+  "stdout": ""
+}

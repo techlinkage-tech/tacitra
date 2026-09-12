@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:cc1247a21311d4360d87c89526d0edd9cfc838d87807c9f32db9781666d259ff",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if divisor == 0 { Err(\"zero\") } else { Ok(value / divisor) } }",
+      "target": "sym:fn:solve_sp_307"
+    }
+  ],
+  "version": 1
+}

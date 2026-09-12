@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "test",
+  "stderr": "Traceback (most recent call last):\n  File \"program.py\", line 10, in <module>\n    print(main())\n          ^^^^^^\n  File \"program.py\", line 6, in main\n    return solve_068(98)\n           ^^^^^^^^^^^^^\n  File \"program.py\", line 2, in solve_068\n    offset = missing\n             ^^^^^^^\nNameError: name 'missing' is not defined\n",
+  "stdout": ""
+}

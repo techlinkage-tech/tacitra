@@ -1,0 +1,9 @@
+--- program.py
++++ program.py
+@@ -1,5 +1,5 @@
+ def solve_034(value: int, divisor: int) -> tuple[bool, int]:
+-    if divisor <= 1:
++    if divisor == 0:
+         return False, 0
+     return True, value // divisor
+ 

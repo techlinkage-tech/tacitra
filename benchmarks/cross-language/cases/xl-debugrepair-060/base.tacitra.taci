@@ -1,0 +1,8 @@
+fn solve_060(value: Int) -> Int {
+  let offset = missing;
+  value + offset
+}
+
+fn main() -> Int {
+  solve_060(90)
+}

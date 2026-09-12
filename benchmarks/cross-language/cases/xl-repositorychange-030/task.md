@@ -1,0 +1,1 @@
+Modify both `step_030` and `solve_030`: `step_030` must multiply by 10 instead of 2, and `solve_030` must add 10 instead of 2 after calling `step_030`. Keep the caller unchanged; it must print `510`. Return one unified diff.

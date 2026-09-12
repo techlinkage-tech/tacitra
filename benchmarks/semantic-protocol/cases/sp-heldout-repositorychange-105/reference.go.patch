@@ -1,0 +1,10 @@
+--- program.go
++++ program.go
+@@ -6,6 +6,6 @@
+ func unrelatedBeta(value int64) int64 { return value - 3 }
+ func unrelatedGamma(enabled bool) int64 { if enabled { return 7 }; return 9 }
+ 
+-func solve_sp_105(value int64, limit int64) int64 { if value >= limit { return 0 }; return value + 2 }
++func solve_sp_105(value int64, limit int64) int64 { if value <= limit { return value + 6 }; return 0 }
+ 
+ func main() { fmt.Println(solve_sp_105(135, 135)) }

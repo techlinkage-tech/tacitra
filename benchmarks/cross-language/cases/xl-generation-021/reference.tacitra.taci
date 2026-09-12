@@ -1,0 +1,18 @@
+fn solve_021(value: Int, divisor: Int) -> Result[Int, String] {
+  if divisor == 0 {
+    Err("zero")
+  } else {
+    Ok(value / divisor)
+  }
+}
+
+fn consume(result: Result[Int, String]) -> Int {
+  match result {
+    Ok(value) => value,
+    Err(message) => -1,
+  }
+}
+
+fn main() -> Int {
+  consume(solve_021(52, 2))
+}

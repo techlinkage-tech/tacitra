@@ -1,0 +1,23 @@
+fn unrelated_alpha(value: Int) -> Int {
+  value * 2
+}
+
+fn unrelated_beta(value: Int) -> Int {
+  value - 3
+}
+
+fn unrelated_gamma(enabled: Bool) -> Int {
+  if enabled { 7 } else { 9 }
+}
+
+fn solve_sp_207(value: Int, divisor: Int) -> Result[Int, String] {
+  if divisor <= 1 { Err("zero") } else { Ok(value / divisor) }
+}
+
+fn consume(result: Result[Int, String]) -> Int {
+  match result { Ok(value) => value, Err(message) => -1, }
+}
+
+fn main() -> Int {
+  consume(solve_sp_207(237, 1))
+}

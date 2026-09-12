@@ -1,0 +1,36 @@
+{
+  "accepted_data_preserved": true,
+  "classification": "environment_preflight_failure",
+  "evidence": {
+    "acceptance_command_form": "argument array, shell=false",
+    "cargo_in_parent_path": false,
+    "env_file_changes_path": false,
+    "failure_phase": "compile",
+    "generated_source_missing": false,
+    "host_platform": "Linux WSL2 x86_64",
+    "parent_environment_RUSTC": null,
+    "rustc_executable_kind": "Linux ELF, not rustc.exe",
+    "rustc_in_parent_path": false,
+    "rustup_in_parent_path": false,
+    "subprocess_environment": "copy of parent environment plus Python/Go cache directories",
+    "temporary_directory_reproduction": "FileNotFoundError: [Errno 2] No such file or directory: 'rustc'",
+    "toolchain_available_outside_parent_path": "rustc 1.85.1 and cargo 1.85.1 under an ephemeral toolchain root"
+  },
+  "existing_result": {
+    "rust_compile_failures": 60,
+    "rust_model_generation_failures": 0,
+    "rust_provider_calls": 180,
+    "rust_total_provider_tokens_retained": 133935
+  },
+  "protected_sha256": {
+    "aggregate": "d6964bb9083c7d6b097a43c7d8c6c7ab4d8e0625cb2f9f65f1e22652507d333b",
+    "comparison": "d5ef1ba2311c50b004aa430061d227921e464c52acdc09a2551ac143d917f468",
+    "events": "41e6e0f11c3821e59406243e0ec62b6fe269939b20f5706f4e910ab66b0bf6e9",
+    "evidence_manifest": "9e660677d366230a6d594ea3c838f51c15aaf2ca42dcef24f2bdce16bb94a1da",
+    "preregistration": "65d7e426a0f5264c0c3307707ca1431f1135da3c6af9be8459b4dcaa9573cee4",
+    "raw": "e46be7b16bf61cb97b935ebb45022ff8c6261724c40618d009be54558e1a0d17",
+    "report": "6d77abdfbb36802833aa02d8ac2cbdef344cae6dc1debf058ec480a4cbf7f475"
+  },
+  "root_cause": "The parent Python process could not resolve rustc, cargo, or rustup. The frozen harness converted an unresolved {rustc} placeholder to the literal string rustc and deferred discovery until each compile command, so FileNotFoundError became an ordinary compile failure after provider calls.",
+  "schema_version": 1
+}

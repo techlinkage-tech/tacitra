@@ -1,0 +1,1 @@
+Return only the requested artifact in the exact JSON envelope described by the prompt. Do not include Markdown fences or explanations. Preserve the requested public names and observable behavior. Use only the language and standard library named by the prompt. Do not read or assume any reference solution.

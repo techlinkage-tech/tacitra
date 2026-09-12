@@ -1,0 +1,19 @@
+fn unrelated_alpha(value: Int) -> Int {
+  value * 2
+}
+
+fn unrelated_beta(value: Int) -> Int {
+  value - 3
+}
+
+fn unrelated_gamma(enabled: Bool) -> Int {
+  if enabled { 7 } else { 9 }
+}
+
+fn solve_sp_357(value: Int, limit: Int) -> Int {
+  if value >= limit { 0 } else { value + 2 }
+}
+
+fn main() -> Int {
+  solve_sp_357(387, 387)
+}

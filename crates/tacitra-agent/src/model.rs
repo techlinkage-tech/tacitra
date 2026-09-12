@@ -14,6 +14,8 @@ pub struct AgentError {
     pub code: &'static str,
     pub message: String,
     pub target: Option<String>,
+    pub(crate) expected_type: Option<String>,
+    pub(crate) actual_type: Option<String>,
 }
 
 impl AgentError {
@@ -23,7 +25,15 @@ impl AgentError {
             code,
             message: message.into(),
             target,
+            expected_type: None,
+            actual_type: None,
         }
+    }
+
+    pub(crate) fn with_diagnostic(mut self, diagnostic: &Diagnostic) -> Self {
+        self.expected_type.clone_from(&diagnostic.expected_type);
+        self.actual_type.clone_from(&diagnostic.actual_type);
+        self
     }
 
     #[must_use]

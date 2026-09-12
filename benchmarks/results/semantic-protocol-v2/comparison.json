@@ -1,0 +1,165 @@
+{
+  "accepted_categories": [
+    "debug-repair",
+    "repository-change"
+  ],
+  "candidate": "capsule-fragment",
+  "candidate_result": {
+    "acceptance_rate": 1.0,
+    "accepted": 60,
+    "cached_input_tokens": 0,
+    "compile_at_1": 1.0,
+    "input_tokens": 31747,
+    "output_tokens": 5271,
+    "pass_at_1": 1.0,
+    "patch_size": {
+      "mean": 47.36666666666667,
+      "median": 59.5,
+      "population_variance": 433.66555555555556
+    },
+    "reasoning_tokens": 3756,
+    "repair_output_tokens": 0,
+    "repair_rounds": 0,
+    "total_tokens": 37018,
+    "total_tokens_per_accepted_solution": 616.9666666666667,
+    "trials": 60,
+    "wall_clock_time": 123.435902
+  },
+  "categories": [
+    {
+      "candidate": {
+        "acceptance_rate": 1.0,
+        "accepted": 30,
+        "cached_input_tokens": 0,
+        "compile_at_1": 1.0,
+        "input_tokens": 15962,
+        "output_tokens": 1516,
+        "pass_at_1": 1.0,
+        "patch_size": {
+          "mean": 38.9,
+          "median": 39.0,
+          "population_variance": 650.49
+        },
+        "reasoning_tokens": 877,
+        "repair_output_tokens": 0,
+        "repair_rounds": 0,
+        "total_tokens": 17478,
+        "total_tokens_per_accepted_solution": 582.6,
+        "trials": 30,
+        "wall_clock_time": 49.790406
+      },
+      "category": "debug-repair",
+      "ordinary": {
+        "acceptance_rate": 1.0,
+        "accepted": 30,
+        "cached_input_tokens": 0,
+        "compile_at_1": 1.0,
+        "input_tokens": 20295,
+        "output_tokens": 5199,
+        "pass_at_1": 1.0,
+        "patch_size": {
+          "mean": 365.43333333333334,
+          "median": 347.5,
+          "population_variance": 5154.3788888888885
+        },
+        "reasoning_tokens": 1184,
+        "repair_output_tokens": 0,
+        "repair_rounds": 0,
+        "total_tokens": 25494,
+        "total_tokens_per_accepted_solution": 849.8,
+        "trials": 30,
+        "wall_clock_time": 85.744409
+      }
+    },
+    {
+      "candidate": {
+        "acceptance_rate": 1.0,
+        "accepted": 30,
+        "cached_input_tokens": 0,
+        "compile_at_1": 1.0,
+        "input_tokens": 15785,
+        "output_tokens": 3755,
+        "pass_at_1": 1.0,
+        "patch_size": {
+          "mean": 55.833333333333336,
+          "median": 59.5,
+          "population_variance": 73.47222222222223
+        },
+        "reasoning_tokens": 2879,
+        "repair_output_tokens": 0,
+        "repair_rounds": 0,
+        "total_tokens": 19540,
+        "total_tokens_per_accepted_solution": 651.3333333333334,
+        "trials": 30,
+        "wall_clock_time": 73.645496
+      },
+      "category": "repository-change",
+      "ordinary": {
+        "acceptance_rate": 1.0,
+        "accepted": 30,
+        "cached_input_tokens": 0,
+        "compile_at_1": 1.0,
+        "input_tokens": 19545,
+        "output_tokens": 6242,
+        "pass_at_1": 1.0,
+        "patch_size": {
+          "mean": 358.4,
+          "median": 353.0,
+          "population_variance": 6719.173333333333
+        },
+        "reasoning_tokens": 2124,
+        "repair_output_tokens": 0,
+        "repair_rounds": 0,
+        "total_tokens": 25787,
+        "total_tokens_per_accepted_solution": 859.5666666666667,
+        "trials": 30,
+        "wall_clock_time": 90.435139
+      }
+    }
+  ],
+  "classification": "supports_semantic_protocol_v2",
+  "confirmatory": true,
+  "difference": {
+    "acceptance_bootstrap_95_percent_interval": [
+      0.0,
+      0.0
+    ],
+    "acceptance_rate": 0.0,
+    "observed_token_reduction_rate": 0.27813420175113585,
+    "paired_bootstrap_95_percent_interval": [
+      -248.90041666666676,
+      -226.3829166666667
+    ],
+    "total_tokens_per_accepted_solution": -237.71666666666658
+  },
+  "evidence": "measured-confirmatory",
+  "noninferiority": {
+    "candidate_loss_cases": 0,
+    "limit": 0.05,
+    "observed_loss_rate": 0.0,
+    "one_sided_95_upper": 0.04870291331009752,
+    "ordinary_accepted_cases": 60
+  },
+  "ordinary_result": {
+    "acceptance_rate": 1.0,
+    "accepted": 60,
+    "cached_input_tokens": 0,
+    "compile_at_1": 1.0,
+    "input_tokens": 39840,
+    "output_tokens": 11441,
+    "pass_at_1": 1.0,
+    "patch_size": {
+      "mean": 361.9166666666667,
+      "median": 347.5,
+      "population_variance": 5949.143055555555
+    },
+    "reasoning_tokens": 3308,
+    "repair_output_tokens": 0,
+    "repair_rounds": 0,
+    "total_tokens": 51281,
+    "total_tokens_per_accepted_solution": 854.6833333333333,
+    "trials": 60,
+    "wall_clock_time": 176.179548
+  },
+  "schema_version": 1
+}

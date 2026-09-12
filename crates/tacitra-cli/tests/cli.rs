@@ -232,6 +232,98 @@ fn compact_agent_context_commands_are_available() {
 }
 
 #[test]
+fn ai_surface_capsule_edit_diff_apply_and_repair_are_executable() {
+    let source = fixture(
+        "ai-surface",
+        "fn solve(value: Int) -> Int { value }\nfn main() -> Int { solve(41) }",
+    );
+    let summary = tacitra()
+        .args(["module.summary", source.to_str().unwrap()])
+        .output()
+        .unwrap();
+    let summary: serde_json::Value = serde_json::from_slice(&summary.stdout).unwrap();
+    let edit = serde_json::json!({
+        "v": 1,
+        "h": summary["content_hash"],
+        "cap": [],
+        "ops": [["body", "sym:fn:solve", "{ value + 1 }"]]
+    });
+    let edit_path = fixture("ai-edit", &edit.to_string());
+
+    let capsule = tacitra()
+        .args([
+            "ai.context",
+            source.to_str().unwrap(),
+            "solve",
+            "--success",
+            "main returns 42",
+        ])
+        .output()
+        .unwrap();
+    assert!(capsule.status.success());
+    let capsule: serde_json::Value = serde_json::from_slice(&capsule.stdout).unwrap();
+    assert_eq!(capsule["target"]["id"], "sym:fn:solve");
+    assert!(capsule.get("source").is_none());
+
+    let before = fs::read_to_string(&source).unwrap();
+    for command in ["ai.edit.validate", "ai.edit.dry-run"] {
+        let output = tacitra()
+            .args([
+                command,
+                source.to_str().unwrap(),
+                edit_path.to_str().unwrap(),
+            ])
+            .output()
+            .unwrap();
+        assert!(output.status.success());
+        assert_eq!(fs::read_to_string(&source).unwrap(), before);
+    }
+    let diff = tacitra()
+        .args([
+            "ai.edit.diff",
+            source.to_str().unwrap(),
+            edit_path.to_str().unwrap(),
+        ])
+        .output()
+        .unwrap();
+    assert!(diff.status.success());
+    assert!(String::from_utf8(diff.stdout)
+        .unwrap()
+        .contains("value + 1"));
+    assert_eq!(fs::read_to_string(&source).unwrap(), before);
+
+    let invalid = edit.to_string().replace("{ value + 1 }", "{ false }");
+    let invalid_path = fixture("ai-invalid", &invalid);
+    let repair = tacitra()
+        .args([
+            "ai.repair-context",
+            source.to_str().unwrap(),
+            invalid_path.to_str().unwrap(),
+        ])
+        .output()
+        .unwrap();
+    assert_eq!(repair.status.code(), Some(1));
+    let repair: serde_json::Value = serde_json::from_slice(&repair.stdout).unwrap();
+    assert_eq!(repair["repair"]["expected"], "Int");
+    assert_eq!(repair["repair"]["actual"], "Bool");
+
+    let application = tacitra()
+        .args([
+            "ai.edit.apply",
+            source.to_str().unwrap(),
+            edit_path.to_str().unwrap(),
+        ])
+        .output()
+        .unwrap();
+    assert!(application.status.success());
+    let run = tacitra()
+        .args(["run", source.to_str().unwrap()])
+        .output()
+        .unwrap();
+    assert_eq!(String::from_utf8(run.stdout).unwrap(), "42\n");
+}
+
+#[test]
 fn help_and_version_are_successful_and_document_commands() {
     let help = tacitra().arg("--help").output().unwrap();
     assert!(help.status.success());
@@ -243,6 +335,9 @@ fn help_and_version_are_successful_and_document_commands() {
         "check",
         "run",
         "patch.validate",
+        "ai.context",
+        "ai.edit.validate",
+        "ai.repair-context",
         "interop.call",
     ] {
         assert!(text.contains(command), "help omitted {command}");
@@ -264,6 +359,9 @@ fn public_error_schemas_have_unique_versioned_ids() {
         include_str!("../../../protocol/schema/interop-error-v1.schema.json"),
         include_str!("../../../protocol/schema/patch.schema.json"),
         include_str!("../../../protocol/schema/interop-manifest.schema.json"),
+        include_str!("../../../protocol/schema/task-capsule-v1.schema.json"),
+        include_str!("../../../protocol/schema/typed-edit-v1.schema.json"),
+        include_str!("../../../protocol/schema/repair-context-v1.schema.json"),
     ];
     let mut identifiers = std::collections::BTreeSet::new();
     for schema in schemas {

@@ -1,0 +1,1 @@
+Modify both `step_036` and `solve_036`: `step_036` must multiply by 9 instead of 3, and `solve_036` must add 9 instead of 3 after calling `step_036`. Keep the caller unchanged; it must print `513`. Return one unified diff.

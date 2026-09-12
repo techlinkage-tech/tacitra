@@ -1,0 +1,8 @@
+fn solve_079(value: Int) -> Int {
+  let offset = 3;
+  value + offset
+}
+
+fn main() -> Int {
+  solve_079(109, 3)
+}

@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -5,7 +5,7 @@
+ 
+ 
+ def solve_051(packet: Packet051) -> int:
+-    return packet.value - 3 if packet.enabled else packet.value
++    return packet.value + 10 if packet.enabled else packet.value
+ 
+ def main() -> int:
+     return solve_051(Packet051(71, True))

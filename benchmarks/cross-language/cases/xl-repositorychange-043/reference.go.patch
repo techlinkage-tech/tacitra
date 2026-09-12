@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_043(value int64, limit int64) int64 {
+-	if value > limit { return value - 5 }
++	if value >= limit { return value + 9 }
+ 	return 0
+ }
+ 

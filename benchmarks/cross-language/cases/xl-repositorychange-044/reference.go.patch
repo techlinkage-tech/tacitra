@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_044(label string, value int64) int64 {
+-	if label == "ready_44" { return value + 6 }
++	if label == "active_44" { return value + 10 }
+ 	return 0
+ }
+ 

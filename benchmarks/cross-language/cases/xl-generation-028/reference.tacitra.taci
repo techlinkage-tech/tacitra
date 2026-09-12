@@ -1,0 +1,16 @@
+record Packet028 {
+  value: Int,
+  enabled: Bool,
+}
+
+fn solve_028(packet: Packet028) -> Int {
+  if packet.enabled {
+    packet.value + 2
+  } else {
+    packet.value
+  }
+}
+
+fn main() -> Int {
+  solve_028(new Packet028 { value: 33, enabled: true })
+}

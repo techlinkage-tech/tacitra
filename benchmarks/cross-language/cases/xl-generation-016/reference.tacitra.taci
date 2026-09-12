@@ -1,0 +1,11 @@
+fn step_016(value: Int) -> Int {
+  value * 2
+}
+
+fn solve_016(value: Int) -> Int {
+  step_016(value) + 4
+}
+
+fn main() -> Int {
+  solve_016(21)
+}

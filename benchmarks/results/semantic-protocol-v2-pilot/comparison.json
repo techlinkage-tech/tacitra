@@ -1,0 +1,155 @@
+{
+  "baseline": {
+    "acceptance_rate": 1.0,
+    "accepted": 24,
+    "cached_input_tokens": 0,
+    "compile_at_1": 1.0,
+    "input_tokens": 15936,
+    "output_tokens": 4629,
+    "pass_at_1": 1.0,
+    "patch_size": {
+      "mean": 336.2083333333333,
+      "median": 299.5,
+      "population_variance": 5806.164930555556
+    },
+    "reasoning_tokens": 1490,
+    "repair_output_tokens": 0,
+    "repair_rounds": 0,
+    "total_tokens": 20565,
+    "total_tokens_per_accepted_solution": 856.875,
+    "trials": 24,
+    "wall_clock_time": 63.490646
+  },
+  "best_eligible_candidate": "capsule-fragment",
+  "comparisons": [
+    {
+      "accepted_categories": [],
+      "baseline_accepted_trials": 24,
+      "candidate": "capsule-diff",
+      "candidate_losses": 24,
+      "eligible": false,
+      "observed_loss_rate": 1.0,
+      "result": {
+        "acceptance_rate": 0.0,
+        "accepted": 0,
+        "cached_input_tokens": 0,
+        "compile_at_1": 0.0,
+        "input_tokens": 23375,
+        "output_tokens": 28624,
+        "pass_at_1": 0.0,
+        "patch_size": {
+          "mean": 180.91666666666666,
+          "median": 172.5,
+          "population_variance": 1196.6597222222222
+        },
+        "reasoning_tokens": 23359,
+        "repair_output_tokens": 16586,
+        "repair_rounds": 48,
+        "total_tokens": 51999,
+        "total_tokens_per_accepted_solution": null,
+        "trials": 24,
+        "wall_clock_time": 368.289985
+      },
+      "token_difference": null
+    },
+    {
+      "accepted_categories": [
+        "debug-repair",
+        "repository-change"
+      ],
+      "baseline_accepted_trials": 24,
+      "candidate": "capsule-fragment",
+      "candidate_losses": 0,
+      "eligible": true,
+      "observed_loss_rate": 0.0,
+      "result": {
+        "acceptance_rate": 1.0,
+        "accepted": 24,
+        "cached_input_tokens": 0,
+        "compile_at_1": 1.0,
+        "input_tokens": 12680,
+        "output_tokens": 2087,
+        "pass_at_1": 1.0,
+        "patch_size": {
+          "mean": 47.0,
+          "median": 55.5,
+          "population_variance": 431.1666666666667
+        },
+        "reasoning_tokens": 1481,
+        "repair_output_tokens": 0,
+        "repair_rounds": 0,
+        "total_tokens": 14767,
+        "total_tokens_per_accepted_solution": 615.2916666666666,
+        "trials": 24,
+        "wall_clock_time": 41.506228
+      },
+      "token_difference": -241.58333333333337
+    },
+    {
+      "accepted_categories": [],
+      "baseline_accepted_trials": 24,
+      "candidate": "capsule-named",
+      "candidate_losses": 24,
+      "eligible": false,
+      "observed_loss_rate": 1.0,
+      "result": {
+        "acceptance_rate": 0.0,
+        "accepted": 0,
+        "cached_input_tokens": 0,
+        "compile_at_1": 0.0,
+        "input_tokens": 25393,
+        "output_tokens": 29099,
+        "pass_at_1": 0.0,
+        "patch_size": {
+          "mean": 265.0833333333333,
+          "median": 268.5,
+          "population_variance": 690.9930555555555
+        },
+        "reasoning_tokens": 21497,
+        "repair_output_tokens": 23848,
+        "repair_rounds": 48,
+        "total_tokens": 54492,
+        "total_tokens_per_accepted_solution": null,
+        "trials": 24,
+        "wall_clock_time": 366.773486
+      },
+      "token_difference": null
+    },
+    {
+      "accepted_categories": [],
+      "baseline_accepted_trials": 24,
+      "candidate": "compact-control",
+      "candidate_losses": 24,
+      "eligible": false,
+      "observed_loss_rate": 1.0,
+      "result": {
+        "acceptance_rate": 0.0,
+        "accepted": 0,
+        "cached_input_tokens": 0,
+        "compile_at_1": 0.0,
+        "input_tokens": 25167,
+        "output_tokens": 40295,
+        "pass_at_1": 0.0,
+        "patch_size": {
+          "mean": 229.95833333333334,
+          "median": 229.5,
+          "population_variance": 923.2065972222222
+        },
+        "reasoning_tokens": 32611,
+        "repair_output_tokens": 24787,
+        "repair_rounds": 48,
+        "total_tokens": 65462,
+        "total_tokens_per_accepted_solution": null,
+        "trials": 24,
+        "wall_clock_time": 472.863835
+      },
+      "token_difference": null
+    }
+  ],
+  "confirmatory": false,
+  "evidence": "measured-development-pilot",
+  "proceed_to_confirmation": true,
+  "schema_version": 1,
+  "selected_candidate": "capsule-fragment",
+  "stop_reason": null
+}

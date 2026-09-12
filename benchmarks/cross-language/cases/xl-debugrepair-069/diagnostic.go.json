@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "compile",
+  "stderr": "# command-line-arguments\n./program.go:7:9: undefined: step_069\n",
+  "stdout": ""
+}

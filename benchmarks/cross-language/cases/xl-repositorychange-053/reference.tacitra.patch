@@ -1,0 +1,11 @@
+--- program.taci
++++ program.taci
+@@ -1,6 +1,6 @@
+ fn solve_053(value: Int, limit: Int) -> Int {
+-  if value < limit {
+-    5
++  if value <= limit {
++    85
+   } else {
+     0
+   }

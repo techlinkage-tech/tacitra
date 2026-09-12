@@ -1,0 +1,68 @@
+{
+  "combined_token_limit": 750000,
+  "evidence": "measured-local",
+  "fake_provider_calls": 2,
+  "maximum_api_calls": 360,
+  "phase_token_limit": 542715,
+  "preregistration_revision": "sha256:2cc188bef0bc575986f1723ad7e726a404f400fa58a46b94ca0012eea80fc433",
+  "real_provider_calls": 0,
+  "reference_fixtures": 120,
+  "runtime": {
+    "classification": "environment_preflight_success",
+    "credentials_forwarded_to_children": false,
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "schema_version": 1,
+    "tools": [
+      {
+        "executable_sha256": "sha256:87e9ff02f95ea17d877e7c4eeb0f365f50fe3827f5afec132131ff3b8031a57e",
+        "failure_reason": null,
+        "name": "cargo",
+        "ok": true,
+        "resolved_executable": "cargo",
+        "version": "cargo 1.85.1 (d73d2caf9 2024-12-31)"
+      },
+      {
+        "executable_sha256": "sha256:f51e63d85d80a6658fdfe21610aba78ec85aec83deb7dcf0dd07346caf46fc6e",
+        "failure_reason": null,
+        "name": "go",
+        "ok": true,
+        "resolved_executable": "go",
+        "version": "go version go1.24.2 linux/amd64"
+      },
+      {
+        "executable_sha256": "sha256:a7ae8b838a75711c06f86a2a8293dcad85a20b564670a120717e704c436e6f3a",
+        "failure_reason": null,
+        "name": "patch",
+        "ok": true,
+        "resolved_executable": "patch",
+        "version": "GNU patch 2.7.6"
+      },
+      {
+        "executable_sha256": "sha256:e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "failure_reason": null,
+        "name": "python3",
+        "ok": true,
+        "resolved_executable": "python3.12",
+        "version": "Python 3.12.3"
+      },
+      {
+        "executable_sha256": "sha256:f8d033fd72e878ec60493788c8bffec2e6c154dcab6f0cb4c145af8ada26a7ed",
+        "failure_reason": null,
+        "name": "rustc",
+        "ok": true,
+        "resolved_executable": "rustc",
+        "version": "rustc 1.85.1 (4eb161250 2025-03-15)"
+      },
+      {
+        "executable_sha256": "sha256:97f6e46ad650f07d0a86e395849e156620a0824bc5bde189676002e974c99c6b",
+        "failure_reason": null,
+        "name": "tacitra",
+        "ok": true,
+        "resolved_executable": "tacitra",
+        "version": "tacitra 0.1.0 (experimental)"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "trials": 120
+}

@@ -1,0 +1,11 @@
+--- program.py
++++ program.py
+@@ -11,7 +11,7 @@
+ 
+ 
+ def solve_sp_104(value: int) -> int:
+-    return value + 1
++    return value + 12
+ 
+ 
+ if __name__ == "__main__":

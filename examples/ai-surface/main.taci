@@ -1,0 +1,16 @@
+record Config {
+  step: Int,
+  enabled: Bool,
+}
+
+fn increment(value: Int, config: Config) -> Int {
+  if config.enabled {
+    value + config.step
+  } else {
+    value
+  }
+}
+
+fn main() -> Int {
+  increment(40, new Config { step: 1, enabled: true })
+}

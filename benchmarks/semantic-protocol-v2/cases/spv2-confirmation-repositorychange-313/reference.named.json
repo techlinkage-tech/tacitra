@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:3d8a838cd5cc8a989455f894cc3e18acf727959f9140c012761f9eec7206a016",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if value <= limit { value + 11 } else { 0 } }",
+      "target": "sym:fn:solve_sp_313"
+    }
+  ],
+  "version": 1
+}

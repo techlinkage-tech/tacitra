@@ -1,0 +1,9 @@
+--- program.rs
++++ program.rs
+@@ -4,5 +4,5 @@
+ }
+ 
+ fn main() {
+-    println!("{}", solve_059(89, 7));
++    println!("{}", solve_059(89));
+ }

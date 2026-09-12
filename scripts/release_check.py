@@ -101,6 +101,11 @@ def main() -> int:
         run("optimized-cases", PYTHON, "benchmarks/run_optimized.py", "validate")
         run("confirmation-pins", PYTHON, "scripts/check_confirmation.py")
         run("confirmation-references", PYTHON, "scripts/validate_confirmation_references.py")
+        run("replication-preflight", PYTHON, "benchmarks/semantic_protocol_recovery.py", "preflight")
+        run(
+            "semantic-v2-dry-run", PYTHON,
+            "benchmarks/semantic_protocol_v2.py", "dry-run", "--phase", "pilot",
+        )
 
         with tempfile.TemporaryDirectory(prefix="tacitra-release-check-") as directory:
             temporary = Path(directory)
@@ -110,6 +115,15 @@ def main() -> int:
             model_aggregate = temporary / "model.aggregate.json"
             model_comparison = temporary / "model.comparison.json"
             model_report = temporary / "model.report.md"
+            rust_prevalidation = temporary / "rust.prevalidation.json"
+            robust_aggregate = temporary / "semantic.aggregate-v2.json"
+            robust_comparison = temporary / "semantic.comparison-v2.json"
+            robust_report = temporary / "semantic.report-v2.md"
+            run(
+                "rust-reference-prevalidation", PYTHON,
+                "benchmarks/semantic_protocol_recovery.py", "prevalidate-rust",
+                "--output", str(rust_prevalidation),
+            )
             run(
                 "static-reaggregate", PYTHON, "benchmarks/harness.py", "aggregate", "--raw",
                 "benchmarks/results/static-reference-v1/raw.jsonl", "--output", str(static_aggregate),
@@ -140,6 +154,24 @@ def main() -> int:
                 str(model_aggregate), "--comparison", str(model_comparison), "--output", str(model_report),
             )
             identical("model report", model_report, ROOT / "benchmarks/results/model-confirmation-v1/report.md")
+            semantic_raw = "benchmarks/results/semantic-protocol-v1/raw.jsonl"
+            run(
+                "semantic-zero-safe-aggregate", PYTHON,
+                "benchmarks/semantic_protocol_aggregate_v2.py", "--raw", semantic_raw,
+                "--output", str(robust_aggregate),
+            )
+            run(
+                "semantic-zero-safe-comparison", PYTHON,
+                "benchmarks/semantic_protocol_compare_v2.py", "--raw", semantic_raw,
+                "--output", str(robust_comparison), "--report", str(robust_report),
+                "--bootstrap-samples", "1000",
+            )
+            robust = json.loads(robust_comparison.read_text(encoding="utf-8"))
+            rust_comparison = next(
+                item for item in robust["exploratory"] if item["right"] == "rust-ordinary"
+            )
+            if rust_comparison["difference"]["not_estimable_reason"] != "zero_accepted_trials":
+                raise RuntimeError("zero-accepted Rust comparison is not represented safely")
 
         if (ROOT / ".env.local").exists():
             run("credential-ignore", "git", "check-ignore", "-q", ".env.local")

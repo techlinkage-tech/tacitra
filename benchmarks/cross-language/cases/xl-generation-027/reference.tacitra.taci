@@ -1,0 +1,11 @@
+fn solve_027(label: String) -> Int {
+  if label == "ready_27" {
+    32
+  } else {
+    8
+  }
+}
+
+fn main() -> Int {
+  solve_027("ready_27")
+}

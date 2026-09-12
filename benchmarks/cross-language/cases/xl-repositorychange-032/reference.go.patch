@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -3,7 +3,7 @@
+ import "fmt"
+ 
+ func solve_032(label string, value int64) int64 {
+-	if label == "ready_32" { return value + 4 }
++	if label == "active_32" { return value + 12 }
+ 	return 0
+ }
+ 

@@ -1,0 +1,863 @@
+{
+  "cross_language_decomposition": {
+    "comparisons": [
+      {
+        "comparator": "python",
+        "input_difference": 293.364705882353,
+        "input_share_of_difference": 0.8256133496672516,
+        "output_difference": 61.964705882352945,
+        "reduction_needed_to_match": 0.37366076951626875,
+        "total_difference": 355.3294117647059
+      },
+      {
+        "comparator": "go",
+        "input_difference": 280.44705882352946,
+        "input_share_of_difference": 0.8849866349866349,
+        "output_difference": 36.44705882352943,
+        "reduction_needed_to_match": 0.33324260794259564,
+        "total_difference": 316.8941176470589
+      },
+      {
+        "comparator": "rust",
+        "input_difference": 285.37647058823535,
+        "input_share_of_difference": 0.8823294049177943,
+        "output_difference": 38.05882352941177,
+        "reduction_needed_to_match": 0.34012124211307687,
+        "total_difference": 323.4352941176471
+      }
+    ],
+    "evidence": "measured",
+    "means": {
+      "go": {
+        "input_tokens": 389.3764705882353,
+        "output_tokens": 244.6705882352941,
+        "total_tokens": 634.0470588235294
+      },
+      "python": {
+        "input_tokens": 376.45882352941175,
+        "output_tokens": 219.1529411764706,
+        "total_tokens": 595.6117647058824
+      },
+      "rust": {
+        "input_tokens": 384.4470588235294,
+        "output_tokens": 243.05882352941177,
+        "total_tokens": 627.5058823529412
+      },
+      "tacitra": {
+        "input_tokens": 669.8235294117648,
+        "output_tokens": 281.11764705882354,
+        "total_tokens": 950.9411764705883
+      }
+    },
+    "source": "cross-language-v1"
+  },
+  "schema_version": 1,
+  "semantic_protocol_static": {
+    "ablations": {
+      "conversation_or_cache": {
+        "stateless": 1477.5,
+        "warm_amortization": {
+          "1": {
+            "bytes_per_task": 1477.5,
+            "evidence": "projected",
+            "tasks": 1,
+            "total_utf8_bytes": 1477.5
+          },
+          "10": {
+            "bytes_per_task": 872.7,
+            "evidence": "projected",
+            "tasks": 10,
+            "total_utf8_bytes": 8727.0
+          },
+          "100": {
+            "bytes_per_task": 812.22,
+            "evidence": "projected",
+            "tasks": 100,
+            "total_utf8_bytes": 81222.0
+          }
+        }
+      },
+      "full": 1477.5,
+      "no_minimal_repair_context": null,
+      "no_semantic_query": 1263.0,
+      "no_task_scoped_specification": 9946.5,
+      "no_typed_structural_patch": 1540.5
+    },
+    "edit_candidates": {
+      "compact_named_object": {
+        "bytes": {
+          "mean": 257.3333333333333,
+          "median": 262.5,
+          "population_variance": 332.8888888888889
+        },
+        "evidence": "measured",
+        "schema_validatable": true,
+        "tokenizer": "utf8-bytes/1",
+        "unambiguous": true
+      },
+      "compact_tuple": {
+        "bytes": {
+          "mean": 185.33333333333334,
+          "median": 190.5,
+          "population_variance": 332.8888888888889
+        },
+        "evidence": "measured",
+        "schema_validatable": true,
+        "tokenizer": "utf8-bytes/1",
+        "unambiguous": true
+      },
+      "legacy_verbose_object": {
+        "bytes": {
+          "mean": 249.33333333333334,
+          "median": 254.5,
+          "population_variance": 332.8888888888889
+        },
+        "evidence": "measured",
+        "schema_validatable": true,
+        "tokenizer": "utf8-bytes/1",
+        "unambiguous": true
+      }
+    },
+    "evidence": "measured",
+    "groups": [
+      {
+        "accepted": 6,
+        "diagnostic": {
+          "mean": 28.0,
+          "median": 28.0,
+          "population_variance": 784
+        },
+        "input": {
+          "mean": 929.0,
+          "median": 919.5,
+          "population_variance": 3681.6666666666665
+        },
+        "output": {
+          "mean": 443.1666666666667,
+          "median": 430.0,
+          "population_variance": 5109.138888888889
+        },
+        "repository_context": {
+          "mean": 420.5,
+          "median": 425.5,
+          "population_variance": 3768.25
+        },
+        "representation": "go-ordinary",
+        "specification": {
+          "mean": 160.0,
+          "median": 160.0,
+          "population_variance": 0
+        },
+        "total": {
+          "mean": 1372.1666666666667,
+          "median": 1370.5,
+          "population_variance": 11076.472222222223
+        },
+        "trials": 6
+      },
+      {
+        "accepted": 6,
+        "diagnostic": {
+          "mean": 28.0,
+          "median": 28.0,
+          "population_variance": 784
+        },
+        "input": {
+          "mean": 955.5,
+          "median": 936.0,
+          "population_variance": 7476.25
+        },
+        "output": {
+          "mean": 246.0,
+          "median": 252.0,
+          "population_variance": 1961.6666666666667
+        },
+        "repository_context": {
+          "mean": 425.0,
+          "median": 429.5,
+          "population_variance": 7192.333333333333
+        },
+        "representation": "python-ordinary",
+        "specification": {
+          "mean": 182.0,
+          "median": 182.0,
+          "population_variance": 0
+        },
+        "total": {
+          "mean": 1201.5,
+          "median": 1188.0,
+          "population_variance": 16383.583333333334
+        },
+        "trials": 6
+      },
+      {
+        "accepted": 6,
+        "diagnostic": {
+          "mean": 28.0,
+          "median": 28.0,
+          "population_variance": 784
+        },
+        "input": {
+          "mean": 879.5,
+          "median": 884.0,
+          "population_variance": 4412.25
+        },
+        "output": {
+          "mean": 429.5,
+          "median": 409.5,
+          "population_variance": 7986.916666666667
+        },
+        "repository_context": {
+          "mean": 372.0,
+          "median": 370.0,
+          "population_variance": 5080.333333333333
+        },
+        "representation": "rust-ordinary",
+        "specification": {
+          "mean": 159.0,
+          "median": 159.0,
+          "population_variance": 0
+        },
+        "total": {
+          "mean": 1309.0,
+          "median": 1293.5,
+          "population_variance": 18741.666666666668
+        },
+        "trials": 6
+      },
+      {
+        "accepted": 6,
+        "diagnostic": {
+          "mean": 28.0,
+          "median": 28.0,
+          "population_variance": 784
+        },
+        "input": {
+          "mean": 1946.1666666666667,
+          "median": 1947.0,
+          "population_variance": 4785.138888888889
+        },
+        "output": {
+          "mean": 235.16666666666666,
+          "median": 239.5,
+          "population_variance": 2368.472222222222
+        },
+        "repository_context": {
+          "mean": 376.6666666666667,
+          "median": 376.5,
+          "population_variance": 5305.555555555556
+        },
+        "representation": "tacitra-ordinary",
+        "specification": {
+          "mean": 1221.0,
+          "median": 1221.0,
+          "population_variance": 0
+        },
+        "total": {
+          "mean": 2181.3333333333335,
+          "median": 2192.0,
+          "population_variance": 12616.222222222223
+        },
+        "trials": 6
+      },
+      {
+        "accepted": 6,
+        "diagnostic": {
+          "mean": 28.0,
+          "median": 28.0,
+          "population_variance": 784
+        },
+        "input": {
+          "mean": 1291.1666666666667,
+          "median": 1296.5,
+          "population_variance": 3755.1388888888887
+        },
+        "output": {
+          "mean": 186.33333333333334,
+          "median": 191.5,
+          "population_variance": 332.8888888888889
+        },
+        "repository_context": {
+          "mean": 591.1666666666666,
+          "median": 602.0,
+          "population_variance": 3969.8055555555557
+        },
+        "representation": "tacitra-semantic",
+        "specification": {
+          "mean": 454.0,
+          "median": 454.0,
+          "population_variance": 0
+        },
+        "total": {
+          "mean": 1477.5,
+          "median": 1489.0,
+          "population_variance": 6186.916666666667
+        },
+        "trials": 6
+      }
+    ],
+    "rows": [
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-002",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1061,
+          "instruction": 218,
+          "output": 289,
+          "repository_context": 511,
+          "specification": 182,
+          "task": 94,
+          "total": 1350
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-002",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1001,
+          "instruction": 218,
+          "output": 414,
+          "repository_context": 473,
+          "specification": 160,
+          "task": 94,
+          "total": 1415
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-002",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 945,
+          "instruction": 218,
+          "output": 402,
+          "repository_context": 418,
+          "specification": 159,
+          "task": 94,
+          "total": 1347
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-002",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 2018,
+          "instruction": 218,
+          "output": 255,
+          "repository_context": 429,
+          "specification": 1221,
+          "task": 94,
+          "total": 2273
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-002",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1353,
+          "instruction": 218,
+          "output": 200,
+          "repository_context": 625,
+          "specification": 454,
+          "task": 0,
+          "total": 1553
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-004",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 860,
+          "instruction": 218,
+          "output": 166,
+          "repository_context": 314,
+          "specification": 182,
+          "task": 90,
+          "total": 1026
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-004",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 853,
+          "instruction": 218,
+          "output": 352,
+          "repository_context": 329,
+          "specification": 160,
+          "task": 90,
+          "total": 1205
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-004",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 796,
+          "instruction": 218,
+          "output": 323,
+          "repository_context": 273,
+          "specification": 159,
+          "task": 90,
+          "total": 1119
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-004",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1860,
+          "instruction": 218,
+          "output": 146,
+          "repository_context": 275,
+          "specification": 1221,
+          "task": 90,
+          "total": 2006
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-004",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1197,
+          "instruction": 218,
+          "output": 150,
+          "repository_context": 469,
+          "specification": 454,
+          "task": 0,
+          "total": 1347
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-006",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1062,
+          "instruction": 218,
+          "output": 290,
+          "repository_context": 511,
+          "specification": 182,
+          "task": 95,
+          "total": 1352
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-006",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1002,
+          "instruction": 218,
+          "output": 415,
+          "repository_context": 473,
+          "specification": 160,
+          "task": 95,
+          "total": 1417
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-006",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 946,
+          "instruction": 218,
+          "output": 403,
+          "repository_context": 418,
+          "specification": 159,
+          "task": 95,
+          "total": 1349
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-006",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 2019,
+          "instruction": 218,
+          "output": 256,
+          "repository_context": 429,
+          "specification": 1221,
+          "task": 95,
+          "total": 2275
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-debugrepair-006",
+        "category": "debug-repair",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 56,
+          "input": 1354,
+          "instruction": 218,
+          "output": 201,
+          "repository_context": 626,
+          "specification": 454,
+          "task": 0,
+          "total": 1555
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-001",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 878,
+          "instruction": 218,
+          "output": 227,
+          "repository_context": 355,
+          "specification": 182,
+          "task": 123,
+          "total": 1105
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-001",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 879,
+          "instruction": 218,
+          "output": 445,
+          "repository_context": 378,
+          "specification": 160,
+          "task": 123,
+          "total": 1324
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-001",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 822,
+          "instruction": 218,
+          "output": 416,
+          "repository_context": 322,
+          "specification": 159,
+          "task": 123,
+          "total": 1238
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-001",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 1886,
+          "instruction": 218,
+          "output": 223,
+          "repository_context": 324,
+          "specification": 1221,
+          "task": 123,
+          "total": 2109
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-001",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 1250,
+          "instruction": 218,
+          "output": 182,
+          "repository_context": 578,
+          "specification": 454,
+          "task": 0,
+          "total": 1432
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-003",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 993,
+          "instruction": 218,
+          "output": 276,
+          "repository_context": 504,
+          "specification": 182,
+          "task": 89,
+          "total": 1269
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-003",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 959,
+          "instruction": 218,
+          "output": 587,
+          "repository_context": 492,
+          "specification": 160,
+          "task": 89,
+          "total": 1546
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-003",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 945,
+          "instruction": 218,
+          "output": 616,
+          "repository_context": 479,
+          "specification": 159,
+          "task": 89,
+          "total": 1561
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-003",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 2007,
+          "instruction": 218,
+          "output": 307,
+          "repository_context": 479,
+          "specification": 1221,
+          "task": 89,
+          "total": 2314
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-003",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 1342,
+          "instruction": 218,
+          "output": 202,
+          "repository_context": 670,
+          "specification": 454,
+          "task": 0,
+          "total": 1544
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-005",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "python-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 879,
+          "instruction": 218,
+          "output": 228,
+          "repository_context": 355,
+          "specification": 182,
+          "task": 124,
+          "total": 1107
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-005",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "go-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 880,
+          "instruction": 218,
+          "output": 446,
+          "repository_context": 378,
+          "specification": 160,
+          "task": 124,
+          "total": 1326
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-005",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "rust-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 823,
+          "instruction": 218,
+          "output": 417,
+          "repository_context": 322,
+          "specification": 159,
+          "task": 124,
+          "total": 1240
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-005",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-ordinary",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 1887,
+          "instruction": 218,
+          "output": 224,
+          "repository_context": 324,
+          "specification": 1221,
+          "task": 124,
+          "total": 2111
+        }
+      },
+      {
+        "accepted": true,
+        "case": "sp-dev-repositorychange-005",
+        "category": "repository-change",
+        "evidence": "measured",
+        "representation": "tacitra-semantic",
+        "tokenizer": "utf8-bytes/1",
+        "tokens": {
+          "diagnostic": 0,
+          "input": 1251,
+          "instruction": 218,
+          "output": 183,
+          "repository_context": 579,
+          "specification": 454,
+          "task": 0,
+          "total": 1434
+        }
+      }
+    ],
+    "tokenizer": "utf8-bytes/1",
+    "warm_session_simulation": {
+      "1": {
+        "bytes_per_task": 1477.5,
+        "evidence": "projected",
+        "tasks": 1,
+        "total_utf8_bytes": 1477.5
+      },
+      "10": {
+        "bytes_per_task": 872.7,
+        "evidence": "projected",
+        "tasks": 10,
+        "total_utf8_bytes": 8727.0
+      },
+      "100": {
+        "bytes_per_task": 812.22,
+        "evidence": "projected",
+        "tasks": 100,
+        "total_utf8_bytes": 81222.0
+      }
+    }
+  }
+}

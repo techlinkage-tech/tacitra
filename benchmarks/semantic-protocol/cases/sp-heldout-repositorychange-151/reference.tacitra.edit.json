@@ -1,0 +1,1 @@
+{"cap":[],"h":"sha256:833de0f2b2b05af96da2da7f9cf2f2aced2b035110b57e585779bf3e6c893470","ops":[["body","sym:fn:solve_sp_151","{ if divisor == 0 { Err(\"zero\") } else { Ok(value / divisor) } }"]],"v":1}

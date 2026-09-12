@@ -1,0 +1,39 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:1a5da321eb1a46999d94c3c9f8e77bc63db906b07dfc8cc65af67f0d7303c6c5",
+    "success": "Change `solve_sp_344` to add 7 instead of 1. Keep the caller unchanged; it must print 381.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_344",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_344/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ value + 1 }"
+  },
+  "schema_version": 1
+}

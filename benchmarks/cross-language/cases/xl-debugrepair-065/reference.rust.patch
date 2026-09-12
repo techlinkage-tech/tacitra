@@ -1,0 +1,10 @@
+--- program.rs
++++ program.rs
+@@ -1,6 +1,6 @@
+ fn solve_065(value: i64) -> i64 {
+     let offset = 7;
+-    step_065(value) + offset
++    value + offset
+ }
+ 
+ fn main() {

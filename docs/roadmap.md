@@ -78,3 +78,29 @@ Real-model evaluation was initially recorded as Milestone 7 after a follow-up re
 - Repeat the paired design with separately frozen models and harder cases that provoke repair loops.
 - Test profile-selection accuracy when task coverage is less obvious.
 - Publish model-specific results without pooling incompatible model/tokenizer conditions.
+
+## Cross-language-v1 research track (complete)
+
+- Freeze 85 new language-neutral cases spanning complete generation, local repository changes, and diagnostic repair.
+- Validate equivalent Tacitra, Python, Go, and Rust reference fixtures under one common information-selection and response protocol.
+- Preregister model settings, seeded interleaving, failure-inclusive metrics, family-wise comparisons, success non-inferiority, classifications, and all content hashes.
+- Complete the fake-model dry run and leakage tests without calling the real model API.
+- Run the frozen real-model evaluation once after Phase B approval and retain all evidence. (complete: `does_not_support_advantage`; all languages 85/85 accepted, while Tacitra used more tokens in every adjusted comparison)
+- Protocol-assisted comparison remains future work until all four languages have equivalent mechanisms.
+
+## Semantic-protocol-v1 research track (complete; does not support primary advantage)
+
+- Preserve canonical Tacitra as the human surface and add a versioned AI surface for source-free task capsules, compact typed edits, and minimal repairs.
+- Reaggregate cross-language evidence, measure three edit encodings and component ablations on six development cases, and retain unfavorable ablations.
+- Freeze 60 unused independent cases, five workflows, 300 stateless calls, model settings, seeded schedule, graders, hashes, bootstrap comparison, and 5% acceptance non-inferiority rule.
+- The frozen real-model run retained 300 trials and yielded `does_not_support_semantic_protocol`: semantic was fully accepted but used more total tokens per accepted solution than ordinary Tacitra.
+- Warm-session values remain projected. Rust comparison is invalid because `rustc` was absent; any replication or causal ablation requires a new preregistration and cases.
+- Environment recovery is implemented: tool/version preflight, credential-safe absolute-path subprocesses, 60/60 Rust reference prevalidation, timeout cleanup, and zero-acceptance-safe comparison/reporting.
+- A full five-condition, 300-trial environment-corrected replication is recommended but remains an unfrozen draft with no model execution authorization.
+
+## Milestone 10 — Familiar-output semantic protocol (complete)
+
+- Keep public Tacitra syntax unchanged and compare task capsule plus unified diff, source fragment, named edit, and compact control against ordinary editing.
+- Freeze a 12-case/120-trial development pilot before model access; select by success preservation, total provider tokens per accepted solution, then reasoning tokens.
+- Run a separately frozen 60-case/120-trial confirmation only if the pilot winner beats ordinary Tacitra.
+- Phase 1, the 120-trial pilot, and the separately frozen 60-case/120-trial confirmation are complete. Confirmation retained 60/60 acceptance in both conditions and measured 616.97 versus ordinary 854.68 total provider tokens per accepted solution, a 27.81% observed reduction. The preregistered decision supports this protocol relative to ordinary Tacitra for the frozen tasks and model, not against other languages.

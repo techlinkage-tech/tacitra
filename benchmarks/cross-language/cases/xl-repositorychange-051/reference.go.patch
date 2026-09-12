@@ -1,0 +1,11 @@
+--- program.go
++++ program.go
+@@ -5,7 +5,7 @@
+ type Packet051 struct { value int64; enabled bool }
+ 
+ func solve_051(packet Packet051) int64 {
+-	if packet.enabled { return packet.value - 3 }
++	if packet.enabled { return packet.value + 10 }
+ 	return packet.value
+ }
+ 

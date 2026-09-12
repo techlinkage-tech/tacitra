@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "test",
+  "stderr": "Traceback (most recent call last):\n  File \"program.py\", line 10, in <module>\n    print(main())\n          ^^^^^^\n  File \"program.py\", line 6, in main\n    return solve_079(109, 3)\n           ^^^^^^^^^^^^^^^^^\nTypeError: solve_079() takes 1 positional argument but 2 were given\n",
+  "stdout": ""
+}

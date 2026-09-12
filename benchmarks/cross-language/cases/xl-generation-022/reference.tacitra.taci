@@ -1,0 +1,11 @@
+fn solve_022(value: Int, limit: Int) -> Int {
+  if value <= limit {
+    27
+  } else {
+    3
+  }
+}
+
+fn main() -> Int {
+  solve_022(8999999999999999978, 8999999999999999978)
+}

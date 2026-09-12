@@ -1,0 +1,12 @@
+{
+  "base_hash": "sha256:374c9b57229527ff3f4911d38262a7066240effed7dc0ca0b7a35c34a4c49f1a",
+  "capabilities": [],
+  "operations": [
+    {
+      "operation": "replace_function_body",
+      "replacement": "{ if packet.enabled { packet.value + 6 } else { packet.value } }",
+      "target": "sym:fn:solve_sp_350"
+    }
+  ],
+  "version": 1
+}

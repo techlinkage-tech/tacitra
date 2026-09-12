@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "test",
+  "stderr": "Traceback (most recent call last):\n  File \"program.py\", line 10, in <module>\n    print(main())\n          ^^^^^^\n  File \"program.py\", line 6, in main\n    return solve_074(104)\n           ^^^^^^^^^^^^^^\n  File \"program.py\", line 3, in solve_074\n    return value + offset\n           ~~~~~~^~~~~~~~\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n",
+  "stdout": ""
+}

@@ -1,0 +1,1 @@
+Change `solve_047` from an exclusive to an inclusive check at the large integer boundary `8999999999999999953`, and change the successful result to value plus 13. Keep the exact-boundary caller unchanged; it must print `80`. Return one unified diff.

@@ -1,0 +1,56 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [
+      [
+        "sym:builtin:Err",
+        "fn(E) -> Result[T, E]"
+      ],
+      [
+        "sym:builtin:Ok",
+        "fn(T) -> Result[T, E]"
+      ]
+    ],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:fcac94410af81189c1bda8275e2baa01cfec2f9b3c6abb458bd31f41c56d488b",
+    "success": "Change `solve_sp_211` so zero is the only error and value 241 with divisor one returns 241.",
+    "target": {
+      "failure": "String",
+      "id": "sym:fn:solve_sp_211",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        },
+        {
+          "name": "divisor",
+          "type": "Int"
+        }
+      ],
+      "return": "Result[Int, String]",
+      "type": "fn(Int, Int) -> Result[Int, String]"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_211/param:divisor",
+        "Int"
+      ],
+      [
+        "sym:fn:solve_sp_211/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ if divisor <= 1 { Err(\"zero\") } else { Ok(value / divisor) } }"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "phase": "test",
+  "stderr": "Traceback (most recent call last):\n  File \"program.py\", line 10, in <module>\n    print(main())\n          ^^^^^^\n  File \"program.py\", line 6, in main\n    return solve_063(93, 5)\n           ^^^^^^^^^^^^^^^^\nTypeError: solve_063() takes 1 positional argument but 2 were given\n",
+  "stdout": ""
+}

@@ -1,0 +1,39 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:4a561a0cd1b9c7b80e9169acac190fdcc6c80ec9cb1d1deeb16a1cb7539b7d6d",
+    "success": "Change `solve_sp_360` to add 9 instead of 1. Keep the caller unchanged; it must print 399.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_360",
+      "params": [
+        {
+          "name": "value",
+          "type": "Int"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(Int) -> Int"
+    },
+    "types": [],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_360/param:value",
+        "Int"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ value + 1 }"
+  },
+  "schema_version": 1
+}

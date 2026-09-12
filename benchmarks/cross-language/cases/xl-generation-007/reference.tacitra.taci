@@ -1,0 +1,11 @@
+fn solve_007(left: Int, right: Int, enabled: Bool) -> Int {
+  if enabled && left > 0 {
+    left + right
+  } else {
+    0
+  }
+}
+
+fn main() -> Int {
+  solve_007(12, 2, true)
+}

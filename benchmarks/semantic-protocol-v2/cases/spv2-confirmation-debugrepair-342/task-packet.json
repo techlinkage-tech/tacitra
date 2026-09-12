@@ -1,0 +1,56 @@
+{
+  "capsule": {
+    "allowed": [
+      "body",
+      "expr"
+    ],
+    "calls": [],
+    "capabilities": [],
+    "contracts": [],
+    "effects": [],
+    "hash": "sha256:2059f2d5dfe4ab07767c47554eaac19545705880c25f25fc82eb82967e14b00f",
+    "success": "Change record-based `solve_sp_342` so an enabled packet adds 12 instead of 3. It must print 384.",
+    "target": {
+      "failure": null,
+      "id": "sym:fn:solve_sp_342",
+      "params": [
+        {
+          "name": "packet",
+          "type": "PacketSp342"
+        }
+      ],
+      "return": "Int",
+      "type": "fn(PacketSp342) -> Int"
+    },
+    "types": [
+      {
+        "def": {
+          "fields": [
+            {
+              "name": "value",
+              "type": "Int"
+            },
+            {
+              "name": "enabled",
+              "type": "Bool"
+            }
+          ]
+        },
+        "id": "type:record:PacketSp342",
+        "kind": "record"
+      }
+    ],
+    "v": 1,
+    "values": [
+      [
+        "sym:fn:solve_sp_342/param:packet",
+        "PacketSp342"
+      ]
+    ]
+  },
+  "editable": {
+    "kind": "function_body",
+    "source": "{ if packet.enabled { packet.value + 3 } else { packet.value } }"
+  },
+  "schema_version": 1
+}
